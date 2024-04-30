@@ -1,4 +1,4 @@
-Veamos cómo hacer acopio de los tipos enumerados y de los registros en pos de facilitar la implementación de varios tipos de datos. Esto nos es útil, para por ejemplo añadir todos los datos que conforman el historial médico de un paciente.
+ Veamos cómo hacer acopio de los tipos enumerados y de los registros en pos de facilitar la implementación de varios tipos de datos. Esto nos es útil, para por ejemplo añadir todos los datos que conforman el historial médico de un paciente.
 
 En este tema, usaremos *enum* y *struct* para favorecer al programador y que los use posteriormente para satisfacer ciertas necesidades.
 
@@ -108,7 +108,8 @@ void pruebaPersona(struct tipoPersona persona) {
 }  
 
 int main() {
-	pruebaPersona();
+	struct tipoPersona persona;
+	pruebaPersona(persona);
 	return 0;
 }
 ```
