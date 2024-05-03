@@ -19,13 +19,11 @@ Siéntete libre de usar todo lo que te sea útil, iré añadiendo poco a poco to
 #### Contenido de la carrera
 
 ##### Primer año
-**Primer cuatrimestre**
 - Cálculo - WIP
 - Álgebra y Discreta - WIP
 - Lógica - WIP
 - Programación I - WIP
 - Antecedentes y desarrollo de la IA - WIP
-**Segundo cuatrimestre**
 - Probabilidad y Estadística - WIP
 - Programación Declarativa - WIP
 - Ética y Legislación en IA - WIP
