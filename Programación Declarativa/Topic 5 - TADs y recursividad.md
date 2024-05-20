@@ -120,7 +120,7 @@ def LengthTR[A](list: List[A]) : Int =
 	lengthAux(0, list) // Iniciamos la función auxiliar con un contador de           // tamaño de cero y la lista que hayamos conseguido
 ```
 
-Podríamos comprobar los problemas de seguridad frente a la pila que nos dan las funciones recursivas calculando la longitud the una gran lista. Para comprobar, creemos una función que dado un número nos de una lista de ese tamaño:
+Podríamos comprobar los problemas de seguridad frente a la pila que nos dan las funciones recursivas calculando la longitud de una gran lista. Para comprobar, creemos una función que dado un número nos de una lista de ese tamaño:
 
 ```
 // Primero de forma imperativa
