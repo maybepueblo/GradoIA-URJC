@@ -19,11 +19,11 @@ Siéntete libre de usar todo lo que te sea útil, iré añadiendo poco a poco to
 #### Contenido de la carrera
 
 ##### Primer año
-- Cálculo - WIP
-- Álgebra y Discreta - WIP
+- Cálculo (No se adjuntan apuntes de esta materia en este repo) 
+- Álgebra y Discreta (No se adjuntan apuntes de esta tampoco)
 - Lógica - WIP
 - Programación I - WIP
-- Antecedentes y desarrollo de la IA - WIP
+- Antecedentes y desarrollo de la IA 
 - Probabilidad y Estadística - WIP
 - Programación Declarativa - WIP
 - Ética y Legislación en IA - WIP
