@@ -2,6 +2,8 @@
 
 ##### Estáticas
 
+![[Implementación Lista Dinámica|1000]]
+
 ##### Dinámicas
 
 - **Lista enlazada simple**:
@@ -59,7 +61,6 @@ void inCabecera (tLista * lista, tElemento elem) {
 	lista = nodo;
 }
 ```
-
 
 
 

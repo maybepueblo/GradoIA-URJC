@@ -8,5 +8,8 @@
 
 - [[Complejidad Algorítmica]]
 - [[Tema 2 - Abstracción de datos]]
+- [[Tema 3 - Listas]]
+- [[Tema 4 - Pilas]]
+- [[Tema 5 - Colas]]
 
 

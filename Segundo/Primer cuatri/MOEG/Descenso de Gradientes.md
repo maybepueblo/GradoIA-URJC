@@ -68,8 +68,7 @@ plt.show()
 
 Esta sería la salida del programa:
 
-![[Pasted image 20241013200055.png]]
-
+![[Test.png]]
 #### Función de coste/error/pérdida/residuo
 
 ``` python
