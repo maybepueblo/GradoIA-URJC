@@ -1,69 +1,44 @@
 
+from math import inf
 
-# Función para encontrar el "padre" en el conjunto disjunto
-def find(parent, i):
-    if parent[i] == i:
-        return i
-    return find(parent, parent[i])
+def minDist(distances, visited):
+    minDist = float('inf')
+    bestItem = None
+    for i in range(len(distances)):
+        if not visited[i] and distances[i] < minDist:
+            minDist = distances[i]
+            bestItem = i
+    return bestItem
 
+def dijkstraViaje(g, node):
+    distances = [inf]*len(g)
+    distances[node] = 0
 
-# Función para hacer la unión de dos subconjuntos
-def union(parent, rank, x, y):
-    root_x = find(parent, x)
-    root_y = find(parent, y)
+    visited = [False]*len(g)
 
-    if rank[root_x] < rank[root_y]:
-        parent[root_x] = root_y
-    elif rank[root_x] > rank[root_y]:
-        parent[root_y] = root_x
-    else:
-        parent[root_y] = root_x
-        rank[root_x] += 1
+    for _ in range(len(g)):
+        nextNode = minDist(distances, visited)
+        visited[nextNode] = True
 
+        for (start, end, weight) in g[nextNode]:
+            distances[end] = min(distances[end], distances[start]+weight)
 
-def kruskal(n, edges):
-    # Ordenar las aristas por el peso (distancia D)
-    edges.sort(key=lambda x: x[2])
-
-    parent = []
-    rank = []
-
-    # Inicializar los conjuntos disjuntos
-    for node in range(n):
-        parent.append(node)
-        rank.append(0)
-
-    mst_cost = 0
-    mst_edges = 0
-
-    # Iterar sobre las aristas ordenadas
-    for edge in edges:
-        h1, h2, dist = edge
-        root1 = find(parent, h1)
-        root2 = find(parent, h2)
-
-        # Si no forman un ciclo, añadimos la arista al MST
-        if root1 != root2:
-            mst_cost += dist
-            mst_edges += 1
-            union(parent, rank, root1, root2)
-
-            # Si ya hemos añadido N-1 aristas, terminamos
-            if mst_edges == n - 1:
-                break
-
-    return mst_cost
+    return distances
 
 if __name__ == '__main__':
     n, m = map(int, input().strip().split())
-    edges = []
-
+    g = [[] for _ in range(n) ]
     for _ in range(m):
         h1, h2, d = map(int, input().strip().split())
-        edges.append((h1, h2, d))
+        g[h1].append((h1, h2, d))
+        g[h2].append((h2, h1, d))
 
-    resultado = kruskal(n, edges)
-    print(resultado)
+    max_distances = 0
+    for i in range(n):
+        distances = dijkstraViaje(g,i)
+        alcanzables = [dist for dist in distances if dist<inf]
+        max_distances = max(max_distances, max(alcanzables))
+    print(max_distances)
 
 '''
 10 15
@@ -89,7 +64,7 @@ if __name__ == '__main__':
 0 1 10
 0 2 20
 0 3 30
-0 4 40
+0 4 40  
 1 2 5
 2 3 9
 3 4 10
