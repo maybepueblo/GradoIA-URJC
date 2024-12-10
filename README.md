@@ -1,4 +1,4 @@
-**ARCHIVO REALIZADO CON OBSIDIAN**
+**REALIZADO CON OBSIDIAN**
 
 
 Primero que todo, para acceder al contenido, pueden acceder desde github, 
@@ -7,6 +7,9 @@ lo cual puede venirles bien para hallar las relación que tiene cada contenido c
 
 
 **Página web de Obsidian** --> https://obsidian.md/
+
+**Plugins empleados**
+- Excalidraw --> https://forum.obsidian.md/t/excalidraw-full-featured-sketching-plugin-in-obsidian/17367
 
 ¡Buenas!
 
@@ -21,14 +24,14 @@ Siéntete libre de usar todo lo que te sea útil, iré añadiendo poco a poco to
 ##### Primer año
 - Cálculo (No se adjuntan apuntes de esta materia en este repo) 
 - Álgebra y Discreta (No se adjuntan apuntes de esta tampoco)
-- Lógica - WIP
-- Programación I - WIP
+- Lógica
+- Programación I 
 - Antecedentes y desarrollo de la IA 
-- Probabilidad y Estadística - WIP
-- Programación Declarativa - WIP
-- Ética y Legislación en IA - WIP
-- Fundamentos de la Arquitectura de Computadores - WIP
-- Programación Declarativa - WIP
+- Probabilidad y Estadística 
+- Programación Declarativa 
+- Ética y Legislación en IA 
+- Fundamentos de la Arquitectura de Computadores 
+- Programación Declarativa 
 
 
 
