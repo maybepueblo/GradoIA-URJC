@@ -9,4 +9,6 @@ Decimos que un algoritmo es una secuencia de pasos precisos con cero ambigüedad
 - [[Tema 2 - Voraces y voraces_grafos]]
 - [[Tema 3 - Divide y vencerás]]
 - [[Tema 4 - Backtracking]]
+- [[Tema 5 - Ramificación y poda]]
+- [[Tema 6 - Programación Dinámica]]
 

@@ -22,7 +22,35 @@ Especificación xxxx
 FIN ESPECIFICACIÓN
 ```
 
-Ahora veamos la especificación algebraica para los complejos: 
+Vamos antes que nada, a entender un poco mejor qué significa esto en temas posteriores como [[Tema 3 - Listas]] o demás:
+
+ 1. Constructoras Generadoras
+
+Estas son las operaciones mínimas necesarias para crear y dar vida al TAD desde cero. Este conjunto de funciones crea instancias iniciales válidas del tipo de datos, y por lo general, constituyen el núcleo para construir cualquier versión del TAD. Sin las constructoras generadoras, no se puede formar el tipo de datos.
+
+_Ejemplo:_ En una lista enlazada, una función generadora podría ser la creación de una lista vacía (`crearListaVacia()`), ya que es fundamental para iniciar cualquier estructura de este tipo.
+
+2. Constructoras No Generadoras
+
+Son las funciones que permiten modificar o expandir una instancia ya creada del TAD. Si bien estas no forman el TAD desde cero, permiten añadir o modificar elementos para seguir desarrollando la estructura.
+
+_Ejemplo:_ En una lista, una constructora no generadora sería `insertarElemento(lista, elemento)`, que agrega un nuevo elemento a una lista ya existente, sin tener que crearla desde el inicio.
+
+ 3. Observadoras Selectoras
+
+Estas funciones permiten acceder directamente a elementos o información específica dentro del TAD. Su función principal es la obtención de partes internas o datos guardados sin modificarlos. Permiten “seleccionar” datos específicos del TAD.
+
+_Ejemplo:_ En un TAD de lista enlazada, `obtenerPrimero(lista)` sería una observadora selectora, ya que accede al primer elemento sin alterar la lista.
+
+ 4. Observadoras No Selectoras
+
+Estas operaciones también observan información en el TAD, pero, a diferencia de las observadoras selectoras, obtienen datos calculados o derivados de la estructura, en lugar de acceder directamente a una parte específica de ella. Estas operaciones brindan una visión más general o procesada del TAD.
+
+_Ejemplo:_ En una lista enlazada, `esVacia(lista)` es una observadora no selectora, pues verifica si la lista está vacía o no sin retornar un elemento específico.
+
+---
+
+Ahora, veamos la especificación algebraica para los complejos: 
 
 ```c
 Especificación Complejos
@@ -61,7 +89,7 @@ Especificación Complejos
 		Multiplicar(CrearComplejo(re, im), CrearComplejo(re2, im2)) =
 		CrearComplejo()
 		Dividir(CrearComplejo(re, im), CrearComplejo(re2, im2)) =
-		CrearComplejo(((re*re2) + (im*im2))/(re2^2+im2^2),                        ((re2*im)-(re*im2)/(re2^2+im2^2)))
+		CrearComplejo(((re*re2) + (im*im2))/(re2^2+im2^2),                               ((re2*im)-(re*im2)/(re2^2+im2^2)))
 		Conjugado(CreaComplejo(re, im) ->rComplejo(re, im))
 		I = CrearComplejo(0, 1)
 		
@@ -83,7 +111,7 @@ ESPECIFICACIÓN Booleanos
 	OPERACIONES 
 		(* constructoras generadoras *)
 		CIERTO: -> tBooleano
-			FALSO: -> tBooleano
+		FALSO: -> tBooleano
 
 		(* constructoras no generadoras *)
 		NO: tBooleano -> tBooleano
@@ -172,7 +200,7 @@ ESPECIFICACION Enteros
 		Suma(2, 1) = Suma(2, Sucesor(CERO)) = Sucesor(2) = 3
 		Suma(n, Sucesor(m)) = Sucesor(Suma(n, m))
 		
-		Suma(2, -1) = Suma(2, Predecesor(CERO)) = Predecesor(Suma(2, 0))          = Predecesor(2) = 2
+		Suma(2, -1) = Suma(2, Predecesor(CERO)) = Predecesor(Suma(2, 0))                 = Predecesor(2) = 1
 		Suma(n, Predecesor(m)) = Predecesor(Suma(n, m))
 
 		Resta(n, CERO) = n
@@ -184,7 +212,7 @@ FIN ESPECIFICACIÓN
 
 Asimismo, esta es una posible definición de los números naturales:
 
-```
+```c
 ESPECIFICACION Enteros
 
 	TIPOS tNatural
@@ -230,7 +258,7 @@ FIN ESPECIFICACIÓN
 
 Y finalmente, veremos la creación de un vector:
 
-```
+```c
 ESPECIFICACIÓN Contenedor
 
 	PARÁMETROS GÉNÉRICOS

@@ -1,100 +1,152 @@
-#### Introducción
+### **Introducción**
 
-Ciertos problemas requieren realizar una búsqueda exhaustiva por el espacio de posibles soluciones hasta que encontremos una solución o constatemos que no existe solución. 
+Ciertos pclroblemas requieren realizar una búsqueda exhaustiva por el espacio de posibles soluciones hasta encontrar una solución o constatar que no existe. Para ello, utilizamos el esquema de **Vuelta Atrás (Backtracking)**, que genera de forma **sistemática** posibles soluciones.
 
-Nuestro esquema **Vuelta Atrás** genera de forma **sistemática** posibles soluciones. Este espacio de soluciones se plantea en términos de un **grafo (o árbol) implícito**.
+El espacio de soluciones se plantea como un **grafo (o árbol) implícito**, donde cada nodo representa una decisión o una solución parcial.
 
-**Casos de uso**
-- Necesito una solución -> Paramos en cuanto encontremos la primera solución factible.
-- Necesito todas las soluciones -> El algoritmo recorre todo el espacio de soluciones.
-- Necesito la MEJOR solución -> Recorremos todo el espacio de soluciones y devolvemos el mejor resultado de todos.
+#### **Casos de uso**
 
-Conseguimos un árbol que representa todas las soluciones.
+1. **Encontrar una solución**: Paramos en cuanto encontramos la primera solución factible.
+2. **Encontrar todas las soluciones**: Recorremos todo el espacio de soluciones para enumerarlas.
+3. **Encontrar la mejor solución**: Evaluamos todas las soluciones y devolvemos la más óptima según un criterio (e.g., mayor valor en el problema de la mochila).
 
-![[Árbol implícito Backtracking|600]]
+#### **Árbol implícito**
 
-Realizamos un recorrido en profundidad en un grafo dirigido implícito y sin ciclos conocido como *Árbol de Exploración*.
-#### Estrategia general
+Este modelo:
 
-A medida que progresamos en recorrido se construyen soluciones parciales (n-tupla) (ya que no hemos decidido qué hacer con lo generado).
+- Nos permite **recorrer soluciones de forma eficiente** sin almacenar todas las posibles combinaciones.
+- Realiza un recorrido **en profundidad** en un grafo dirigido sin ciclos, conocido como el **Árbol de Exploración**.
 
-Cuando llegamos a un nodo hoja y la solución no es completa, entonces el recorrido no es exitoso y hacemos backtracking:
-- Eliminaremos el último elemento de la tupla.
-- Intentamos construir añadiendo otro elemento diferente.
+![[Árbol implícito Backtracking|500]]
 
-En el caso de que lleguemos a una hoja con solución completa, el recorrido ha sido exitoso.
-- Si sólo buscamos una solución, el algoritmo se detiene. 
-- En caso contrario, hacemos **backtracking**.
+---
 
-**n-tupla**
-Es una solución factible si verifica las siguientes restricciones:
-- **Explícitas**: indican los valores que puede tomar cada componente de una tupla solución (Soluciones factibles + no factibles).
-- **Implícitas**: Las que tenemos que cumplir para que la solución sea factible.
+### **Estrategia general**
 
-**Espacio de soluciones**
-Conjunto de tuplas que satisfacen las restricciones explícitas (factibles y no factibles).
+#### **Construcción y poda**
 
-**Árbol de exploración**
-Forma de estructurar el espacio de soluciones factibles
-	**Nodo del árbol**
-	Tupla parcial (prometedora) o completa (sol. factible)
+1. A medida que progresamos, construimos soluciones parciales representadas por una **n-tupla**.
+2. Al llegar a un nodo hoja:
+    - Si la solución no es válida o completa, hacemos **backtracking**:
+        - Eliminamos el último elemento de la tupla.
+        - Probamos con otro elemento disponible.
+    - Si la solución es válida y completa:
+        - **Detenemos el algoritmo** (si buscamos una única solución).
+        - **Continuamos explorando** (si buscamos todas o la mejor solución).
 
-**Función de poda o Test de factibilidad**
-Determinamos con esto si esta tupla parcial es o no prometedora. Se trata en [[Tema 5 - Ramificación y poda]].
+#### **N-tupla**
 
-##### ¿Cómo identificar si podemos usar bt?
+- Una solución es **factible** si satisface restricciones:
+    - **Restricciones explícitas**: Limitaciones individuales de cada componente (e.g., "el peso del objeto debe ser ≤ capacidad").
+    - **Restricciones implícitas**: Relaciones entre componentes (e.g., "no puede haber reinas en la misma diagonal").
 
-**Principal**
-Una solución, mejor solución o todas las soluciones es seguro que es backtracking. 
+#### **Árbol de exploración**
 
-Si no, siempre que la solución se exprese como una n-tupla, tengamos que hallar un recorrido en profundidad sobre el árbol de exploración o cuando cada etapa representa un nivel en el árbol de busqueda.
+- Organiza el **espacio de soluciones factibles**.
+- Cada nodo representa:
+    - Una tupla parcial (potencialmente prometedora).
+    - Una tupla completa (solución factible).
+- Usa una **función de poda** para descartar tuplas no prometedoras, mejorando la eficiencia.
 
-Complejidad algorítmica de esto? -> O(n!)
+#### **¿Cuándo usar Backtracking?**
 
->[!NOTE]
->Si el tamaño de la entrada en el apartado de límites es pequeño para N, puede ser backtracking, ya que si fuera mayor no daría abasto la memoria.
+1. Cuando las soluciones se pueden expresar como una **n-tupla**.
+2. Si podemos realizar un recorrido **en profundidad** sobre un árbol implícito.
+3. Si las etapas del problema corresponden a **niveles en el árbol de búsqueda**.
 
-#### Esquema de la técnica
+> **Nota**: Backtracking es viable cuando el espacio de soluciones es manejable, usualmente con entradas pequeñas (complejidad O(n!)).
+
+---
+
+### **Esquema de la técnica**
 
 ```python
-procedimiento VueltaAtras(v[1..k])
-si EsSolucion(v[1..k]) entonces
-	escribir v {o almacenar v}
-sino
-para ei={e1,..,ej} hacer {ei: comp. disp.}
-	v[k+1] ← ei
- si EsPrometedor(v[1..k+1]) entonces
-	VueltaAtras(v[1..k+1])
- fsi
-	fpara
+procedimiento VueltaAtras(v[1..k]):
+    si EsSolucion(v[1..k]) entonces
+        escribir v  # O almacenar v
+    sino:
+        para ei en {e1, .., ej} hacer:  # Posibles opciones
+            v[k+1] ← ei
+            si EsPrometedor(v[1..k+1]) entonces:
+                VueltaAtras(v[1..k+1])
+            fsi
+        fpara
 fsi
 fprocedimiento
 ```
 
-- v[1..k] es una tupla (nodo).
-- EsSolucion() es una función que indica si la tupla es solucion.
-- {e1, .., ej} es un conjunto de posibles sucesores dada una tupla.
-- EsPrometedor(v[1...k+1]) es una función que determina si una tupla se puede podar.
-#### Ejemplos 
+### **Ejemplos prácticos**
 
-##### Mochila backtracking
+#### **1. Mochila (Backtracking)**
 
+Tienes una mochila con límite de peso y debes maximizar el valor total de los objetos que puedes cargar. Cada objeto tiene un peso `w[k]` y un valor `v[k]`.
+
+**Código del algoritmo**:
+
+```python
+funcion mochilaVA(i, r: entero): entero:
+    # i: índice del objeto actual
+    # r: capacidad restante de la mochila
+    b ← 0
+    para k ← i hasta n hacer:
+        si (w[k] ≤ r) entonces:
+            b ← max(b, v[k] + mochilaVA(k, r - w[k]))
+        fsi
+    fpara
+    devolver b
+ffuncion
 ```
-funcion mochilaVA(i,r:entero):entero
- {i: construir usando los elementos i al n y cuyo
- peso no sobrepase r}
- b ← 0;
- para k ← i hasta n hacer
-  si (w[k] ≤ r) entonces
-	b ← max(b,v[k]+mochilaVA(k,r-w[k]));
-  fsi
- fpara
- devolver b
-ffun
+
+#### **2. Problema de las N-Reinas**
+
+Colocar `N` reinas en un tablero de ajedrez (`N x N`) sin que se ataquen entre sí.
+
+- Representamos el tablero como un vector `tablero[1..N]`, donde cada posición indica en qué columna está la reina en una fila específica.
+- Aplicamos restricciones de:
+    - Fila (por construcción).
+    - Columna (sin repetición).
+    - Diagonales (evitando conflictos).
+
+**Esquema simplificado**:
+
+```python
+procedimiento n_reinas(k, col, diag45, diag135):
+    si k = N entonces:
+        escribir solución
+    sino:
+        para j ← 1 hasta N hacer:
+            si (j no en col y j-k no en diag45 y j+k no en diag135) entonces:
+                sol[k+1] ← j
+                n_reinas(k+1, col ∪ {j}, diag45 ∪ {j-k}, diag135 ∪ {j+k})
+            fsi
+        fpara
+fsi
+```
+#### **3. Laberinto**
+
+Encuentra un camino desde la entrada `[1, 1]` hasta la salida `[N, N]` en una matriz `N x N` donde:
+
+- `0`: Casilla transitable.
+- `∞`: Obstáculo.
+
+**Pseudocódigo**:
+
+```python
+procedimiento Laberinto(f, c, k, tab):
+    tab[f, c] ← k
+    si (f = N) y (c = N) entonces:
+        MostrarSolucion(tab)
+    sino:
+        para cada dirección (arriba, abajo, izquierda, derecha) hacer:
+            si EsPosible(tab, nueva_f, nueva_c) entonces:
+                Laberinto(nueva_f, nueva_c, k+1, tab)
+            fsi
+        fpara
+    tab[f, c] ← 0  # Backtracking: deshacer el movimiento
+fsi
 ```
 
->[!NOTE]
->Suponemos que w[k], v[k] y n se encuentran disponibles
->
+### **Notas finales**
 
-En este código falta saber cómo voy a probar todos los nodos en un nivel concreto si no voy a deshacer un movimiento hecho previamente. En este caso si el movimiento no me lleva a una sol. factible, tendremos que deshacer el movimiento.
+Con esta técnica puedes resolver problemas combinatorios que requieren evaluar muchas posibilidades. El uso de poda y estructuras como árboles implícitos hace que Backtracking sea práctico para problemas con entradas pequeñas, permitiendo explorar soluciones sistemáticamente.
+
