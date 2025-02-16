@@ -10,7 +10,7 @@ tags: [excalidraw]
 # Excalidraw Data
 ## Text Elements
 ## Embedded Files
-b21c925701a21192064078bb1a2021e5a6f77f73: [[image.png]]
+b21c925701a21192064078bb1a2021e5a6f77f73: [[Proyecto/Imagenes/image.png]]
 
 %%
 ## Drawing
