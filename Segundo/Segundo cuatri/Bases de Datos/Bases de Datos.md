@@ -3,7 +3,7 @@
 1. [[Sistemas de Información y Bases de Datos]]
 2. [[Sistemas de Ficheros y Sistemas de Gestión]]
 3. [[Concepto de Modelo de Datos]]
-4. [[Modelo E/R extendido]]
+4. [[Modelo E - R extendido]]
 5. [[Modelado Conceptual]]
 ## Bloque II - Modelo relacional y diseño de BBDD
 6. [[Modelo Relacional]]
@@ -12,6 +12,7 @@
 8. [[Lenguaje SQL]]
 ## Hojas de ejercicios
 - [[Hoja 1 - Base de Datos]]
+- [[Hoja 2 - Base de Datos]]
 # Evaluación
 - Prueba 1 - 21 de febrero
 	- 20%
