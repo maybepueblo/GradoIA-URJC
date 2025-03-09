@@ -1,0 +1,1 @@
+Una heurística es mejor cuanta más información tenga, es decir, entre dos posibles interpretaciones de una heurísticas, si se cumple que h1*(n) >= h2*(n) entonces h1 es más informada que h2.

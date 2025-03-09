@@ -60,7 +60,7 @@ Repetir
 	sucesores <- expandir(nodo)
 	Para cada n sucesores hacer
 		n.padre <- nodo
-		ordINSERTAR(n, abierta, <orden>)
+		ordInsertar(n, abierta, <orden>)
 	Fin{repetir}
 ```
 - El árbol lo representamos a través de un registro de tipo nodo
@@ -68,3 +68,11 @@ Repetir
 - vacía? determina si una lista es vacía
 - Primero quita el primer elemento de una lista
 - ordInsertar añade un nodo a una lista, clasificado según una función de orden
+### Problema de estados repetidos
+### Métodos de búsqueda
+- **No informados**
+	- Conocimiento mínimo
+- **Heurísticos**
+	- Información aproximada y específica del problema (guía)
+- **Con estados estructurados**
+	- Características de estados para la complejidad
