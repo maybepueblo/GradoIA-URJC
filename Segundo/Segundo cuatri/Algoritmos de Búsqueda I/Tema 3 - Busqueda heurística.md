@@ -23,4 +23,40 @@ En A*, la función de evaluación es f(n) = g(n) + h*(n) donde:
 
 **Estrategia**
 Expandimos el nodo con el valor f(n) más bajo en cada paso, lo que garantiza que encontremos una solución óptima si la heurística es **optimista**
-- Por ejemplo, si tenemos un grafo con nodos A, B, C, D, E y F, donde g(A) = 0, h*(A) = 366
+- Por ejemplo, si tenemos un grafo con nodos A, B, C, D, E y F, donde g(A) = 0, h*(A) = 366, g(B) = 118, h*(B) = 329, etc. El algoritmo A* calcularía f(n) para cada nodo y expandiría primero el nodo con el mejor f(n)
+
+**Pasos del algoritmo A****
+1. **Inicialización** ->Comienza desde el nodo inicial s0 en la lista abierta
+2. **Selección** -> Selecciona el nodo con el menor f(n) de la lista abierta
+3. **Expansión** -> Expande el nodo seleccionado y genera sus sucesores
+4. **Inserción** -> Inserta los sucesores en la lista abierta, ordenados por f(n)
+5. **Terminación** -> Si se alcanza un nodo meta, devolvemos solución. Si la lista abierta está vacía, devolvemos un fallo.
+ 
+ **Ejemplo de A* en Acción**
+
+- **Ejemplo**: Supongamos que tenemos un grafo con nodos A, B, C, D, E y F, donde:
+    - g(A)=0,  h∗(A)=8
+    - g(B)=4,  h∗(B)=6
+    - g(C)=3,  h∗(C)=6
+    - g(D)=7,  h∗(D)=5
+    - g(E)=10,  h∗(E)=0
+    - g(F)=11,  h∗(F)=0
+    
+    El algoritmo A* calcularía f(n) para cada nodo y expandiría primero el nodo con el menor f(n). En este caso, A* no encontraría el mejor nodo meta E si la heurística no es optimista.
+## Análisis del Algoritmo A*
+Centrado en **completitud**, **optimalidad** y **complejidad**, así como en las propiedades de la función heurística utilizada.
+
+**Completitud**
+Decimos que el algoritmo es completo, lo que significa que siempre encontrará solución si existe (espacio finito y costes positivos)
+- *Prueba de completitud* -> Si no encontramos solución debe haber un camino infinito. Sin embargo, como los costes son positivos, g(n) aumenta indefinidamente, haciendo que f(n) supere cualquier límite. 
+**Optimalidad**
+Si la heurística lo es, A* también. Encuentra así la solución con menor coste
+- *Teorema de Optimalidad* -> La prueba se basa en que A* siempre expande el nodo con el menor f(n) y si h*(n) es optimista, f(n) no sobrestima el coste real.
+**Consistencia**
+Si para todo nodo ni y su sucesor directo nj se cumple que h*(ni) - h*(nj) <= c(ni, nj) donde esto último es el coste de operador que lleva de ni a nj. Si h*(n) es consistente, entonces f(n) crece monótonamente a lo largo de cualquier camino.
+- *Lema 1*: Si h∗(n) es consistente, entonces f(n) crece de forma débilmente monótona en todos los caminos del árbol de búsqueda.
+- *Corolario 1*: Si h∗(n) es consistente, A* expande todos los nodos nini​ tal que f(ni)≤f(nm), donde nm es el mejor nodo meta.
+**Complejidad**
+- **Complejidad en tiempo y espacio**: En el peor caso, la complejidad del algoritmo A* es exponencial en función del coste de la solución óptima (g_gorro​) y el coste mínimo de los operadores (ε). La complejidad en tiempo y espacio es O(b^{g_gorro/ε}), donde b es el factor de ramificación del árbol de búsqueda.
+### **Ejemplo de Análisis**
+- **Ejemplo**: En un grafo con nodos A, B, C, D, E y F, donde h∗(n) es consistente, A* expandirá todos los nodos con f(n)≤f(nm), asegurando que se encuentre la solución óptima
