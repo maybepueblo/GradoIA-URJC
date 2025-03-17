@@ -26,7 +26,7 @@ Además de estos, también tenemos que considerar lo siguiente:
 - Buscan una secuencia de acciones que modifiquen el mundo para llegar a su objetivo. 
 Para hacer esto mantienen un modelo simbólico del entorno, anticipan los efectos esperados de sus acciones sobre el modelo, generando y seleccionando planes de actuación en el modelo antes de ejecutar las acciones del plan en el entorno. 
 
-**Búsqueda offline** -> Se analizan todas las posibilidadesy se ejecuta en el mundo real
+**Búsqueda offline** -> Se analizan todas las posibilidades y se ejecuta en el mundo real
 **Búsqueda online** -> Se actualiza conforme se hace la búsqueda en relación al entorno. 
 
 Todo sistema es offline por defecto pero cuando se ha de actualizar, es cuando se vuelve un sistema online.

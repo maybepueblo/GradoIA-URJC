@@ -8,8 +8,7 @@ Estrategia que selecciona el nodo más prometedor para expandir, basándose en u
 	- *Ejemplo* -> En el problema de bloques, una heurística común es el número de bloques mal colocados. En la búsqueda de rutas, la distancia en línea recta hasta el destino es heurística optimista
 ### Búsqueda Avara
 Variante de la vista anteriormente en este md, aquí seleccionamos el nodo con el valor heurístico más bajo, es decir, el nodo que parece estar más cerca del objetivo. Sin embargo, no es óptimo, ya que no tiene en cuenta el coste acumulado para llegar al nodo.
-- *Ejemplo* -> En un espacio de estados con nodos A, B, C y D, donde h*(A) = 7, h*(B) ? 2, h*(C) 
-  = 5, y h*(D) = 0, la avara elegiría primero B, luego C, y finalmente D. Sin embargo, si el coste para llegar a D es muy alto, no se garantiza la solución óptima.
+- *Ejemplo* -> En un espacio de estados con nodos A, B, C y D, donde h*(A) = 7, h*(B) ? 2, h*(C) = 5, y h*(D) = 0, la avara elegiría primero B, luego C, y finalmente D. Sin embargo, si el coste para llegar a D es muy alto, no se garantiza la solución óptima.
 #### Limitaciones
 - **No es óptima**
 - **Complejidad**
@@ -55,7 +54,7 @@ Si la heurística lo es, A* también. Encuentra así la solución con menor cost
 **Consistencia**
 Si para todo nodo ni y su sucesor directo nj se cumple que h*(ni) - h*(nj) <= c(ni, nj) donde esto último es el coste de operador que lleva de ni a nj. Si h*(n) es consistente, entonces f(n) crece monótonamente a lo largo de cualquier camino.
 - *Lema 1*: Si h∗(n) es consistente, entonces f(n) crece de forma débilmente monótona en todos los caminos del árbol de búsqueda.
-- *Corolario 1*: Si h∗(n) es consistente, A* expande todos los nodos nini​ tal que f(ni)≤f(nm), donde nm es el mejor nodo meta.
+- *Corolario 1*: Si h∗(n) es consistente, A* expande todos los nodos ni​ tal que f(ni)≤f(nm), donde nm es el mejor nodo meta.
 **Complejidad**
 - **Complejidad en tiempo y espacio**: En el peor caso, la complejidad del algoritmo A* es exponencial en función del coste de la solución óptima (g_gorro​) y el coste mínimo de los operadores (ε). La complejidad en tiempo y espacio es O(b^{g_gorro/ε}), donde b es el factor de ramificación del árbol de búsqueda.
 ### **Ejemplo de Análisis**

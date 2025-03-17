@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 3 - Busqueda heurística.md",
+                "file": "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque II/Tema 5 - Introducción a problemas de búsqueda en juegos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 3 - Busqueda heurística"
+              "title": "Tema 5 - Introducción a problemas de búsqueda en juegos"
             }
           }
         ]
@@ -162,9 +162,14 @@
   },
   "active": "315ffad57767fe53",
   "lastOpenFiles": [
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 4 - Búsqueda heurística avanzada.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 3 - Busqueda heurística.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 2 - Búsqueda no informada.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 1 - Intro a los problemas de búsqueda.md"
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Algoritmos de Búsqueda.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque II/Tema 5 - Introducción a problemas de búsqueda en juegos.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque II/Tema 6 - Algoritmos mini-max y poda alfa-beta.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque II",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 4 - Búsqueda heurística avanzada.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 3 - Busqueda heurística.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 1 - Intro a los problemas de búsqueda.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 2 - Búsqueda no informada.md"
   ]
 }
