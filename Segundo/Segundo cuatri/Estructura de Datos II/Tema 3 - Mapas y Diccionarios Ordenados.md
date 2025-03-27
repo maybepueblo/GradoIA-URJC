@@ -23,7 +23,7 @@ Si recorriésemos los nodos de este árbol en inorden (izquierda, raíz, derecha
 ***Ejemplo de borrado***
 En el árbol anterior, queriendo borrar 5, tenemos como sucesor al 8, se quedaría así:
 ```
-    8
+	8
    / \
   3   9
  / \
