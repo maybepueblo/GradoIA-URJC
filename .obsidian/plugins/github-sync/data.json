@@ -3,5 +3,5 @@
   "gitLocation": "",
   "syncinterval": 0,
   "isSyncOnLoad": false,
-  "checkStatusOnLoad": false
+  "checkStatusOnLoad": true
 }
