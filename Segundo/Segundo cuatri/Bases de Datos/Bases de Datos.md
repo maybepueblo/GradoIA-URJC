@@ -6,7 +6,7 @@
 4. [[Modelo E - R extendido]]
 5. [[Modelado Conceptual]]
 ## Bloque II - Modelo relacional y diseño de BBDD
-6. [[Modelo Relacional]]
+6. [[Tema 6 - Modelo Relacional]]
 7. [[Diseño lógico]]
 ## Bloque III - Implementación de Basees de Datos
 8. [[Lenguaje SQL]]
