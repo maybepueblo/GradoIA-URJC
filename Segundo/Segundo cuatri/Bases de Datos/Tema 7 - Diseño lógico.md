@@ -54,3 +54,10 @@ Está en 1FN. Todos los atributos no principales dependen completamente de la cl
 Está en 2FN. No hay dependencias transitivas (atributos no principales que dependen de otros no principales)
 #### FNBC (Forma Normal de Boyce - Codd)
 Todos los determinantes son claves candidatas
+### Proceso de descomposición
+Una descomposición ha de ser:
+- **Sin pérdida de información:** La unión natural de las relaciones resultantes debe reconstruir la original
+- **Conservación de dependencias:** Todas las DF originales deben preservarse
+**Ejemplo de descomposición sin pérdida:**
+- Dado R(A,B,C) con DF = {A -> B}
+	- R1(A, B) y R2(A, C) es una descomposición sin pérdida porque A es clave en R1.
