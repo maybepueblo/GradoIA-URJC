@@ -1,8 +1,3 @@
 {
-  "alwaysUpdateLinks": true,
-<<<<<<< HEAD
-  "promptDelete": false
-=======
-  "spellcheck": false
->>>>>>> 77b462a113429e9e5ab7969f296c3fcc1bdb34d1
+  "alwaysUpdateLinks": true
 }

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/5 - Análisis de componentes principales.md",
+                "file": "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/11b - Aplicación del descenso de gradiente.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 - Análisis de componentes principales"
+              "title": "11b - Aplicación del descenso de gradiente"
             }
           }
         ],
@@ -175,23 +175,39 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "46f4ec8ce7b1f762",
+  "active": "3b67066e88b7e606",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/12 - Regularización.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/11b - Aplicación del descenso de gradiente.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/11a - Descenso de gradiente.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/10 - Función de perdida y problema general de optimización para aprendizaje supervisado.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/9 - Evaluación modelos.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Funciones de perdida regresión.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Matriz de confusión.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Ejemplo Clasificación Binaria.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/8 - Regresión logística para clasificación binaria.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/7 - Modelos lineales.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Cálculo matricial modelo lineal regresión.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/6 - Visualización de elementos básicos.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/5 - Análisis de componentes principales.md",
+    "Segundo/Primer cuatri/MOEG/Descenso de Gradientes.md",
+    "Segundo/Primer cuatri/MOEG/Guía Examen MOEG.md",
+    "Segundo/Primer cuatri/MOEG/Programación Matemática.md",
+    "Segundo/Primer cuatri/MOEG/Métodos Operativos y Estadísticos de Gestión.md",
+    "Segundo/Primer cuatri/MOEG/Aprendizaje Inductivo.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/1 - Tipos de datos.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/4 - Filtrado de características.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/2 - Separar, explorar y rellenar datos.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/3 - Ingeniería de características.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/0 - Introducción a ML I.md",
+    "Untitled.md",
     "Segundo/Segundo cuatri/Bases de Datos/Tema 7 - Diseño lógico.md",
     "Segundo/Segundo cuatri/Bases de Datos/Tema 6 - Modelo Relacional.md",
     "Segundo/Segundo cuatri/Bases de Datos/PDFs/Hoja 5 BD.pdf",
     "Segundo/Segundo cuatri/Bases de Datos/Hoja 5 - Base de Datos.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/6 - Visualización de elementos básicos.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar hiperplano.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar planos.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar rectas.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/4 - Filtrado de características.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/3 - Ingeniería de características.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/2 - Separar, explorar y rellenar datos.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/1 - Tipos de datos.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/0 - Introducción a ML I.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Codificación SciKit-Learn.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Librerías ML I.png",
     "README.md",
@@ -201,20 +217,10 @@
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque II/Tema 5 - Introducción a problemas de búsqueda en juegos.md",
     "Primero/FAC/Trabajo Ensamblador FAC.pdf",
     "Primero/FAC/PROYECTO_grupo3.circ",
-    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 2 - Árboles generales.md",
-    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 3 - Mapas y Diccionarios Ordenados.md",
-    "Segundo/Segundo cuatri/Estructura de Datos II/Exámenes Años Pasados.md",
-    "Segundo/Segundo cuatri/Estructura de Datos II/Estructura de Datos II.md",
     "Segundo/Segundo cuatri/Estructura de Datos II/PDFs/Prueba Parcial - Introducción_ Revisión del intento.pdf",
     "Segundo/Segundo cuatri/Estructura de Datos II/PDFs/Parcial 2_ Árboles_ Revisión del intento.pdf",
-    "Segundo/Segundo cuatri/Estructura de Datos II/Images/Configuraciones Caso 1.png",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Algoritmos de Búsqueda.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 4 - Búsqueda heurística avanzada.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 3 - Busqueda heurística.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 1 - Intro a los problemas de búsqueda.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 2 - Búsqueda no informada.md"
+    "Segundo/Segundo cuatri/Estructura de Datos II/Images/Configuraciones Caso 1.png"
   ]
 }
