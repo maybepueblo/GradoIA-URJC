@@ -66,13 +66,14 @@ donde $r$ es el porcentaje o ratio de regularización Lasso que aplicamos; y por
 
 Comentarios:
 - La clase `sklearn.linear_model.ElasticNet` implementa la pérdida con esta regularización para el modelo lineal.
-<BR> También se puede usar en otros modelos que ofrecen la opción `penalty = "elasticnet"`.
+También se puede usar en otros modelos que ofrecen la opción `penalty = "elasticnet"`.
 # Hiperparámetros
 
 Con los términos de regularización aparece un término nuevo muy-muy importante: **hiperparámetro**.
 
-Los parámetros son aquellos elementos que podemos utilizar para ajustar un modelo a un conjunto de datos supervisado, <br>
-mientras que los **hiperparámetros** son aquellos elementos que se han añadido al modelo o al algoritmo para controlar la ejecución.
+Los parámetros son aquellos elementos que podemos utilizar para ajustar un modelo a un conjunto de datos supervisado,
+
+Mientras que los **hiperparámetros** son aquellos elementos que se han añadido al modelo o al algoritmo para controlar la ejecución.
 
 <u>Ejemplos</u>
 - En la regla de actualización de parámetros mediante descenso del gradiente aparecía el _learning rate_ $\eta$, que controlaba la velocidad a la que viajamos por el espacio de parámetros.
