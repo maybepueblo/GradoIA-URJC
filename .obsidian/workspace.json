@@ -31,7 +31,8 @@
               "title": "New tab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,10 +171,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2dfc709c277af9c1",
+  "active": "9491dce6561b9c7b",
   "lastOpenFiles": [
-    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 3 - Mapas y Diccionarios Ordenados.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/6 - Visualización de elementos básicos.md",
+    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 3 - Mapas y Diccionarios Ordenados.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/CuadernoML.ipynb~",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/combined+cycle+power+plant.zip",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/sample_data/CCPP/Readme.txt~",
