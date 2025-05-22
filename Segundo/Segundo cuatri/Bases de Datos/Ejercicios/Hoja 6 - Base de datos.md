@@ -1,5 +1,5 @@
 
-```sql
+```mysql
 # Ejercicio 1
 SELECT Name, Population FROM country;
 
