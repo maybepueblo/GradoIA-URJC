@@ -254,3 +254,54 @@ Ocurre cuando hay muchos procesos activos y cada uno tiene muy pocos marcos. Res
 - **Páginas grandes**
 	- Tablas más pequeñas, siendo E/S más eficiente pero mucha más fragmentación interna.
 La tendencia moderna es usar **tamaños grandes** o incluso **múltiples tamaños** según uso.
+## Preguntas sugeridas
+1. **Por qué os.kill no siempre mata un proceso**
+	Porque os.kill solo envía una señal al proceso y algunos procesos pueden capturar o ignorar señales, por lo que no siempre terminan
+2. **Características de un sistema operativo en tiempo real**
+	Garantiza una respuesta dentro de un tiempo precedible y conocido, esencial para aplicaciones que no pueden esperar
+3. **Para qué sirve supervisor**
+	Sirve para gestionar y controlar procesos, incluyendo la capacidad de correr procesos en segundo plano (demonios) y supervisar su estado
+4. **Por qué en memoria con paginación no se pueden establecer permisos de acceso a las páginas, pero con segmentación sí**
+	Porque cada segmento contiene información homogénea y lógica, por lo que se pueden asignar permisos coherentes a todo el segmento. En cambio, las páginas son unidades fijas de memoria que pueden contener datos heterogéneos, por lo que no siempre es posible asignar permisos específicos a cada página sin afectar otros datos.
+5. **Qué es un proceso en un sistema operativo**
+	Programa en ejecución que tiene su propio espacio de memoria, estado y recursos.
+6. **Qué pasa cuando en un sistema con memoria virtual aumento el número de procesos en ejecución sin aumentar la memoria física**
+	Produce **hiperpaginación** donde el sistema pasa más tiempo intercambiando páginas entre memoria y disco que ejecutando procesos, causando una gran ralentización.
+7. **Por qué debo usar un semáforo para sincronizar dos objetos concurrentes**
+	Porque ofrece operaciones **atómicas** que garantizan acceso seguro y ordenado a los recursos compartidos, mientras que una variable normal no garantiza atomicidad, lo que provoca errores en concurrencia.
+8. **Qué diferencia tiene un sistema operativo orientado a escritorio de uno orientado a servidor**
+	- **Sistemas de escritorio**: Diseñados para interacción directa con el usuario, con interfaces gráficas, soporte multimedia y multitarea enfocada en la experiencia del usuario
+	- **Sistemas de servidor**: Están optimizados para manejar múltiples solicitudes simultáneas, alta disponibilidad, rendimiento, seguridad y gestión de recursos para servicios en red, usualmente sin interfaz gráfica.
+	- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
