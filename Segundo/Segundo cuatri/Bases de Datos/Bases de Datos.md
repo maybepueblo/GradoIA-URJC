@@ -11,7 +11,7 @@
 ## Bloque III - Implementación de Basees de Datos
 8. [[Lenguaje SQL]]
 ## Hojas de ejercicios
-- [[Hoja 1 - Base de Datos]]
+- [[Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 1 - Base de Datos]]
 - [[Hoja 2 - Base de Datos]]
 # Evaluación
 - Prueba 1 - 21 de febrero

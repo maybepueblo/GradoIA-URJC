@@ -22,6 +22,16 @@
             }
           },
           {
+            "id": "373cc2ecbc76b25e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
             "id": "562ea618f5a6ca20",
             "type": "leaf",
             "state": {
@@ -35,7 +45,8 @@
               "title": "Tema 10 - Heurística en la planificación"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,53 +185,53 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2dfc709c277af9c1",
+  "active": "373cc2ecbc76b25e",
   "lastOpenFiles": [
-    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 5 - Grafos.md",
-    "Segundo/Primer cuatri/Estructura de Datos/Tema 7 - Árboles.md",
+    "Untitled.md",
+    "Segundo/Segundo cuatri/Sistemas Operativos/Resumen SO.md",
+    "Segundo/Segundo cuatri/Bases de Datos/ImágenesBD/Ejercicio 2 Hoja 1 BD.png",
+    "Segundo/Segundo cuatri/Bases de Datos/ImágenesBD/Ejemplo1.png",
+    "Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 7 - Base de Datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 6 - Base de datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 5 - Base de Datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 1 - Base de Datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Ejercicios",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque III - Implementación/Tema 8 - SQL.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque III - Implementación",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Tema 7 - Diseño lógico.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Tema 6 - Modelo Relacional.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Modelo Relacional.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 5 - Modelo Conceptual.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 4 - Modelo E - R extendido.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 3 - Concepto de Modelo de Datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 2 - Sistemas de Ficheros y Sistemas de Gestión.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 1 - Sistemas de Información y Bases de Datos.md",
     "Segundo/Segundo cuatri/Estructura de Datos II/Tema 3 - Mapas y Diccionarios Ordenados.md",
-    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 2 - Árboles generales.md",
-    "Segundo/Segundo cuatri/Estructura de Datos II/Estructura de Datos II.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque IV/Tema 9 - Resolución de problemas con planificación.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque IV/Tema 10 - Heurística en la planificación.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 3 - Busqueda heurística.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 2 - Búsqueda no informada.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque I/Tema 1 - Intro a los problemas de búsqueda.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/6 - Visualización de elementos básicos.md",
-    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 4 - Mapas y diccionarios NO ordenados.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Graficado Clasificadores.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III/SVM, ejemplo con código.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III/SVM no lineal y kernels.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III/SVM lineal y hinge Loss.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque III ED NO Lineales/Tema 8 - Grafos.md",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque III ED NO Lineales/Tema 7 - Árboles.md",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque III ED NO Lineales/Tema 6 - Conjuntos.md",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque III ED NO Lineales",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 5 - Colas.md",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 4 - Pilas.md",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 3 - Listas.md",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque I TADs/Tema 2 - Abstracción de datos.md",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque I TADs",
     "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque IV",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Tema 8 - Algoritmos para búsqueda con restricciones.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Tema 7 - Restricciones.md",
     "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/CuadernoML.ipynb~",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/combined+cycle+power+plant.zip",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/sample_data/CCPP/Readme.txt~",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/sample_data/CCPP/Readme.txt",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/sample_data/CCPP/Folds5x2_pp.xlsx",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/sample_data/CCPP/Folds5x2_pp.ods",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/sample_data/CCPP",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/CuadernosJupyter/sample_data",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/9 - Evaluación modelos.md",
-    "Por apuntar.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/7 - Modelos lineales.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/8 - Regresión logística para clasificación binaria.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/10 - Función de perdida y problema general de optimización para aprendizaje supervisado.md",
-    "Untitled 1.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Matriz de confusión.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Funciones de perdida regresión.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Ejemplo Clasificación Binaria.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Cálculo matricial modelo lineal regresión.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/12 - Regularización.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/11b - Aplicación del descenso de gradiente.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/11a - Descenso de gradiente.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar rectas.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar planos.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar hiperplano.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Librerías ML I.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Codificación SciKit-Learn.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/5 - Análisis de componentes principales.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/4 - Filtrado de características.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/3 - Ingeniería de características.md",
-    "Segundo/Segundo cuatri/Estructura de Datos II/Images/Configuraciones Caso 1.png"
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar hiperplano.png"
   ]
 }
