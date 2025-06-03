@@ -13,22 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Segundo/Segundo cuatri/Estructura de Datos II/Tema 3 - Mapas y Diccionarios Ordenados.md",
+                "file": "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 3 - Listas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 3 - Mapas y Diccionarios Ordenados"
-            }
-          },
-          {
-            "id": "373cc2ecbc76b25e",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Tema 3 - Listas"
             }
           },
           {
@@ -45,8 +35,7 @@
               "title": "Tema 10 - Heurística en la planificación"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,8 +174,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "373cc2ecbc76b25e",
+  "active": "2dfc709c277af9c1",
   "lastOpenFiles": [
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 5 - Colas.md",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 4 - Pilas.md",
+    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 3 - Listas.md",
     "Untitled.md",
     "Segundo/Segundo cuatri/Sistemas Operativos/Resumen SO.md",
     "Segundo/Segundo cuatri/Bases de Datos/ImágenesBD/Ejercicio 2 Hoja 1 BD.png",
@@ -218,9 +210,6 @@
     "Segundo/Primer cuatri/Estructura de Datos/Bloque III ED NO Lineales/Tema 7 - Árboles.md",
     "Segundo/Primer cuatri/Estructura de Datos/Bloque III ED NO Lineales/Tema 6 - Conjuntos.md",
     "Segundo/Primer cuatri/Estructura de Datos/Bloque III ED NO Lineales",
-    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 5 - Colas.md",
-    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 4 - Pilas.md",
-    "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales/Tema 3 - Listas.md",
     "Segundo/Primer cuatri/Estructura de Datos/Bloque II ED Lineales",
     "Segundo/Primer cuatri/Estructura de Datos/Bloque I TADs/Tema 2 - Abstracción de datos.md",
     "Segundo/Primer cuatri/Estructura de Datos/Bloque I TADs",
