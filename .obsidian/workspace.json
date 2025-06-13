@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "315ffad57767fe53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 3 - Busqueda heurística.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tema 3 - Busqueda heurística"
-            }
-          },
-          {
             "id": "fc7322786dabe8d2",
             "type": "leaf",
             "state": {
@@ -33,8 +19,7 @@
               "title": "Release Notes 1.8.10"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,11 +158,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fc7322786dabe8d2",
+  "active": "46f4ec8ce7b1f762",
   "lastOpenFiles": [
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 4 - Búsqueda heurística avanzada.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 3 - Busqueda heurística.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 2 - Búsqueda no informada.md",
-    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Tema 1 - Intro a los problemas de búsqueda.md"
+    "Untitled.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III/SVM, ejemplo con código.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III/SVM no lineal y kernels.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III/SVM lineal y hinge Loss.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque IV/Tema 9 - Resolución de problemas con planificación.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque IV/Tema 10 - Heurística en la planificación.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque IV",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Tema 8 - Algoritmos para búsqueda con restricciones.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Tema 7 - Restricciones.md",
+    "Segundo/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III",
+    "Segundo/Segundo cuatri/Sistemas Operativos/Resumen SO.md",
+    "Segundo/Segundo cuatri/Sistemas Operativos/Practica1/maintenance.sh",
+    "Segundo/Segundo cuatri/Sistemas Operativos/Practica1",
+    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 5 - Grafos.md",
+    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 4 - Mapas y diccionarios NO ordenados.md",
+    "Segundo/Segundo cuatri/Estructura de Datos II/Tema 3 - Mapas y Diccionarios Ordenados.md",
+    "Segundo/Segundo cuatri/Estructura de Datos II/PDFs/Prueba Parcial - Introducción_ Revisión del intento.pdf",
+    "Segundo/Segundo cuatri/Estructura de Datos II/PDFs/Parcial 3_ Tablas hash y grafos_ Revisión del intento.pdf",
+    "Segundo/Segundo cuatri/Estructura de Datos II/PDFs/Parcial 2_ Árboles_ Revisión del intento.pdf",
+    "Segundo/Segundo cuatri/Estructura de Datos II/PDFs",
+    "Segundo/Segundo cuatri/Estructura de Datos II/Images/Configuraciones Caso 1.png",
+    "Segundo/Segundo cuatri/Estructura de Datos II/Images",
+    "Segundo/Segundo cuatri/Bases de Datos/ImágenesBD/Ejercicio 2 Hoja 1 BD.png",
+    "Segundo/Segundo cuatri/Bases de Datos/ImágenesBD/Ejemplo1.png",
+    "Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 6 - Base de datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 7 - Base de Datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 5 - Base de Datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 1 - Base de Datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque III - Implementación/Tema 8 - SQL.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Tema 7 - Diseño lógico.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Tema 6 - Modelo Relacional.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Modelo Relacional.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 3 - Concepto de Modelo de Datos.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 4 - Modelo E - R extendido.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 5 - Modelo Conceptual.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 2 - Sistemas de Ficheros y Sistemas de Gestión.md",
+    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 1 - Sistemas de Información y Bases de Datos.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar planos.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar rectas.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Graficado Clasificadores.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Ejemplo Clasificación Binaria.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar hiperplano.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Matriz de confusión.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Librerías ML I.png",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/9 - Evaluación modelos.md"
   ]
 }

@@ -6,12 +6,12 @@
 4. [[Modelo E - R extendido]]
 5. [[Modelado Conceptual]]
 ## Bloque II - Modelo relacional y diseño de BBDD
-6. [[Modelo Relacional]]
-7. [[Diseño lógico]]
+6. [[Tema 6 - Modelo Relacional]]
+7. [[Tema 7 - Diseño lógico]]
 ## Bloque III - Implementación de Basees de Datos
 8. [[Lenguaje SQL]]
 ## Hojas de ejercicios
-- [[Hoja 1 - Base de Datos]]
+- [[Segundo/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 1 - Base de Datos]]
 - [[Hoja 2 - Base de Datos]]
 # Evaluación
 - Prueba 1 - 21 de febrero
