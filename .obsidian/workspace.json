@@ -11,12 +11,14 @@
             "id": "fc7322786dabe8d2",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.8.10"
+                "file": "Segundo/Primer cuatri/Algoritmos/Tema 2 - Voraces y voraces_grafos.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
+              "icon": "lucide-file",
+              "title": "Tema 2 - Voraces y voraces_grafos"
             }
           }
         ]
@@ -149,7 +151,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "github-sync:Sync with Remote": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -158,8 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "46f4ec8ce7b1f762",
+  "active": "fc7322786dabe8d2",
   "lastOpenFiles": [
+    "Segundo/Primer cuatri/Algoritmos/Tema 1 - Introducción a los algoritmos.md",
+    "Segundo/Primer cuatri/Algoritmos/Tema 2 - Diseño y Análisis de Algoritmos.md",
+    "Segundo/Primer cuatri/Algoritmos/AlgoritmosJuez/Voraces.md",
+    "Segundo/Primer cuatri/Algoritmos/Ejercicio Casa.md",
+    "Segundo/Primer cuatri/Algoritmos/Tema 2 - Voraces y voraces_grafos.md",
     "Untitled.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III/SVM, ejemplo con código.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque III/SVM no lineal y kernels.md",
@@ -194,17 +200,12 @@
     "Segundo/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Tema 6 - Modelo Relacional.md",
     "Segundo/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Modelo Relacional.md",
     "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 3 - Concepto de Modelo de Datos.md",
-    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 4 - Modelo E - R extendido.md",
-    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 5 - Modelo Conceptual.md",
-    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 2 - Sistemas de Ficheros y Sistemas de Gestión.md",
-    "Segundo/Segundo cuatri/Bases de Datos/Bloque I - Fundamentos y modelado de alto nivel/Tema 1 - Sistemas de Información y Bases de Datos.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar planos.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar rectas.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Graficado Clasificadores.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Ejemplo Clasificación Binaria.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar hiperplano.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Matriz de confusión.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Librerías ML I.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/9 - Evaluación modelos.md"
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Librerías ML I.png"
   ]
 }

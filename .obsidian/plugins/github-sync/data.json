@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "remoteURL": "https://github.com/maybepueblo/GradoIA-URJC",
-=======
-  "remoteURL": "https://github.com/maybepueblo/GradoIA-URJC.git",
->>>>>>> 3e3f793130f4eb5460c99210bc29cc0be26b6806
   "gitLocation": "",
   "syncinterval": 0,
   "isSyncOnLoad": false,
