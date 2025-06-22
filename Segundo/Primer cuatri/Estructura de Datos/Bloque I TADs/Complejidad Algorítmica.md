@@ -1,5 +1,4 @@
-ºshutEn este documento, abarcaré los diversos ejercicios que vayamos haciendo en clase y que haga en mi tiempo libre (poco).
-
+En este documento, abarcaré los diversos ejercicios que vayamos haciendo en clase y que haga en mi tiempo libre (poco).
 ##### 1º Ejercicio
 
 ```
