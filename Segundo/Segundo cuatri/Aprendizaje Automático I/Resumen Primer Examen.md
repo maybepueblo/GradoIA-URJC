@@ -12,7 +12,7 @@ Aunque presentamos los datos en forma de tabla numérica, cada columna puede ten
 Hay que codificar los categóricos porque no son números. Existe una relación biyectiva significando que a cada elemento del conjunto de categorías se les puede asignar un número natural. Podemos o asignar un entero a cada elemento o usar *One-Hot* 
 
 En *One-Hot* creamos tantas columnas como categorías diferentes haya por cada atributo categórico. Se codifica escribiendo 1 en aquella columna que se corresponde con la categoría y un 0 en las demás.
-## Separar, explorar y rellenar
+### Separar, explorar y rellenar
 
 **Separación**
 Nunca podemos usar todos los ejemplos dados para aprender la tarea. Queremos tener una máquina autónoma, que reaccione a nuevos ejemplos que le lleguen ya desplegada. Por ello, para probar el modelo, reservamos una parte del conjunto de datos para formar el **Conjunto de Test** (10-20% de los datos), el resto siendo el de **Entrenamiento**. 
@@ -404,3 +404,508 @@ no se puede representar en pantalla. esta ecuación implícita y de los otros el
 
 A veces se añade un término independiente como variable *dummy* para eliminarlo de la expresión. Es una variable fija a 1 que se añade al vector de variables, quedando la ecuación implícita del hiperplano como $c^Tx = 0$ lo que simplifica las cosas
 ## Bloque II
+### Modelos lineales
+Existen dos grandes problemas de aprendizaje supervisado:
+- Regresión -> Aprender a emparejar los ejemplos dados con un *target* (valor objetivo) que toma valores en un intervalo continuo.
+- Clasificación -> Emparejar los ejemplos dados con un número discreto, denominado *label* (etiqueta o clase también). A veces la clase toma valores dentro de un conjunto de categorías. Ahí o bien codificamos con enteros o por *one-hot*. Si sólo hay dos clases el problema es binario o de clasificación binaria, más es multi-clase
+realmente son el mismo, regresión es clasificación con infinitas clases.
+
+En ambos casos siempre tendremos un conjunto de datos de N ejemplos D dimensionales tal que cada ejemplo esté emparejado con su valor objetivo y un modelo para aprender cada ejemplo con su valor objetivo (regresión) o su etiqueta (clasificación)
+
+Buscamos **estimar** con mayor tasa de acierto posible el target o el label de los ejemplos nuevos.
+
+Entendemos modelo como parte de un sistema más grande que aprenderemos a construir posteriormente. 
+
+**Modelo general para AS**
+Llamaremos modelo a la función paramétrica $f(x; w)$ que:
+- recibe un ejemplo $x \in \mathbb{R}^D$
+- produce una salida, ya sea un vector $\textbf{y}$ o un escalar $y$ dependiendo del problema
+- el vector **w** es el conjunto de parámetros que podemos modificar para transformar la entrada **x** en la salida **y**
+
+**Modelo lineal**
+Aquel en que la salida del modelo es una combinación lineal de la entrada y los parámetros. 
+
+Es decir:
+$f(w; x)=w_0+w_1x_1+...+w_Dx_D$
+
+Hay una relación evidente entre modelo lineal y hiperplano. Dado un modelo lineal, existe un hiperplano cuyo vector característico $w=(w_1,...,w_D)^T$ y término independiente $w_0$ tal que $w_0+w^Tx = 0$ 
+
+**Modelo lineal de regresión**
+$\hat{y} = w_0+w^T x$ 
+
+donde $\hat{y}$ es la estimación que hace el modelo para el ejemplo **x** dado los parámetros escogidos. 
+
+El modelo lineal de regresión es lo que obtenemos al ajustar por mínimos cuadrados un conjunto de pares de puntos generalizado a mínimo 2 dimensiones.
+
+Aprender significa encontrar los parámetros óptimos o los mejores posibles. Un primer modo es a través de un cálculo matricial
+
+$$
+
+{\bf X} =
+
+\left[
+
+\begin{matrix}
+
+1 & x_1^{(1)} & x_2^{(1)} & \ldots & x_D^{(1)} \\
+
+1 & x_1^{(2)} & x_2^{(2)} & \ldots & x_D^{(2)} \\
+
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+
+1 & x_1^{(N)} & x_2^{(N)} & \ldots & x_D^{(N)} \\
+
+\end{matrix}
+
+\right]
+
+\quad
+
+{,}
+
+\quad
+
+{\bf Y} =
+
+\left[
+
+\begin{matrix}
+
+y_1 \\ y_2 \\ \vdots \\ y_N
+
+\end{matrix}
+
+\right]
+
+{,}
+
+\quad
+
+{\bf w} =
+
+\left[
+
+\begin{matrix}
+
+w_0 \\ w_1 \\ w_2 \\ \vdots \\ w_D
+
+\end{matrix}
+
+\right]
+
+$$
+El modelo lineal para el conjunto de entrenamiento $\{{\bf X}, {\bf Y}\}$ queda entonces:
+$$
+
+\begin{align}
+
+{\bf Y} &= {\bf X}{\bf w}~, \\
+
+{\bf X}^\top{\bf Y} &= {\bf X}^\top{\bf X}{\bf w}~,\\
+
+\big({\bf X}^\top{\bf X}\big)^{-1}{\bf X}^\top{\bf Y} &= \big({\bf X}^\top{\bf X}\big)^{-1}{\bf X}^\top{\bf X}{\bf w}~,\\
+
+\big({\bf X}^\top{\bf X}\big)^{-1}{\bf X}^\top{\bf Y} &= \mathbb{I}{\bf w}~,\\
+
+\end{align}
+
+$$
+
+donde $\mathbb{I}$ es la matriz identidad. Por tanto el vector óptimo de parámetros es
+$$
+
+{\bf w}^* = \big({\bf X}^\top{\bf X}\big)^{-1}{\bf X}^\top{\bf Y}
+
+$$
+
+Este método es costoso computacionalmente si X es muy grande, vamos a usar el **descenso de gradiente** para optimizar esto. 
+
+**Modelo lineal de clasificación binaria**
+
+$\hat{y} = Signo(w_0 + w^T x)$
+
+Este modelo asume que tenemos dos clases etiquetadas como {+, -}
+
+De nuevo $\hat{y}$ representa la estimación que hace el modelo. Pero cuando se trata de clasificación binaria aparecen dos términos importantes nuevos:
+- superficie de decisión -> puntos de $\mathbb{R}^D$ que satisfacen la igualdad $w_0+w^T x = 0$ están exactamente sobre el hiperplano; no tienen signo positivo ni negativo. Por tanto, se sitúan exactamente sobre la frontera entre dos clases. Será un hiperplano sólo si el modelo es lineal
+- función discriminante -> usamos la función *Signo* para estimar la etiqueta, discriminando a qué clase pertenece el ejemplo dado. Usarla NO es obligatorio. Se usa una función discriminante que transforme el resultado de $f(w;x)$ (lineal o no) en la etiqueta estimada.
+
+<u>Ejemplo</u>
+Función _Umbral_
+$$
+
+\hat y = \left\lbrace
+
+\begin{array}{lll}
+
+0 & \text{si} & f({\bf x};{\bf w}) > \theta \\
+
+1 & \text{si} & f({\bf x};{\bf w}) \le \theta
+
+\end{array}
+
+\right.
+
+$$
+- La etiqueta puede ser {0, 1}.
+- La función discriminante consiste en superar el umbral $\theta$.
+
+Aplicamos la misma fórmula para aprender que en regresión, la superficie de decisión será el hiperplano que se forma con los parámetros óptimos para luego aplicar la función discriminante.
+### Regresión logística
+Necesitaremos la función sigmoide (gráfica que tiene forma de S). Cumple:
+- $S : \mathbb{R} \rightarrow (a,b)$ con $a < b$ o sea, real y acotada
+- Diferenciable con derivada no negativa en cada punto y 1 punto de inflexión, siempre crece. 
+
+La que usaremos es la logística que es la siguiente: $S(x)=\frac{1}{1+e^{-x}}$ donde $x$ hace referencia a la entrada de la función, no a un ejemplo del conjunto de datos. 
+
+Esta función tiene las siguientes propiedades:
+- Continua y siempre creciente
+- En sus límites de infinito (negativo y positivo) tiende a 0 y 1 (respectivamente)
+
+Cumple las condiciones para ser una distribución de probabilidad.
+
+un ejemplo $~\bf x = (1, x_1, \ldots, x_D)^\top$ evaluado en el hiperplano que representa el modelo $f({\bf w},{\bf x}) = {\bf w}^\top{\bf x}~~$ puede dar tres resultados:
+
+$\quad f({\bf w},{\bf x})=0$, entonces el ejemplo $\bf x$ está **exactamente sobre** el hiperplano de decisión.
+$$\left.\begin{matrix}
+\quad f({\bf w},{\bf x})>0\\
+\quad f({\bf w},{\bf x})<0
+\end{matrix}\right\rbrace
+$$
+
+Entonces el ejemplo está **separado** del hiperplano de decisión, por un lado o por el otro.
+
+En este último caso, dependiendo del ejemplo, la separacíón puede ser pequeña o grande. No hay límites.
+
+PERO lo que buscamos es asignar una etiqueta a cada ejemplo, no saber a qué distancia se encuentra del plano de decisión. 
+
+Esta claro que si está muy lejos es lo mismo que si esta muy-muy-muy lejos.<br>
+Por tanto podríamos pensar en **saturar** el valor de $ f({\bf w},{\bf x})$ de modo que por encima de esa saturación valga siempre lo mismo.
+
+La función sigmoide se encarga de hacer esta saturación de $ f({\bf w},{\bf x})$, convirtiendolo a una medida de la probabilidad de que el ejemplo pertenezca a una de las dos clases.
+
+Sea **Logit** el nombre que recibe el resultado de la función lineal $f(w,x)=w^Tx$ 
+
+Entonces, la función logística aplicada al logit nos devuelve una medida de la probabilidad de que $\bf x$ pertenezca a la clase "$+1$", más exactamente:
+$$
+
+\Pr(y=+1|\text{logit}={\bf w}^\top{\bf x}) =
+
+\frac{1}{1+e^{-{\bf w}^\top{\bf x}}}
+
+$$
+El aprendizaje es igual ya que son los parámetros de un modelo lineal. Simplemente hemos de transformar el resultado mediante la función logística.
+#### Datos importantes
+- La regresión logística es un modelo lineal generalizado ya que calculamos los logits mediante un modelo lineal
+- También tiene una función discriminante
+	$$
+	
+	\hat y = \left\lbrace
+	
+	\begin{array}{llll}
+	
+	+1 & \text{si} & \hat p > \theta \\
+	
+	-1 & \text{si} & \hat p \le \theta
+	
+	\end{array}
+	
+	\right.
+	
+	\quad\text{donde}\quad
+	
+	\hat p = \frac{1}{1+e^{-{\bf w}^\top{\bf x}}}
+	
+	$$
+	con $\theta = 0.5$.
+### Evaluación modelos
+Hemos de analizar la calidad de ellos. La métrica típica en regresión es el valor R² 
+$$R^2(y, \hat{y}) = 1 - \frac{\sum_{i=1}^{N} (y^{(i)} - \hat{y}^{(i)})^2}{\sum_{i=1}^{N} (y^{(i)} - \bar{y})^2}$$
+donde $\hat{y}$ es la media de los valores de y. A la diferencia de ys se le llama **residuo**. Con esto comparamos el cuadrado de los residuos con la dispersión de los targets respecto de su media. R² = 1 sólo si todos los residuos son 0. Cuanto más cercano a 1, mejor el modelo.
+
+**Calidad de los modelos**
+Si hay que predecir entre dos clases podemos acertar de dos maneras y fallar de dos también:
+- Aciertos: 
+	- **Verdadero positivo**
+		- $\hat{y} = + \space , \space y = +$ Estimación positivo y clase positiva
+	- **Verdadero negativo**
+		- $\hat{y} = - \space , \space y = -$ Estimación negativo y clase negativa
+- Fallos:
+	- **Falso positivo**
+		- $\hat{y} = + \space , \space y = -$ Estimación positivo y clase negativa
+	- **Falso negativo**
+		- $\hat{y} = - \space , \space y = +$ Estimación negativo y clase positiva
+Reunimos estos casos en lo conocido como **matriz de confusión**
+
+De esta matriz derivamos diferentes medidas:
+- **Precision** significa que todos los ejemplos estimados como positivos efectivamente lo eran
+- **Recall** todos los ejemplos positivos han sido estimados correctamente
+- **F1-score** da media entre *Precision* y *Recall*
+- **Accuracy** porcentaje total de aciertos
+
+**Curva ROC y AUROC**
+Dado un modelo que estima la probabilidad $p(y = 1|x)$ tal que $\hat{y}=1$ si $p(y=1|x)>0$; la curva ROC es el trazado de pares cuando hacemos variar el umbral 0 < $\theta$ < 1
+
+Es diferente la ROC a la matriz de confusión porque la calculamos para todo el rango de posibles umbrales $\theta$, mientras que la matriz de confusión ya asume un $\theta$ fijado. 
+
+Si elegimos el umbral que da lugar al par (FPR, TPR) más cercano al punto (0, 1) estaremos tomando un buen compromiso de rendimiento.
+
+Por otro lado, midiendo el área bajo la curva ROC podemos comparar modelos, cuanto **mayor** sea **AUROC**, **mejor** es el **modelo**
+### Función de pérdida
+Hay que recordar que un problema supervisado es aquel donde cada ejemplo está emparejado a una etiqueta o clase (clasificación) o con un valor objetivo o target (regresión)
+
+Tenemos a nuestra disposición:
+- conjunto de datos X en forma de tabla N x D
+- conjunto Y de valores objetivos o etiquetas:
+	- regresión: vector columna de N elementos en el primer caso
+	- clasificación: vector columna o matriz si se usa *one-hot*. A este conjunto se le denomina por su término en inglés, *ground-truth*. 
+
+Se supone que tenemos un modelo también, la función paramétrica $f(x;w)$
+
+¿Por qué unos parámetros son mejores que otros?
+
+El objetivo es predicir con la mayor tasa de acierto posible, el valor objetivo o la etiqueta de los ejemplos que reciba. Cuando pertenecen al conjunto de entrenamiento conocemos el valor objetivo o la etiqueta real de cada ejemplo. La **función de pérdida** devuelve una medida relacionada con los fallos cometidos por el modelo respecto al *ground truth*. 
+
+Sea $~\mathcal L \big( {\bf Y}, f({\bf X};{\bf w}) \big)$ esa función
+
+**Expresión general**
+Cuantos menos fallos, mejor es el modelo. Por tanto, el problema de AS es el siguiente problema de optimización:
+$$w*=arg_w min~\mathcal L \big( {\bf Y}, f({\bf X};{\bf w}) \big)$$
+Necesitamos para realizar una tarea supervisada:
+- un **conjunto de datos etiquetado** dado por el "cliente"
+- un **modelo** y una **función de pérdida** que es decisión nuestra
+
+Viendo sólo modelos lineales por ahora tenemos que $f(x; w) = w^Tx$ (asumiendo una característica dummy). Veamos las posibles funciones de pérdida
+
+**FP para regresión**
+En estos casos $f(x; w) : (\mathbb{R}^D, \mathbb{R}^D) \rightarrow \mathbb{R}$ y el valor objetivo $y \in \mathbb{R}$
+
+Por tanto una función de pérdida para regresión debe tener las siguientes características:
+- Calcular $\delta_{(i)} = \left(y^{(i)} - f({\bf x}^{(i)},{\bf w}) \right)$ para cada $i = 1,2,\ldots,N.$
+- Convertir $\delta_{(i)}$ en un valor positivo para todo $i$.
+- Hacer el promedio para todos los ejemplos.
+
+Algunas funciones de pérdida con estas características son:
+
+**MSE** (_Mean Squared Error_)
+$$
+
+\mathcal L \big( {\bf Y}, f({\bf X};{\bf w}) \big)
+
+=\frac{1}{N}\sum\limits_{i=1}^{N}\left(y^{(i)} - f({\bf x}^{(i)},{\bf w})\right)^2
+
+$$
+**MAE** (_Mean Absolute Error_)
+$$
+
+\mathcal L \big( {\bf Y}, f({\bf X};{\bf w}) \big)
+
+=\frac{1}{N}\sum\limits_{i=1}^{N}\left\vert y^{(i)} - f({\bf x}^{(i)},{\bf w})\right\vert
+
+$$
+**Log-cosh**
+$$
+
+\mathcal L \big( {\bf Y}, f({\bf X};{\bf w}) \big)
+
+=\frac{1}{N}\sum\limits_{i=1}^{N} \log\left(\cosh\big( y^{(i)} - f({\bf x}^{(i)})\big)\right)
+
+$$
+
+**FP para clasificación**
+A diferencia de regresión, la clasificación puede tener varias formas:
+1. Clasificación binaria:
+	*un ejemplo puede pertenecer a 2 clases excluyentes*
+2. Clasificación multi-clase
+	*un ejemplo puede pertenecer a varias clases pero excluyentes*
+3. Clasificación multi-etiqueta
+	*un ejemplo puede pertenecer a una o varias clases al mismo tiempo*
+Los tres casos se pueden abordar como un problema de regresión y después usar una función discriminante. PERO la regresión logística es un modo mucho más natural de abordar la clasificación porque incorpora una medida de la probabilidad de pertenecer a una cierta clase. 
+
+Cuando trabajamos con probabilidades las pérdidas citadas arriba NO son apropiadas. Veremos un cuaderno para esto solo
+### Descenso de gradiente
+#### Qué es
+Vector que marca la dirección de máxima pendiente de una función en un punto dado.
+
+Sea $\mathcal L(w):\mathbb{R}^D \rightarrow \mathbb{R}$ entonces el gradiente de $\mathcal L$ respecto de **w** es el vector:
+$$
+
+\nabla_w \mathcal L = \left[
+
+\frac{\partial \mathcal L}{\partial w_1},~
+
+\frac{\partial \mathcal L}{\partial w_2},~
+
+\cdots,~
+
+\frac{\partial \mathcal L}{\partial w_D}
+
+\right]
+
+$$
+Decimos que $\mathcal L(w)$ es una superficie en un espacio D-dimensional. En esto, según viajamos por $\mathbb{R}^D$ vamos obteniendo valores de $\mathcal L(w)$. Subiendo o bajando, a veces ni uno de estos.
+
+El gradiente en un punto concreto w nos indica la dirección en la que moverse para subir más rápido que en ninguna otra dirección. 
+
+Para haber un gradiente debe de ser la función $\mathcal L$ derivable en todas las direcciones
+
+**Algoritmo del descenso**
+Es un algoritmo para localizar el mínimo de una función de manera iterativa.
+
+Nos desplazamos por w en la dirección que marca $\mathcal L$. Comenzamos en un punto aleatorio y el desplazamiento produce un nuevo punto. Esto se repite, tomando como punto de partida el punto alcanzado en la iteración anterior, hasta que se cumple una condición de parada.
+- **Regla de actualización**
+	- Sacamos el siguiente punto descendiendo por el gradiente tal que $w^{nuevo}=w^{actual}-\eta · \cdot\nabla_{\bf w}{\mathcal L({\bf w}^\text{actual})}$  donde $\eta \in (0,1)$ es el ratio de aprendizaje 
+- **Ratio de aprendizaje** 
+	- En vez de usar el valor del gradiente evaluado en el punto se usa sólo el $\eta$ porcentaje. Se empieza probando en 0.1 de normal  
+- **Condición de parada**
+	- Se detiene si ocurre uno de los dos casos:
+		- iteraciones alcanzan tope
+		- $\mathcal L$ ya no decrece más
+### Aplicando descenso de gradiente
+Recordando las expresiones importantes:
+$$
+
+\begin{align}
+
+\text{Problema de optimización} &:\quad
+
+{\bf w}^* =
+
+\mathop{\arg\min}\limits_{{\bf w}}
+
+~\mathcal L \big( {\bf Y}, f({\bf X};{\bf w}) \big) \\
+
+\text{Regla de actualización} &:\quad
+
+{\bf w}^\text{nuevo} = {\bf w}^\text{actual} - \eta\cdot\nabla_{\bf w}{\mathcal L({\bf w}^\text{actual})}
+
+\end{align}
+
+$$
+Vamos primero a calcular el gradiente de la pérdida. $$
+
+\begin{align}
+
+\nabla_{\bf w}\mathcal L &=
+
+\left[ \frac{\partial \mathcal L}{\partial w_i}
+
+\right]_{i=1,\ldots,D}
+
+\end{align}
+
+$$
+Para calcular la derivada parcial de la pérdida respecto del parámetro $i$-ésimo vamos a reescribir la pérdida del siguiente modo:
+$$
+
+\mathcal L =
+
+\frac{1}{N}\sum\limits_{k=1}^N \delta_{(k)}^2,
+
+$$
+con
+
+$$\delta_{(k)} = y^{(k)} - f({\bf x}^{(k)},{\bf w}),$$
+
+y con
+
+$$
+
+f({\bf x}^{(k)},{\bf w}) = x_1^{(k)}w_1 + x_2^{(k)}w_2 + \cdots + x_D^{(k)}w_D.
+
+$$
+Así podemos aplicar la regla de la cadena de la derivada, de modo que para el ejemplo $k$-ésimo tenemos:
+$$
+
+\frac{\partial \mathcal L}{\partial w_i} =
+
+\frac{\partial \mathcal L}{\partial \delta_{(k)}}\cdot
+
+\frac{\partial \delta_{(k)}}{\partial f}\cdot
+
+\frac{\partial \mathcal f}{\partial w_i}
+
+$$
+Estos 3 términos son:
+
+$$
+
+\begin{array}{llllll}
+
+\frac{\partial \mathcal L}{\partial \delta_{(k)}} &= \frac{1}{N}2\delta_{(k)} &,&
+
+\frac{\partial \delta^{(k)}}{\partial f} &= -1 &,&
+
+\frac{\partial \mathcal f}{\partial w_i} &= x_i^{(k)} \\
+
+\end{array}
+
+$$
+Juntando todo y recordando que tenemos el sumatorio de $N$ términos $\delta^2$:
+$$
+
+\frac{\partial \mathcal L}{\partial w_i} =
+
+\frac{1}{N}\sum\limits_{k=1}^{N}
+
+2\delta_{(k)}(-1)x_i^{(k)} =
+
+\frac{2}{N}\sum\limits_{k=1}^{N}
+
+\left( f({\bf x}^{(k)},{\bf w}) - y^{(k)} \right)\left( x_i^{(k)} \right),
+
+$$
+
+que para el caso de modelos lineales es
+$$
+
+\frac{\partial \mathcal L}{\partial w_i} =
+
+\frac{2}{N}\sum\limits_{k=1}^{N}
+
+\left( {\bf w}^\top{\bf x}^{(k)} - y^{(k)} \right)\left( x_i^{(k)} \right)
+
+$$
+Una vez conocida la expresión del gradiente en todo punto, sólo hay que usarla en la regla de actualización del descenso de gradiente.
+### Regularización
+La función de pérdida se ve tal que:
+$$\mathcal L(Y, f(X;w))$$
+tal que Y es *ground truth*, X es el conjunto de datos de entreno, después de ser preprocesado y lo otro es el modelo paramétrico siendo w el conjunto de parámetros. 
+
+La regla es que los parámetros elegidos minimicen la función. La regularización busca añadir más reglas. Sólo podemos imponer reglas sobre los pesos. Se termina convirtiendo la función en lo siguiente:
+$$\mathcal L(Y, f(X;w)) + \mathcal R(w)$$
+Hay 3 métodos:
+- Lasso
+- Ridge
+- Elastic Net
+#### Lasso
+Añadimos el término $$\mathcal R_L=\alpha\sum_{i=1}^D|w_i|$$
+a la función de pérdida donde alpha mayor o igual a cero es un valor elegido por nosotros para controlar el efecto. 
+- $\alpha \rightarrow 0$ Obtenemos el mismo w* que con la regresión lineal, desaparece el término de regularización
+- $\alpha > 0$ algunos parámetros tenderán a ir hacia 0
+- $\alpha \rightarrow \infty$  todos los parámetros se anulan
+
+El efecto de este regulador es **lograr que haya menos parámetros** porque muchos tenderán a 0. También se le llama a esta regularización L1 por la norma-1 
+#### Ridge
+Añadimos:
+$$\mathcal R_R=\frac{\alpha}{2}\sum_{i=1}^D(w_i)²$$
+nuevamente:
+- $\alpha \rightarrow 0$ Obtenemos el mismo w* que con la regresión lineal, desaparece el término de regularización al igual que con Lasso
+- $\alpha > 0$ impide que los parámetros se separen mucho o que alguno crezca demasiado
+- $\alpha \rightarrow \infty$  todos los parámetros se anulan igual que con Lasso
+Quitando los casos extremos nuevamente, buscamos **lograr que todos los parámetros tengan valores pequeños pero no necesariamente nulos**
+
+También se le llama Regularización L2 por la norma-2. El factor 1/2 se añade para que al derivar el término el exponente se cancele con él
+#### Elastic Net
+Combinación lineal de ambos:
+$$\mathcal R_E = \alpha_1\mathcal R_L + \alpha_2\mathcal R_R = \alpha_1||w||_1+\frac{\alpha_2}{2}||w||²_2$$ Esto causa una doble reducción de los parámetros, la de Lasso y la de Ridge. Para tener más control y además mejor interpretación de las alphas, se usa una combi. lineal convexa de ambos términos. Es decir:
+$$\mathcal R_E=\alpha(r·\mathcal R_L + (1-r)·\mathcal R_R)$$
+siendo r el porcentaje o ratio de regularización Lasso que aplicamos y por tanto el complementario es el de regularización Ridge, siendo $\alpha$ un multiplicador para dar más o menos peso al término.
+#### Hiperparámetros
+Aparece con los términos de regularización. Mientras que los parámetros se usan para ajustar un modelo a un conjunto de datos supervisado, los hiperparámetros son los elementos que se han añadido al modelo o al algoritmo para controlar la ejecución.
+
+<u>Ejemplos</u>
+>- En la regla de actualización de parámetros mediante descenso del gradiente aparecía el _learning rate_ $\eta$, que controlaba la velocidad a la que viajamos por el espacio de parámetros.
+>- En los términos de regularización aparece $\alpha$ para dar más o menos peso al regularizador
+>- En la regularización Elastic Net aparece $r$ para dar más o menos porcentaje a Lasso.
+
