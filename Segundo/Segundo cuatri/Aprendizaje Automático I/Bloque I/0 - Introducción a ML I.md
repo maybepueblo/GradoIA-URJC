@@ -6,7 +6,7 @@ Cualquier tarea de ML se formula como la búsqueda de los parámetros que **mini
 ### Notación
 - **Datos** -> Serán tabulados en este curso. Se han de representar en forma de tabla siendo cada fila un ejemplo. Así, los ejemplos son un array de valores (**atributos** o **features**)
 -  **Modelos** -> Función paramétrica de los ejemplos
-- **Optimizar** -> Minimizar función de perdida (*Loss*). Es buscar los parámetros que logren la menor pérdida posible. A veces se puede plantear la maximización de la probabilidad o de la ganancia de información. Sin embargo, esto es redundante porque maximizar f(x) es lo mismo que minimizar -f(x). 
+- **Optimizar** -> Minimizar función de perdida (*Loss*). Es buscar los parámetros que logren la menor pérdida posible. A veces se puede plantear la maximización de la probabilidad o de la ganancia de información. Sin embargo, esto es redundante porque maximizar f(x) es lo mismo que minimizar - f(x). 
 ## Tipos de aprendizaje
 - **Supervisado**
 	- Conjunto de ejemplos emparejados "x" uno a uno con valor "y" que recibe varios nombres, siendo los más habituales: "etiqueta", "clase", "valor objetivo", "target" o "ground truth". Queremos predecir  "y" a partir de los emparejamientos. Tenemos que estar para proporcionar etiquetas, esto es un proceso lento y costoso.

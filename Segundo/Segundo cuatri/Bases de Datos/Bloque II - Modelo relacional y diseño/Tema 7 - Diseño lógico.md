@@ -60,4 +60,4 @@ Una descomposición ha de ser:
 - **Conservación de dependencias:** Todas las DF originales deben preservarse
 **Ejemplo de descomposición sin pérdida:**
 - Dado R(A,B,C) con DF = {A -> B}
-	- R1(A, B) y R2(A, C) es una descomposición sin pérdida porque A es clave en R1.
+	- R1(A, B) y R2(A, C) es una descomposición sin pérdida porque A es clave común de R1 y R2 además de ser clave en la relación.

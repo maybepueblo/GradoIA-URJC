@@ -45,6 +45,7 @@ memory usage: 292.0 bytes`
 Observamos la simplicidad del output pero que se nota claramente que nos encontramos en intervalos específicos, en este caso siendo entre el 0 y el 1.
 ## Discretos
 Pueden tomar un número finito de valores dentro de un intervalo. Los booleanos son un caso particular (0|1)
+
 ```python
 # Este código genera un pandas dataframe con 10 ejemplos de 2 atributos discretos
 # en el intervalo (-5,5) generados de manera aleatoria
