@@ -28,7 +28,7 @@ Estos son todos estadísticos básicos que asumen que TODOS los atributos $x_i$ 
 A veces es más práctico desarrollar métodos capaces de procesar y preparar los datos de forma automática, requiriendo una intervención humana casi nula. Podemos automatizar la localización y tratamiento de datos perdidos además de eliminar atributos innecesarios o seleccionar los que vamos a usar finalmente.
 
 ***Valores perdidos***
-Más frecuentes de lo pensado. Hemos de averiguar su ubicación, valorar si rellenamos los huecso o eliminamos el ejemplo del atributo. A veces podemos añadir una nueva columna a la derecha de aquella donde tengamos los valores imputados, marcando celdas donde ha habido imputación.
+Más frecuentes de lo pensado. Hemos de averiguar su ubicación, valorar si rellenamos los huecos o eliminamos el ejemplo del atributo. A veces podemos añadir una nueva columna a la derecha de aquella donde tengamos los valores imputados, marcando celdas donde ha habido imputación.
 
 **Imputación univariada**
 Imputamos valores al resto de los NaN. La técnica más sencilla es esta: asignar un estadístico de la columna a todos los NaN que haya en ella, y repetir para cada columna. Podemos usar la media (si valores distribuidos según normal), mediana (mejor opción con valores muy extremos dentro de esa columna) o el valor más repetido (para valores categóricos)

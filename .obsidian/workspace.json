@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ea968216b657877b",
+        "id": "b2d78af28ca2dd11",
         "type": "tabs",
         "children": [
           {
-            "id": "552cd7440839c50a",
+            "id": "61f9c230c93ba978",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,76 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "Resumen Primer Examen"
-            }
-          },
-          {
-            "id": "afcf1822273ea066",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/2 - Separar, explorar y rellenar datos.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2 - Separar, explorar y rellenar datos"
-            }
-          },
-          {
-            "id": "2b89384a0676d768",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/3 - Ingeniería de características.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3 - Ingeniería de características"
-            }
-          },
-          {
-            "id": "2680f4854e5e77bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/4 - Filtrado de características.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4 - Filtrado de características"
-            }
-          },
-          {
-            "id": "c1113dceddcdd998",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/5 - Análisis de componentes principales.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5 - Análisis de componentes principales"
-            }
-          },
-          {
-            "id": "b1ae4cfedcb75460",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/6 - Visualización de elementos básicos.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6 - Visualización de elementos básicos"
             }
           }
         ]
@@ -231,17 +161,17 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "552cd7440839c50a",
+  "active": "61f9c230c93ba978",
   "lastOpenFiles": [
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/6 - Visualización de elementos básicos.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/5 - Análisis de componentes principales.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/4 - Filtrado de características.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/3 - Ingeniería de características.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Resumen Primer Examen.md",
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/2 - Separar, explorar y rellenar datos.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Cambio de base PCA.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Ejemplo 3 dimensiones PCA.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/1 - Tipos de datos.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Resumen Primer Examen.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/2 - Separar, explorar y rellenar datos.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/3 - Ingeniería de características.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/5 - Análisis de componentes principales.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/6 - Visualización de elementos básicos.md",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/4 - Filtrado de características.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque I/0 - Introducción a ML I.md",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Bloque II/7 - Modelos lineales.md",
     "Segundo/Segundo cuatri/Bases de Datos/Bloque III - Implementación/Tema 8 - SQL.md",
@@ -277,7 +207,6 @@
     "Segundo/Segundo cuatri/Bases de Datos/ImágenesBD/Ejemplo1.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Graficado Clasificadores.png",
     "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Matriz de confusión.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Funciones de perdida regresión.png",
-    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Ejemplo Clasificación Binaria.png"
+    "Segundo/Segundo cuatri/Aprendizaje Automático I/Imágenes/Funciones de perdida regresión.png"
   ]
 }
