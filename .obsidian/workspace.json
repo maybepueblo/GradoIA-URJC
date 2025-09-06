@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2º/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Resumen Bloque III AB.md",
+                "file": "3º/2º cuatri/Visión artificial/Visión Artificial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resumen Bloque III AB"
+              "title": "Visión Artificial"
             }
           }
         ]
@@ -160,8 +160,20 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "46f4ec8ce7b1f762",
+  "active": "6baa3ef595bcc922",
   "lastOpenFiles": [
+    "3º/2º cuatri/Robotica/Robótica.md",
+    "3º/2º cuatri/Visión artificial/Visión Artificial.md",
+    "3º/2º cuatri/RCR II/Representación del Conocimiento y del Razonamiento II.md",
+    "3º/2º cuatri/PLN I/Procesamiento del Lenguaje Natural I.md",
+    "3º/2º cuatri/RCR II/R",
+    "3º/2º cuatri/Multi-agente/Sistemas Multi-agente.md",
+    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
+    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
+    "3º/1º cuatri/IS/Ingeniería del Software.md",
+    "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
+    "4º/2º cuatri/AIA/Aplicaciones de la Inteligencia Artificial.md",
+    "2º/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Resumen Bloque III AB.md",
     "4º/2º cuatri/AIA",
     "4º/2º cuatri",
     "Primero/Untitled",
@@ -172,9 +184,6 @@
     "3º/2º cuatri/Robotica",
     "3º/2º cuatri/Visión artificial",
     "Tercero/2º cuatri/Untitled.md",
-    "2º/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Resumen Bloque III AB.md",
-    "3º/2º cuatri",
-    "3º/1º cuatri",
     "2º/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Tema 8 - Algoritmos para búsqueda con restricciones.md",
     "2º/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Tema 7 - Restricciones.md",
     "2º/Segundo cuatri/Algoritmos de Búsqueda I/Image/hipergrafo criptoaritmética.png",
@@ -194,15 +203,6 @@
     "2º/Segundo cuatri/Bases de Datos/Bloque III - Implementación/Tema 8 - SQL.md",
     "2º/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 4 - Base de Datos.md",
     "2º/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 5 - Base de Datos.md",
-    "2º/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Tema 7 - Diseño lógico.md",
-    "2º/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 7 - Base de Datos.md",
-    "2º/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 6 - Base de datos.md",
-    "2º/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Tema 6 - Modelo Relacional.md",
-    "2º/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 3 -  Base de Datos.md",
-    "2º/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 1 - Base de Datos.md",
-    "2º/Segundo cuatri/Bases de Datos/Bloque II - Modelo relacional y diseño/Modelo Relacional.md",
-    "Segundo/Segundo cuatri/Bases de Datos/Resumen BD.md",
-    "Untitled.md",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/a-b-c.png",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación dinámica árbol.png",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación estática árbol.png",
