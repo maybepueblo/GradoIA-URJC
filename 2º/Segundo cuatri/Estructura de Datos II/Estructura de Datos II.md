@@ -9,7 +9,7 @@ Siempre escribir a los dos a la hora de tutorías o cuestiones por correo.
 	- Interfaz general de árbol
 	- Repaso de árboles binarios
 	- Implementaciones
-- [[Tema 3 - Mapas y diccionarios ordenados]]
+- [[Tema 3 - Mapas y Diccionarios Ordenados]]
 	- Árboles binarios de búsqueda
 	- Árboles AVL
 	- Árboles rojo y negros
