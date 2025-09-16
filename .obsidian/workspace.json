@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/2º cuatri/Visión artificial/Visión Artificial.md",
+                "file": "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Visión Artificial"
+              "title": "Representación del Conocimiento y Razonamiento I"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -151,6 +152,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -162,15 +164,17 @@
   },
   "active": "6baa3ef595bcc922",
   "lastOpenFiles": [
-    "3º/2º cuatri/Robotica/Robótica.md",
+    "Tema 1 - Introducción a ML II.md",
+    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
+    "3º/1º cuatri/IS/Ingeniería del Software.md",
+    "3º/1º cuatri/IS/Tema 1 - Introducción a IS.md",
     "3º/2º cuatri/Visión artificial/Visión Artificial.md",
+    "3º/2º cuatri/Robotica/Robótica.md",
     "3º/2º cuatri/RCR II/Representación del Conocimiento y del Razonamiento II.md",
     "3º/2º cuatri/PLN I/Procesamiento del Lenguaje Natural I.md",
     "3º/2º cuatri/RCR II/R",
     "3º/2º cuatri/Multi-agente/Sistemas Multi-agente.md",
     "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
-    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
-    "3º/1º cuatri/IS/Ingeniería del Software.md",
     "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
     "4º/2º cuatri/AIA/Aplicaciones de la Inteligencia Artificial.md",
     "2º/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Resumen Bloque III AB.md",
@@ -201,8 +205,6 @@
     "2º/Segundo cuatri/Aprendizaje Automático I/Bloque I/0 - Introducción a ML I.md",
     "2º/Segundo cuatri/Aprendizaje Automático I/Bloque II/7 - Modelos lineales.md",
     "2º/Segundo cuatri/Bases de Datos/Bloque III - Implementación/Tema 8 - SQL.md",
-    "2º/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 4 - Base de Datos.md",
-    "2º/Segundo cuatri/Bases de Datos/Ejercicios/Hoja 5 - Base de Datos.md",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/a-b-c.png",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación dinámica árbol.png",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación estática árbol.png",
