@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
+                "file": "3º/1º cuatri/IS/Tema 1 - Introducción a IS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Representación del Conocimiento y Razonamiento I"
+              "title": "Tema 1 - Introducción a IS"
+            }
+          },
+          {
+            "id": "d27a880135dde328",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/IS/Tema 2 - Ciclos de vida y procesos de desarrollo software.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 2 - Ciclos de vida y procesos de desarrollo software"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,20 +177,21 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6baa3ef595bcc922",
+  "active": "d27a880135dde328",
   "lastOpenFiles": [
-    "Tema 1 - Introducción a ML II.md",
-    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
-    "3º/1º cuatri/IS/Ingeniería del Software.md",
     "3º/1º cuatri/IS/Tema 1 - Introducción a IS.md",
+    "3º/1º cuatri/IS/Tema 2 - Ciclos de vida y procesos de desarrollo software.md",
+    "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
+    "3º/1º cuatri/IS/Ingeniería del Software.md",
+    "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
+    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
+    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
     "3º/2º cuatri/Visión artificial/Visión Artificial.md",
     "3º/2º cuatri/Robotica/Robótica.md",
     "3º/2º cuatri/RCR II/Representación del Conocimiento y del Razonamiento II.md",
     "3º/2º cuatri/PLN I/Procesamiento del Lenguaje Natural I.md",
     "3º/2º cuatri/RCR II/R",
     "3º/2º cuatri/Multi-agente/Sistemas Multi-agente.md",
-    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
-    "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
     "4º/2º cuatri/AIA/Aplicaciones de la Inteligencia Artificial.md",
     "2º/Segundo cuatri/Algoritmos de Búsqueda I/Bloque III/Resumen Bloque III AB.md",
     "4º/2º cuatri/AIA",
@@ -204,7 +220,6 @@
     "2º/Segundo cuatri/Aprendizaje Automático I/Bloque I/1 - Tipos de datos.md",
     "2º/Segundo cuatri/Aprendizaje Automático I/Bloque I/0 - Introducción a ML I.md",
     "2º/Segundo cuatri/Aprendizaje Automático I/Bloque II/7 - Modelos lineales.md",
-    "2º/Segundo cuatri/Bases de Datos/Bloque III - Implementación/Tema 8 - SQL.md",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/a-b-c.png",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación dinámica árbol.png",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación estática árbol.png",
