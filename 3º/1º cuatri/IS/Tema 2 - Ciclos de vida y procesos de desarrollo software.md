@@ -100,3 +100,4 @@ Similar a Scrum pero con uso de tarjetas para gestionar las historias de usuario
 
 > [!NOTE] Sabiduría del profe
 Nunca discutir el sueldo neto, te van a engañar con impuestos en el primer minuto. Discute el sueldo bruto anual, que incluye el sueldo y los impuestos con la retencion
+## Pendiente de leer el estándar ISO

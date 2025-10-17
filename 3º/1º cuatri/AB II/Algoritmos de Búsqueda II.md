@@ -1,11 +1,12 @@
 ## Temario
 ### Bloque I - Introducción
+- [[Bonus - Introducción a la POO]]
 - [[Tema 1 - Introducción a la optimización]]
 - [[Tema 2 - Introducción a las heurísticas y metaheurísticas]]
 ### Bloque II - Búsqueda basada en trayectorias
-- [[Tema 3 - Tabu Search]]
-- [[Tema 4 - Simulated Annealing]]
-- [[Tema 5 - Métodos constructivos]]
+- [[Tema 3 - Métodos constructivos]]
+- [[Tema 4 - Tabu Search]]
+- [[Tema 5 - Simulated Annealing]]
 - [[Tema 6 - Variable Neighborhood Search]]
 - [[Tema 7 - Scatter Search y Path Relinking]]
 ### Bloque III - Algoritmos de enjambre

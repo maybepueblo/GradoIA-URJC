@@ -1,6 +1,6 @@
 ## Contenidos
 ### Módulo 1: Web Semántica
-- [[Ŧema 1 - Grafos de conocimiento]]
+- [[Tema 1 - Grafos de conocimiento]]
 - [[Tema 2 - Aplicaciones]]
 ### Módulo 2: Lógica y Ontologías
 - [[Tema 3 - Repaso de lógica de predicados]]
