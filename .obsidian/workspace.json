@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/1º cuatri/AB II/Tema 4 - Tabu Search.md",
+                "file": "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 4 - Tabu Search"
+              "title": "Tema 2 - Aplicaciones"
             }
           }
         ]
@@ -161,18 +161,29 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6baa3ef595bcc922",
+  "active": "46f4ec8ce7b1f762",
   "lastOpenFiles": [
-    "3º/1º cuatri/AB II/Tema 5 - Simulated Annealing.md",
+    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
+    "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
+    "3º/1º cuatri/IACO/Inteligencia Ambiental y Computación Obicua.md",
+    "3º/1º cuatri/IACO/Resumen General.md",
+    "Untitled 4.md",
+    "Untitled 3.md",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
+    "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
     "3º/1º cuatri/AB II/Tema 4 - Tabu Search.md",
     "3º/1º cuatri/AB II/Tema 3 - Métodos constructivos.md",
+    "3º/1º cuatri/AB II/Images/EsquemaGeneralTabuSearch.png",
+    "3º/1º cuatri/AB II/Images",
+    "3º/1º cuatri/AB II/Tema 5 - Simulated Annealing.md",
     "3º/1º cuatri/AB II/Tema 2 - Introducción a las heurísticas y metaheurísticas.md",
-    "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
     "3º/1º cuatri/AB II/Bonus - Introducción a la POO.md",
     "Pasted image 20251015122706.png",
     "3º/1º cuatri/AB II/Tema 1 - Introducción a la optimización.md",
     "3º/1º cuatri/AB II/Bonus 2 - Introducción al lenguaje Java.md",
-    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
     "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
     "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
     "3º/1º cuatri/IS/Tema 4 - Diseño software y modelado.md",
@@ -181,14 +192,6 @@
     "3º/1º cuatri/IS/Tema 5 - Diseño de sistemas basados en conocimiento.md",
     "3º/1º cuatri/IS/Ingeniería del Software.md",
     "3º/1º cuatri/AB II/Untitled.md",
-    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
-    "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
-    "1º/Paradigmas de programación.md",
-    "3º/1º cuatri/IS/Tema 1 - Introducción a IS.md",
-    "3º/2º cuatri/Visión artificial/Visión Artificial.md",
-    "3º/2º cuatri/Robotica/Robótica.md",
-    "3º/2º cuatri/RCR II/Representación del Conocimiento y del Razonamiento II.md",
-    "3º/2º cuatri/PLN I/Procesamiento del Lenguaje Natural I.md",
     "3º/2º cuatri/RCR II/R",
     "4º/2º cuatri/AIA",
     "4º/2º cuatri",
@@ -198,7 +201,6 @@
     "3º/2º cuatri/Multi-agente",
     "3º/2º cuatri/RCR II",
     "3º/2º cuatri/Robotica",
-    "3º/2º cuatri/Visión artificial",
     "2º/Segundo cuatri/Algoritmos de Búsqueda I/Image/hipergrafo criptoaritmética.png",
     "2º/Segundo cuatri/Algoritmos de Búsqueda I/Image/grafo 4-reinas.png",
     "2º/Segundo cuatri/Algoritmos de Búsqueda I/Image/modelado sudoku vacío.png",
@@ -206,7 +208,6 @@
     "2º/Segundo cuatri/Aprendizaje Automático I/Imágenes/Ejemplo 3 dimensiones PCA.png",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/a-b-c.png",
     "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación dinámica árbol.png",
-    "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación estática árbol.png",
-    "2º/Segundo cuatri/Bases de Datos/ImágenesBD/Ejercicio 2 Hoja 1 BD.png"
+    "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación estática árbol.png"
   ]
 }
