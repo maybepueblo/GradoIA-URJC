@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
+                "file": "3º/1º cuatri/AB II/Tema 5 - Simulated Annealing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 2 - Aplicaciones"
+              "title": "Tema 5 - Simulated Annealing"
             }
           }
         ]
@@ -161,8 +161,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "46f4ec8ce7b1f762",
+  "active": "6baa3ef595bcc922",
   "lastOpenFiles": [
+    "3º/1º cuatri/RCR I/Tema 3 - Repaso de lógica de predicados.md",
+    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
     "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
     "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
     "3º/1º cuatri/IACO/Inteligencia Ambiental y Computación Obicua.md",
@@ -172,7 +174,6 @@
     "Untitled 2.md",
     "Untitled 1.md",
     "Untitled.md",
-    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
     "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
     "3º/1º cuatri/AB II/Tema 4 - Tabu Search.md",
     "3º/1º cuatri/AB II/Tema 3 - Métodos constructivos.md",
@@ -191,7 +192,6 @@
     "3º/1º cuatri/IS/Tema 2 - Ciclos de vida y procesos de desarrollo software.md",
     "3º/1º cuatri/IS/Tema 5 - Diseño de sistemas basados en conocimiento.md",
     "3º/1º cuatri/IS/Ingeniería del Software.md",
-    "3º/1º cuatri/AB II/Untitled.md",
     "3º/2º cuatri/RCR II/R",
     "4º/2º cuatri/AIA",
     "4º/2º cuatri",
