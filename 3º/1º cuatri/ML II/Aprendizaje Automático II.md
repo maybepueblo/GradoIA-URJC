@@ -1,4 +1,4 @@
-Asignatura enfocada principalmente alrededor del Deep Learning (DL), fundamentalmente cercano a la parte supervisada.
+Asignatura enfocada principalmente alrededor del Deep Learning (DL), fundamentalmente cercano a la parte supervisada. Continuación de [[Aprendizaje Automático I]]
 ## Evaluación
 - 4 ejercicios prácticos (10%) - No reevaluable
 	- 20 oct tema 1 y 2
