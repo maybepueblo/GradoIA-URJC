@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -135,7 +135,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -218,10 +219,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d56d2c30fd7ea1c4",
+  "active": "54be4b77a547270a",
   "lastOpenFiles": [
-    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
     "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
+    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
     "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
     "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
     "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",

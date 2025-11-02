@@ -18,11 +18,11 @@ La función de pérdida la podemos construir asumiendo una distribución de prob
 
 La optimización generalmente consiste en minimizar el logaritmo negativo de la verosimilitud.
 
-| Problema                 | Distribución Asumida | Función de Activación de Salida                   | Pérdida Resultante                                   |
-| ------------------------ | -------------------- | ------------------------------------------------- | ---------------------------------------------------- |
-| Regresión Univariante    | Normal (Gaussiana)   | Ninguna (salida continua)                         | **Error Cuadrático Medio (MSE)** - Mínimos cuadrados |
-| Clasificación Binaria    | Bernoulli            | **Sigmoide** (para obtener p $\in$)               | **Entropía Cruzada Binaria (BCE)**                   |
-| Clasificación Multiclase | Categórica           | Softmax (para obtener probabilidades que sumen 1) | **Entropía Cruzada Multiclase**                      |
+| Problema                 | Distribución Asumida | Función de Activación de Salida                   | Pérdida Resultante                                                                                                 |
+| ------------------------ | -------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Regresión Univariante    | Normal (Gaussiana)   | Ninguna (salida continua)                         | **Error Cuadrático Medio (MSE)** - Mínimos cuadrados                                                               |
+| Clasificación Binaria    | Bernoulli            | **Sigmoide** (para obtener p $\in$)               | **Entropía Cruzada Binaria (BCE)**<br>$$L(y, \hat{y}) = -y \cdot \log(\hat{y}) - (1 - y) \cdot \log(1 - \hat{y})$$ |
+| Clasificación Multiclase | Categórica           | Softmax (para obtener probabilidades que sumen 1) | **Entropía Cruzada Multiclase**                                                                                    |
 
 **Funciones de pérdida para regresión** (valores continuos)
 1. **Error Cuadrático Medio (MSE) / $L_2$ Loss**: $L(y,\hat{y})=(y-\hat{y})²$. Es la más sensible a **outliers (desvíos significativos del patrón general y del resto de datos)** 
