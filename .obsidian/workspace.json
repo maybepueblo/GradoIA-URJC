@@ -13,15 +13,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
+                "file": "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 4 - Redes de neuronas"
+              "title": "Tema 1 - Introducción a ML II"
+            }
+          },
+          {
+            "id": "54be4b77a547270a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 2 - Optimización y regularización de la pérdida esperada"
+            }
+          },
+          {
+            "id": "33c7b45118560c0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 3 - Combinación de estimadores"
+            }
+          },
+          {
+            "id": "d92af24535702f40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 3 - Combinación de estimadores"
+            }
+          },
+          {
+            "id": "d56d2c30fd7ea1c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fundamento matemático Primer Examen"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -78,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -162,14 +218,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6baa3ef595bcc922",
+  "active": "d56d2c30fd7ea1c4",
   "lastOpenFiles": [
-    "3º/1º cuatri/ML II/Árboles de Decisión.md",
-    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
+    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
+    "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
     "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
     "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
     "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
-    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
+    "3º/1º cuatri/ML II/Árboles de Decisión.md",
+    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
     "3º/1º cuatri/AB II/Tema 5 - Simulated Annealing.md",
     "3º/1º cuatri/RCR I/Tema 3 - Repaso de lógica de predicados.md",
     "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
@@ -192,7 +249,6 @@
     "Pasted image 20251015122706.png",
     "3º/1º cuatri/AB II/Tema 1 - Introducción a la optimización.md",
     "3º/1º cuatri/AB II/Bonus 2 - Introducción al lenguaje Java.md",
-    "3º/1º cuatri/IS/Tema 4 - Diseño software y modelado.md",
     "3º/2º cuatri/RCR II/R",
     "4º/2º cuatri/AIA",
     "4º/2º cuatri",
