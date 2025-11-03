@@ -25,14 +25,14 @@ La optimización generalmente consiste en minimizar el logaritmo negativo de la 
 | Clasificación Multiclase | Categórica           | Softmax (para obtener probabilidades que sumen 1) | **Entropía Cruzada Multiclase**                                                                                    |
 
 **Funciones de pérdida para regresión** (valores continuos)
-1. **Error Cuadrático Medio (MSE) / $L_2$ Loss**: $L(y,\hat{y})=(y-\hat{y})²$. Es la más sensible a **outliers (desvíos significativos del patrón general y del resto de datos)** 
+1. **Error Cuadrático Medio (MSE) / $L_2$ Loss**: $L(y,\hat{y})=(y-\hat{y})²$. 
 2. **Error Absoluto Medio (MAE) / $L_1$ Loss**: $L(y,\hat{y})=|y-\hat{y}|$. Penaliza fundamentalmente los errores pequeños (comparado con MSE)
 3. **Huber / Smooth $L_1$**: Combina $L_2$ para errores pequeños y $L_1$ para errores grandes.
 
 **Funciones de pérdida basadas en el margen** (clasificación $y\in\{1,-1\}$)
  El margen es $y_i·f(x_i;Φ)$ siendo positivo si la predicción es correcta y negativo si es incorrecta.
  - **Pérdida 0/1-Loss**: $L_{0-1} = I(y·f(x;Φ)<0).$ Es 1 si se falla, 0 si se acierta
- - **Pérdida exponencial ($L_{exp}$):** $e^{-y·f(x;Φ)}$. Utilizada por **AdaBoost** 
+ - **Pérdida exponencial ($L_{exp}$):** $e^{-y·f(x;Φ)}$. Utilizada por **AdaBoost**. Es la más sensible a **outliers (desvíos significativos del patrón general y del resto de datos)** 
  - **Pérdida Hinge ($L_{Hinge}$)**: $max(0,1-y·f(x;Φ))$.
 ## Entrenamiento de modelos
 
