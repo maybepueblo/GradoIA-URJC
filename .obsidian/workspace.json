@@ -13,86 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
+                "file": "3º/1º cuatri/RCR I/Tema 4 - Lógica de descripciones.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 3 - Combinación de estimadores"
-            }
-          },
-          {
-            "id": "54be4b77a547270a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tema 2 - Optimización y regularización de la pérdida esperada"
-            }
-          },
-          {
-            "id": "33c7b45118560c0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tema 3 - Combinación de estimadores"
-            }
-          },
-          {
-            "id": "6aba33cf2705711b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º/1º cuatri/ML II/Árboles de Decisión.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Árboles de Decisión"
-            }
-          },
-          {
-            "id": "e25772bdfe6fdc38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tema 4 - Redes de neuronas"
-            }
-          },
-          {
-            "id": "d56d2c30fd7ea1c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fundamento matemático Primer Examen"
+              "title": "Tema 4 - Lógica de descripciones"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -232,37 +162,37 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "54be4b77a547270a",
+  "active": "6baa3ef595bcc922",
   "lastOpenFiles": [
-    "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
-    "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
-    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
-    "3º/1º cuatri/ML II/Árboles de Decisión.md",
-    "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
-    "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
-    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
-    "3º/1º cuatri/AB II/Tema 5 - Simulated Annealing.md",
-    "3º/1º cuatri/RCR I/Tema 3 - Repaso de lógica de predicados.md",
     "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
-    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
+    "3º/1º cuatri/RCR I/Tema 4 - Lógica de descripciones.md",
+    "3º/1º cuatri/RCR I/Tema 3 - Repaso de lógica de predicados.md",
+    "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
+    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
+    "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
+    "3º/1º cuatri/ML II/Árboles de Decisión.md",
+    "3º/1º cuatri/RCR I/Tema 5 - OWL.md",
     "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
+    "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
+    "3º/1º cuatri/AB II/Tema 2 - Introducción a las heurísticas y metaheurísticas.md",
+    "3º/1º cuatri/AB II/Tema 8 - Introducción a los métodos de inteligencia de enjambres.md",
+    "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
+    "3º/1º cuatri/AB II/Bonus - Introducción a la POO.md",
+    "3º/1º cuatri/AB II/Tema 7 - Scatter Search y Path Relinking.md",
+    "3º/1º cuatri/AB II/Tema 6 - Variable Neighborhood Search.md",
+    "3º/1º cuatri/AB II/Tema 5 - Simulated Annealing.md",
+    "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
+    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
+    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
     "3º/1º cuatri/IACO/Inteligencia Ambiental y Computación Obicua.md",
     "3º/1º cuatri/IACO/Resumen General.md",
     "Untitled 4.md",
     "Untitled 3.md",
     "Untitled 2.md",
     "Untitled 1.md",
-    "Untitled.md",
-    "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
-    "3º/1º cuatri/AB II/Tema 4 - Tabu Search.md",
-    "3º/1º cuatri/AB II/Tema 3 - Métodos constructivos.md",
     "3º/1º cuatri/AB II/Images/EsquemaGeneralTabuSearch.png",
     "3º/1º cuatri/AB II/Images",
-    "3º/1º cuatri/AB II/Tema 2 - Introducción a las heurísticas y metaheurísticas.md",
-    "3º/1º cuatri/AB II/Bonus - Introducción a la POO.md",
     "Pasted image 20251015122706.png",
-    "3º/1º cuatri/AB II/Tema 1 - Introducción a la optimización.md",
-    "3º/1º cuatri/AB II/Bonus 2 - Introducción al lenguaje Java.md",
     "3º/2º cuatri/RCR II/R",
     "4º/2º cuatri/AIA",
     "4º/2º cuatri",
