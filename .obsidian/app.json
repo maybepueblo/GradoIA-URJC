@@ -3,7 +3,10 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "pdfExportSettings": {
+<<<<<<< HEAD
     "includeName": true,
+=======
+>>>>>>> e84a6abf23886be828469d3585f6292700405f30
     "pageSize": "Letter",
     "landscape": false,
     "margin": "0",

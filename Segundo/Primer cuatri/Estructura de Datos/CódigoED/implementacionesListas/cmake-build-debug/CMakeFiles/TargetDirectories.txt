@@ -1,3 +1,0 @@
-C:/Users/pablo/Documents/Código Universidad/CLionProyects/implementacionesListas/cmake-build-debug/CMakeFiles/implementacionesListas.dir
-C:/Users/pablo/Documents/Código Universidad/CLionProyects/implementacionesListas/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/pablo/Documents/Código Universidad/CLionProyects/implementacionesListas/cmake-build-debug/CMakeFiles/rebuild_cache.dir

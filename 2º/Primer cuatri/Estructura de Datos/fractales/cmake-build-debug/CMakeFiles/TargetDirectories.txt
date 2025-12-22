@@ -1,0 +1,3 @@
+/home/maybepueblo/Documents/Código Universidad/CLionProyects/fractales/cmake-build-debug/CMakeFiles/fractales.c.dir
+/home/maybepueblo/Documents/Código Universidad/CLionProyects/fractales/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/maybepueblo/Documents/Código Universidad/CLionProyects/fractales/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,19 @@
+# ninja log v6
+23	39	1730314532795979137	implementacionesListas	2cedd60a9265a335
+0	13	7587603982959880	build.ninja	d23c996f11da5656
+42	168	7587624545692038	CMakeFiles/implementacionesListas.dir/tListaCircular.c.obj	483daf7ee295216d
+48	174	7587624545751212	CMakeFiles/implementacionesListas.dir/tListaCircularCabecera.c.obj	33a7f1b10e2300ca
+56	175	7587624545829312	CMakeFiles/implementacionesListas.dir/tListaDoubleEnlazada.c.obj	271f0a32dfbcf79f
+24	206	7587624545523668	CMakeFiles/implementacionesListas.dir/tElemento.c.obj	79d47c9dd7508e78
+18	207	7587624545461358	CMakeFiles/implementacionesListas.dir/main.c.obj	17373632486b8373
+35	221	7587624545629757	CMakeFiles/implementacionesListas.dir/tListaOrdenada.c.obj	32f3f8366349db4d
+30	222	7587624545577344	CMakeFiles/implementacionesListas.dir/tListaEnlazadaSimple.c.obj	c965c39b0caa9812
+62	240	7587624545894171	CMakeFiles/implementacionesListas.dir/tListaDoubleEnlazadaPunteroInitEnd.c.obj	55e053e986688073
+240	359	7587624547671688	implementacionesListas.exe	5e6dd7ab359e450c
+20	114	7587624876187386	CMakeFiles/implementacionesListas.dir/main.c.obj	17373632486b8373
+114	230	7587624877122723	implementacionesListas.exe	5e6dd7ab359e450c
+4	100	7587626457177548	CMakeFiles/implementacionesListas.dir/tListaOrdenada.c.obj	32f3f8366349db4d
+101	215	7587626458137567	implementacionesListas.exe	5e6dd7ab359e450c
+4	108	7587626922943424	implementacionesListas.exe	5e6dd7ab359e450c
+9	116	7587630184037314	CMakeFiles/implementacionesListas.dir/tListaOrdenada.c.obj	32f3f8366349db4d
+116	235	7587630185111056	implementacionesListas.exe	5e6dd7ab359e450c
