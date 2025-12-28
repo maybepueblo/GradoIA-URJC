@@ -1,42 +1,28 @@
-## Herramientas y aplicaciones
-### Frameworks
-Bibliotecas y entornos de programación que permiten crear, manipular y consultar grafos RDF y ontologías. Proporcionan APIs para integrar la Web Semántica en aplicaciones reales.
+## 1. El "Taller": Herramientas de desarrollo
+En nuestro [[Tema 1 - Grafos de conocimiento]] aprendimos a escribir código RDF a mano (con Turtle). Pero en el mundo real, si tienes millones de datos, no lo haces a mano. Usas **Frameworks** (programadores) y **Editores** (diseñadores). 
+### A. Frameworks (programmer focused)
+Son librerías de código que te permiten crear aplicaciones que "hablan" Web Semántica. Son cajas de herramientas para construir sin tener que fabricar tú mismo todo.
 
-**Importancia**
-- Facilitan el desarrollo de aplicaciones semánticas sin implementar todo desde cero
-- Son la base técnica para crear herramientas, portales de datos abiertos y sistemas de razonamiento.
+| Herramienta     | Lenguaje | Uso                                                                                                    |
+| --------------- | -------- | ------------------------------------------------------------------------------------------------------ |
+| **RDFLib**      | Python   | Fácil de usar para leer, escribir y consultar grafos pequeños o medianos.                              |
+| **Apache Jena** | Java     | Incluye su propia base de datos (TDB) y un motor muy potente para hacer consultas SPARQL (llamado ARQ) |
+| **OWL API**     | Java     | Especializada en lógica compleja (OWL). Usada cuando quieres hacer razonamiento complicado             |
+| **RDF4J**       | Java     | Framework modular estándar para manejar bases de datos RDF.                                            |
 
-**Usos**
-- Construcción de grafos RDF
-- Ejecución de consultas SPARQL
-- Carga y exportación de ontologías en distintos formatos
-- Creación de APIs semánticas para integrar datos en aplicaciones
+### B. Editores de Ontologías (human focused)
+En vez de programar, existen interfaces gráficas (ventanas, menús). Usamos un editor.
+- **Protégé:** Estándar mundial. Permite dibujar las clases, las fechas y las reglas sin escribir una sola línea de código.
+	- *Uso*: Crear ontologías, comprobar si tienen errores lógicos (consistencia) y exportarlas a OWL/Turtle
+## 2. Linked Data (Web de Datos)
+Aquí se hace global. Tim Berners-Lee definió los 4 **Principios de Linked Data** para publicar datos en la web. Si cumples esto, tus datos son perfectos.
 
-**Ejemplos principales**
-- **RDFLib** - Creación de grafos RDF, lectura/escritura en Turtle, RDF/XML, N-Triples, consultas SPARQL
-- **Apache Jena** - Motor SPARQL (ARQ), almacenamiento de triples (TDB), razonadores básicos
-- **OWL API** - Enfocado en ontologías OWL, usado en edición y razonamiento
-- **RDF4J** - Framework modular para RDF, compatible con SPARQL y Linked Data
-### Editores de Ontologías
-Aplicaciones gráficas que permiten diseñar, visualizar y modificar ontologías de manera intuitiva
-
-**Importancia**
-- Sin editores, sería muy complejo escribir manualmente ficheros RDF/OWL
-- Permiten a expertos no técnicos colaborar en la construcción de ontologías
-- Integran razonadores para verificar consistencia
-
-**Usos**
-- Crear ontologías desde cero
-- Extender vocabularios existentes
-- Documentar y mantener ontologías
-- Docencia
-
-**Ejemplo principal**
-- **Protégé** (Stanford)
-	- Más usado nivel mundial
-	- RDF, RDFS y OWL
-	- Visualización en grafo, formularios de edición y verificación de consistencia
-	- Extensible con plugins
+Los 4 Mandamientos:
+1. **Usar URIs como nombre:** Todo debe tener un identificador único (como un DNI web). No vale decir "Madrid", hay que decir `http://dbpedia.org/resource/Madrid`.
+2. **Usar HTTP:** Esas URIs deben ser direcciones web reales. Si yo pego esa dirección en mi navegador, tengo que encontrar algo.
+3. **Usar estándares (RDF/SPARQL):** Cuando alguien visite esa dirección, la información debe estar en un formato útil (RDF), no solo en texto plano.
+4. **Incluir Enlaces:** Los datos deben apuntar a los datos de otras personas.
+	- *Ejemplo*: Una base de datos "Profesores" debe tener un enlace a la base de datos de "Universidades"de la DBpedia. Así se crea la red gigante.
 ### Razonadores ontológicos
 Aplicadores de lógica descriptiva sobre ontologías RDF/OWL para derivar conocimiento implícito.
 
@@ -227,38 +213,42 @@ Metadatos para describir recursos
   wot:hasPropertyAffordance :brightness ;
   wot:hasActionAffordance :turnOn, :turnOff .
 ```
-## La Web de Datos (Linked Data)
-### Principios de Linked Data
-1. Usar IRIs para identificar cosas
-2. Usar HTTP para acceder a esas IRIs
-3. Proporcionar información útil usando estándares
-4. Incluir enlaces a otras IRIs
-### Fuentes de datos destacadas
-- DBpedia - datos estructurados de wikipedia
-- Wikidata - base de conocimiento colaborativa y multilingüe
-- Datos abiertos - gobierno de españa, ayuntamiento de madrid, etc.
-### Ejemplo DBpedia
-- SPARQL Endpoint https://dbpedia.org/sparql
-- Ejemplo de consulta para obtener porteros de fútbol con condiciones específicas
-### Ejemplo Wikidata
-- **Elementos clave**
-	- **Items (Q)** tienen identificadores únicos
-	- **Propiedades (P)** relaciones
-- **Consulta SPARQL** ejemplo:
-```sparql
+## DBpedia vs Wikidata
+Existen bases de datos masivas que ya describen el mundo (ciudades, famosos, peliculas...). Las dos más importantes son estas.
+### A. DBpedia: Wikipedia
+Primer gran proyecto con limitaciones.
+- Funciona con un bot que lee "**infoboxes**" (cuadros de resumen a la derecha de los artículos de Wikipedia) y los traduce automáticamente a RDF.
+- El problema es que es un volcado estático. Si wikipedia cambia hoy, DBpedia no se entera hasta que vuelva a pasar el bot. Además, si se escribe mal la infobox, DBpedia tendrá errores.
+### B. Wikidata
+Base de datos creada para ser leída por máquinas y humanos a la par. Hermana de Wikipedia pero independiente.
+- Los usuarios editan los datos directamente en formato estructurado
+- Wikidata no usa palabras en inglés o español para definir las cosas, usa **códigos**
+	- **Items (Q)** Las cosas (Sujetos). *Ej* `Q220292344` es Star Wars
+	- **Properties (P)** Las relaciones (Predicados). *Ej* `P179` es "parte de la serie"
+- Como usa códigos, la interfaz lo traduce automáticamente a tu idioma.
+
+|**Característica**|**DBpedia**|**Wikidata**|
+|---|---|---|
+|**Origen**|Extraído automáticamente de Wikipedia.|Editado manualmente por usuarios (como una wiki).|
+|**Actualización**|Lenta (depende de cuándo extraigan los datos).|**Tiempo real** (si cambias un dato, se refleja al instante).|
+|**Estructura**|Ontología fija basada en las infoboxes.|Flexible (Declaraciones con referencias).|
+|**Idiomas**|Centrado en versiones por idioma (DBpedia en español, en inglés...).|**Nativo Multilingüe** (un solo código Q sirve para todos).|
+|**Identificadores**|`dbpedia:Madrid`|`wd:Q2807` (Madrid)|
+### Ejemplo práctico: Consulta en WikiData
+Si quisiésemos buscar en Wikidata películas de la saga Star Wars, se vería así.
+
+>[!NOTE]
+>En wikidata el prefijo para propiedades es `wdt:` y para items es `wd:`
+
+```SPARQL
 SELECT ?item ?itemLabel
 WHERE {
-  ?item wdt:P179 wd:Q22092344.  # Part of the series "Star Wars"
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+	# Buscamos items (?item) que tengan la propiedad P179 
+	# y cuyo valor sea Q22092344 (Star Wars)
+	?item wdt:P179 wd:Q22092344
+	
+	# Servicio de wikidata
+	# devuelve el nombre en texto automáticamente (?itemLabel)
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "      [AUTO_LANGUAGE], en". }
 }
 ```
-### Comparativa DBpedia vs Wikidata
-
-| Aspecto        | DBpedia                      | Wikidata                                |
-| -------------- | ---------------------------- | --------------------------------------- |
-| Origen         | Extraído de wikipedia (2007) | Proyecto de wikimedia (2012)            |
-| Fuente         | Infoboxes de wikipedia       | Contribuciones directas                 |
-| Modelo         | RDF con odontología fija     | Declaraciones flexibles con referencias |
-| Multilingüismo | Limitado                     | Multilingüe por diseño                  |
-| Actualización  | Automática, menos frecuente  | Manual y en tiempo real                 |
-
