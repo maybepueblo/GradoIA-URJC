@@ -8,33 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6baa3ef595bcc922",
+            "id": "729c5fdab2524a49",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/1º cuatri/ML II/Introducción a PyTorch.md",
+                "file": "3º/1º cuatri/RCR I/Tema 3 - Lógica.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introducción a PyTorch"
-            }
-          },
-          {
-            "id": "729c5fdab2524a49",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.6"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.6"
+              "title": "Tema 3 - Lógica"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -174,20 +161,22 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "46f4ec8ce7b1f762",
+  "active": "729c5fdab2524a49",
   "lastOpenFiles": [
+    "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
+    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
+    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
+    "Untitled.md",
     "Práctica Mates.md",
     "práctica.md",
     "3º/1º cuatri/ML II/Introducción a PyTorch.md",
     "3º/1º cuatri/RCR I/Tema 4 - Lógica de descripciones.md",
-    "3º/1º cuatri/RCR I/Tema 3 - Repaso de lógica de predicados.md",
+    "3º/1º cuatri/RCR I/Tema 3 - Lógica.md",
     "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
     "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
-    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
     "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
     "3º/1º cuatri/ML II/Árboles de Decisión.md",
     "3º/1º cuatri/RCR I/Tema 5 - OWL.md",
-    "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
     "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
     "3º/1º cuatri/AB II/Tema 2 - Introducción a las heurísticas y metaheurísticas.md",
     "3º/1º cuatri/AB II/Tema 8 - Introducción a los métodos de inteligencia de enjambres.md",
@@ -198,10 +187,8 @@
     "3º/1º cuatri/AB II/Tema 5 - Simulated Annealing.md",
     "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
     "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
-    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
     "3º/1º cuatri/IACO/Inteligencia Ambiental y Computación Obicua.md",
     "3º/1º cuatri/IACO/Resumen General.md",
-    "Untitled 4.md",
     "3º/1º cuatri/AB II/Images/EsquemaGeneralTabuSearch.png",
     "3º/1º cuatri/AB II/Images",
     "Pasted image 20251015122706.png",

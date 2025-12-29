@@ -3,7 +3,7 @@
 - [[Tema 1 - Grafos de conocimiento]]
 - [[Tema 2 - Aplicaciones]]
 ### Módulo 2: Lógica y Ontologías
-- [[Tema 3 - Repaso de lógica de predicados]]
+- [[Tema 3 - Lógica]]
 - [[Tema 4 - Lógica de descripciones]]
 - [[Tema 5 - OWL]]
 ### Módulo 3: Extensiones de la lógica clásica

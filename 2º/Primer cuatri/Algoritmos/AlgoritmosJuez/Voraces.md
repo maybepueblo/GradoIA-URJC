@@ -286,7 +286,6 @@ def greedyBag(objetos, N):
         else:  
             proportion = (N - peso_actual) / obj[2]  
             profit += proportion * obj[1]  
-            cost = N  
             backpack[obj[3]] = proportion  
         objeto_actual += 1  
     return profit, backpack
