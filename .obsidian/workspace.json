@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c2ba0eb7a2b9b631",
+        "id": "ea968216b657877b",
         "type": "tabs",
         "children": [
           {
-            "id": "729c5fdab2524a49",
+            "id": "34bf5d1db0152b7c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/1º cuatri/RCR I/Tema 3 - Lógica.md",
+                "file": "3º/1º cuatri/RCR I/Tema 5 - OWL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 3 - Lógica"
+              "title": "Tema 5 - OWL"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -161,53 +162,53 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "729c5fdab2524a49",
+  "active": "34bf5d1db0152b7c",
   "lastOpenFiles": [
-    "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
-    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
-    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
-    "Untitled.md",
-    "Práctica Mates.md",
-    "práctica.md",
-    "3º/1º cuatri/ML II/Introducción a PyTorch.md",
     "3º/1º cuatri/RCR I/Tema 4 - Lógica de descripciones.md",
+    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
     "3º/1º cuatri/RCR I/Tema 3 - Lógica.md",
-    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
-    "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
-    "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
-    "3º/1º cuatri/ML II/Árboles de Decisión.md",
-    "3º/1º cuatri/RCR I/Tema 5 - OWL.md",
-    "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
-    "3º/1º cuatri/AB II/Tema 2 - Introducción a las heurísticas y metaheurísticas.md",
-    "3º/1º cuatri/AB II/Tema 8 - Introducción a los métodos de inteligencia de enjambres.md",
-    "3º/1º cuatri/AB II/Algoritmos de Búsqueda II.md",
-    "3º/1º cuatri/AB II/Bonus - Introducción a la POO.md",
-    "3º/1º cuatri/AB II/Tema 7 - Scatter Search y Path Relinking.md",
-    "3º/1º cuatri/AB II/Tema 6 - Variable Neighborhood Search.md",
-    "3º/1º cuatri/AB II/Tema 5 - Simulated Annealing.md",
-    "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
-    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
-    "3º/1º cuatri/IACO/Inteligencia Ambiental y Computación Obicua.md",
-    "3º/1º cuatri/IACO/Resumen General.md",
-    "3º/1º cuatri/AB II/Images/EsquemaGeneralTabuSearch.png",
-    "3º/1º cuatri/AB II/Images",
-    "Pasted image 20251015122706.png",
-    "3º/2º cuatri/RCR II/R",
+    "3º/1º cuatri/ML II/Introducción a PyTorch.md",
+    "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
+    "3º/1º cuatri/RCR I/Tema 3 - Repaso de lógica de predicados.md",
+    "4º/2º cuatri/AIA/Aplicaciones de la Inteligencia Artificial.md",
+    "Untitled.md",
     "4º/2º cuatri/AIA",
     "4º/2º cuatri",
-    "Primero/Untitled",
     "4º",
-    "3º/2º cuatri/PLN I",
-    "3º/2º cuatri/Multi-agente",
-    "3º/2º cuatri/RCR II",
-    "3º/2º cuatri/Robotica",
-    "2º/Segundo cuatri/Algoritmos de Búsqueda I/Image/hipergrafo criptoaritmética.png",
-    "2º/Segundo cuatri/Algoritmos de Búsqueda I/Image/grafo 4-reinas.png",
-    "2º/Segundo cuatri/Algoritmos de Búsqueda I/Image/modelado sudoku vacío.png",
-    "2º/Segundo cuatri/Aprendizaje Automático I/Imágenes/Cambio de base PCA.png",
-    "2º/Segundo cuatri/Aprendizaje Automático I/Imágenes/Ejemplo 3 dimensiones PCA.png",
-    "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/a-b-c.png",
-    "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación dinámica árbol.png",
-    "2º/Primer cuatri/Estructura de Datos/Imágenes - Excalidraw/Implementación estática árbol.png"
+    "3º/1º cuatri/ML II/ML2CodigoyEntregables/PrácticaExamen1/Untitled.ipynb",
+    "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_53.html",
+    "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_38.html",
+    "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_35.html",
+    "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_37.html",
+    "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_36.html",
+    "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_34.html",
+    "3º/1º cuatri/AB II/Images/EsquemaGeneralTabuSearch.png",
+    "3º/1º cuatri/RCR I/Tema 5 - OWL.md",
+    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
+    "3º/1º cuatri/ML II/Árboles de Decisión.md",
+    "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
+    "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
+    "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
+    "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
+    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
+    "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
+    "3º/1º cuatri/IS/Tema 5 - Diseño de sistemas basados en conocimiento.md",
+    "3º/1º cuatri/IS/Tema 3 - Análisis de requisitos.md",
+    "3º/1º cuatri/IS/Tema 1 - Introducción a IS.md",
+    "3º/1º cuatri/IS/Tema 2 - Ciclos de vida y procesos de desarrollo software.md",
+    "3º/1º cuatri/IS/Tema 4 - Diseño software y modelado.md",
+    "3º/1º cuatri/IS/Ingeniería del Software.md",
+    "3º/1º cuatri/IACO/udpSoket.md",
+    "3º/1º cuatri/IACO/Tema 2 - Arquitecturas.md",
+    "3º/1º cuatri/IACO/Tema 1 - Introducción a IACO.md",
+    "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/mandelbrotInverso.bmp",
+    "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/mandelbrot.bmp",
+    "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/gradiente.bmp",
+    "2º/Segundo cuatri/Estructura de Datos II/Images/Configuraciones Caso 1.png",
+    "2º/Segundo cuatri/Bases de Datos/ImágenesBD/EjGen_Esp.png",
+    "2º/Segundo cuatri/Bases de Datos/ImágenesBD/Pasted image 20250226115838.png",
+    "2º/Segundo cuatri/Bases de Datos/ImágenesBD/Ejercicio 2 Hoja 1 BD.png",
+    "2º/Segundo cuatri/Bases de Datos/ImágenesBD/Ejemplo1.png",
+    "2º/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar planos.png"
   ]
 }
