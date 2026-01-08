@@ -29,7 +29,7 @@ Es importante situarse. OWL no funciona solo, se apoya en los anteriores:
 ---
 ## 3. Vocabulario Especial de OWL
 
-OWL añade palabras clave nuevas para expresar lo que RDFS no podía. Aquí tienes las más importantes explicadas:
+OWL añade palabras clave nuevas para expresar lo que RDFS no podía. Aquí están las más importantes explicadas:
 ### A. Identidad (¿Eres tú o soy yo?) 
 
 En la web, diferentes personas pueden llamar a la misma cosa con nombres distintos. OWL nos permite unificarlos.
