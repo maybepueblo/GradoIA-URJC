@@ -8,7 +8,63 @@
         "type": "tabs",
         "children": [
           {
-            "id": "34bf5d1db0152b7c",
+            "id": "68e9c141bb34c600",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 1 - Grafos de conocimiento"
+            }
+          },
+          {
+            "id": "a208e32e64e12ca7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 2 - Aplicaciones"
+            }
+          },
+          {
+            "id": "bcfd22e0dd618899",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/RCR I/Tema 3 - Lógica.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 3 - Lógica"
+            }
+          },
+          {
+            "id": "c09061aacc61182f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/RCR I/Tema 4 - Lógica de descripciones.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 4 - Lógica de descripciones"
+            }
+          },
+          {
+            "id": "5c4f87624250caad",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,8 +76,37 @@
               "icon": "lucide-file",
               "title": "Tema 5 - OWL"
             }
+          },
+          {
+            "id": "02f1cffe867c32e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/RCR I/Tema 6 - Cálculo de eventos y situaciones.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 6 - Cálculo de eventos y situaciones"
+            }
+          },
+          {
+            "id": "96487c41dbced7db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/RCR I/Tema 7 - Lógicas Modales.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 7 - Lógicas Modales"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -161,17 +246,19 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "34bf5d1db0152b7c",
+  "active": "02f1cffe867c32e4",
   "lastOpenFiles": [
-    "3º/1º cuatri/RCR I/Tema 4 - Lógica de descripciones.md",
+    "3º/1º cuatri/RCR I/Tema 7 - Lógicas Modales.md",
+    "3º/1º cuatri/RCR I/Tema 6 - Cálculo de eventos y situaciones.md",
     "3º/1º cuatri/RCR I/Tema 5 - OWL.md",
-    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
+    "3º/1º cuatri/RCR I/Tema 4 - Lógica de descripciones.md",
     "3º/1º cuatri/RCR I/Tema 3 - Lógica.md",
-    "3º/1º cuatri/ML II/Introducción a PyTorch.md",
+    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
     "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
+    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
+    "3º/1º cuatri/ML II/Introducción a PyTorch.md",
     "3º/1º cuatri/RCR I/Tema 3 - Repaso de lógica de predicados.md",
     "4º/2º cuatri/AIA/Aplicaciones de la Inteligencia Artificial.md",
-    "Untitled.md",
     "4º/2º cuatri/AIA",
     "4º/2º cuatri",
     "4º",
@@ -183,7 +270,6 @@
     "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_36.html",
     "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_34.html",
     "3º/1º cuatri/AB II/Images/EsquemaGeneralTabuSearch.png",
-    "3º/1º cuatri/RCR I/Representación del Conocimiento y Razonamiento I.md",
     "3º/1º cuatri/ML II/Árboles de Decisión.md",
     "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
     "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
@@ -199,7 +285,6 @@
     "3º/1º cuatri/IS/Ingeniería del Software.md",
     "3º/1º cuatri/IACO/udpSoket.md",
     "3º/1º cuatri/IACO/Tema 2 - Arquitecturas.md",
-    "3º/1º cuatri/IACO/Tema 1 - Introducción a IACO.md",
     "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/mandelbrotInverso.bmp",
     "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/mandelbrot.bmp",
     "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/gradiente.bmp",
