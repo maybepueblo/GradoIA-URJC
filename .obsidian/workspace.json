@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tema 7 - Aspectos avanzados.md",
+                "file": "3º/1º cuatri/ML II/Tema 7 - Aspectos avanzados.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Tema 7 - Aspectos avanzados"
             }
+          },
+          {
+            "id": "13d09568622bcf76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/ML II/Tema 5 - Redes de neuronas profundas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 5 - Redes de neuronas profundas"
+            }
+          },
+          {
+            "id": "2b7f2dc65d09ed22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/ML II/Tema 6 - Redes convolucionales.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 6 - Redes convolucionales"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -162,15 +190,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "02f1cffe867c32e4",
+  "active": "2b7f2dc65d09ed22",
   "lastOpenFiles": [
-    "Tema 7 - Aspectos avanzados.md",
+    "3º/1º cuatri/ML II/Tema 5 - Redes de neuronas profundas.md",
+    "3º/1º cuatri/ML II/Tema 7 - Aspectos avanzados.md",
     "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
     "3º/1º cuatri/ML II/Árboles de Decisión.md",
     "3º/1º cuatri/ML II/Tema 6 - Redes convolucionales.md",
     "Untitled 1.md",
     "Untitled.md",
-    "3º/1º cuatri/ML II/Tema 5 - Redes de neuronas profundas.md",
     "3º/1º cuatri/ML II/Untitled.md",
     "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
     "3º/1º cuatri/RCR I/Tema 6 - Cálculo de eventos y situaciones.md",
