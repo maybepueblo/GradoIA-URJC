@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/1º cuatri/ML II/Tema 6 - Redes convolucionales.md",
+                "file": "Tema 7 - Aspectos avanzados.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 6 - Redes convolucionales"
+              "title": "Tema 7 - Aspectos avanzados"
             }
           }
         ]
@@ -164,10 +164,12 @@
   },
   "active": "02f1cffe867c32e4",
   "lastOpenFiles": [
+    "Tema 7 - Aspectos avanzados.md",
+    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
+    "3º/1º cuatri/ML II/Árboles de Decisión.md",
     "3º/1º cuatri/ML II/Tema 6 - Redes convolucionales.md",
     "Untitled 1.md",
     "Untitled.md",
-    "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
     "3º/1º cuatri/ML II/Tema 5 - Redes de neuronas profundas.md",
     "3º/1º cuatri/ML II/Untitled.md",
     "3º/1º cuatri/ML II/Tema 4 - Redes de neuronas.md",
@@ -193,14 +195,12 @@
     "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_36.html",
     "3º/1º cuatri/ML II/ML2CodigoyEntregables/iframe_figures/figure_34.html",
     "3º/1º cuatri/AB II/Images/EsquemaGeneralTabuSearch.png",
-    "3º/1º cuatri/ML II/Árboles de Decisión.md",
     "3º/1º cuatri/ML II/Tema 3 - Combinación de estimadores.md",
     "3º/1º cuatri/ML II/Tema 2 - Optimización y regularización de la pérdida esperada.md",
     "3º/1º cuatri/ML II/Tema 1 - Introducción a ML II.md",
     "3º/1º cuatri/ML II/Fundamento matemático Primer Examen.md",
     "3º/1º cuatri/IS/Tema 5 - Diseño de sistemas basados en conocimiento.md",
     "3º/1º cuatri/IS/Tema 3 - Análisis de requisitos.md",
-    "3º/1º cuatri/IS/Tema 1 - Introducción a IS.md",
     "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/mandelbrotInverso.bmp",
     "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/mandelbrot.bmp",
     "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/gradiente.bmp",

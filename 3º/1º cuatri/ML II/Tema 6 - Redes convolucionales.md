@@ -6,7 +6,7 @@ Problemas de las MLPs para imágenes:
 2. **Pérdida de estructura espacial:** En una MLP, se podría permutar aleatoriamente el orden de los píxeles y reentrenar la red obteniendo los mismos resultados, lo que indica que **no aprovecha la correlación estadística entre píxeles cercanos**
 3. **Inestabilidad a transformaciones:** Las MLPs no son estables ante traslaciones u otras transformaciones geométricas; se necesitaría entrenar con el objeto en todas las posiciones posibles para que la red lo conozca.
 
-<u>La solución: **Redes Convolucionales (CNNs)**</u>
+<u>La solución: <b>Redes Convolucionales (CNNs)</b></u>
 Las CNNs resuelven esto basándose en dos principios:
 - **Conectividad local:** Los parámetros (pesos) solo afectan a una región rectangular local de la imagen
 - **Compartición de pesos (Weight Sharing):** Se usan los mismos parámetros para todas las regiones de la imagen, asumiendo que una característica útil en una esquina lo es también en el centro.
