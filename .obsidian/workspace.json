@@ -49,7 +49,8 @@
               "title": "Tema 7 - Aspectos avanzados"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -189,11 +191,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "13d09568622bcf76",
+  "active": "2b7f2dc65d09ed22",
   "lastOpenFiles": [
+    "3º/1º cuatri/ML II/Tema 7 - Aspectos avanzados.md",
     "3º/1º cuatri/ML II/Tema 6 - Redes convolucionales.md",
     "3º/1º cuatri/ML II/Tema 5 - Redes de neuronas profundas.md",
-    "3º/1º cuatri/ML II/Tema 7 - Aspectos avanzados.md",
     "3º/1º cuatri/ML II/Aprendizaje Automático II.md",
     "3º/1º cuatri/ML II/Árboles de Decisión.md",
     "Untitled 1.md",

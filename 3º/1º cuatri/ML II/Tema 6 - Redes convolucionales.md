@@ -38,6 +38,8 @@ En términos de producto escalar, es la proyección del filtro sobre una ventana
 
 **Cálculo de dimensiones**
 Para una entrada de tamaño $D_{in}$, kernel $K$, padding $P$ y stride $S$, el tamaño de salida $D_{out}$ es:$$D_{out}=[\frac{D_{in}-K+2P}{S}]+1$$
+O: $O=⌊\frac{I−K+2P​}{S}⌋+1$ 
+
 **Canales**
 Las CNNs procesan volúmenes de datos:
 - Una capa convolucional tiene $C_{in}$ canales de entrada y genera $C_{out}$ canales de salida (mapas de características)
@@ -84,7 +86,7 @@ En lugar de aprender la función deseada $H(x)$ directamente, la red aprende el 
 	Esto crea un "atajo" (skip connection) que permite que la identidad fluya fácilmente. Si las capas extra no son necesarias, la red puede aprender $F(x) \approx 0$, convirtiéndose en identidad.
 
 **Detalles de arquitectura**
-- Estilo VGG (filtros $3 \times 3$)
+- Estilo VGG (filtros $3 \times 3$) pero con skip connection
 - Sin Dropout
 - **Uso crítico de Batch Normalization** Fundamental porque en las conexiones residuales ($x + F(x)$), la varianza de la señal se duplica en cada bloque. Sin normalización la señal crecería exponencialmente. 
 ## 6.8 Otras arquitecturas (Segmentación)

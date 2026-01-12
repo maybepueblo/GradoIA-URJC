@@ -25,7 +25,7 @@ La salida final siendo:$$y=\beta_K+\ohm_Kh_K$$
 ## 5.2 Optimización con redes profundas
 El entrenamiento de redes profundas presenta desafíos específicos que requieren técnicas avanzadas de inicialización y regularización.
 ### 1. Backpropagation
-El algoritmo para calcular el gradiente se basa en la regla de la cadena sobre el grafo de cómputo.
+El algoritmo para calcular el gradiente. Se basa en la regla de la cadena sobre el grafo de cómputo.
 - **Derivada respecto a la salida ($y$):** Empezamos calculando $\frac{∂J}{∂y}$ (derivada de la función de pérdida)
 - **Retropropagación:** Vamos hacia atrás capa por capa. Para una capa lineal $z = \ohm h+\beta$:
 	- El gradiente respecto a los pesos $\ohm$ depende de la entrada de esa capa ($h^T$):$$\frac{∂L}{∂\ohm}=\frac{∂L}{∂y}·h^T$$
@@ -33,7 +33,7 @@ El algoritmo para calcular el gradiente se basa en la regla de la cadena sobre e
 **Problema de la escala**: Si las entradas $x$ tienen magnitudes muy diferentes, los gradientes tendrán magnitudes muy diferentes, dificultando la optimización.
 ### 2. Inicialización de parámetros
 Una correcta inicialización es crítica. Si inicializamos todos los pesos a 0, la red sufre de **simetría**: todas las neuronas ocultas aprenden lo mismo
-- **Estrategia:** Sesgos (\beta) a 0. Pesos ($\ohm$) aleatorios con media 0 y varianza $\sigma_\ohm²$ 
+- **Estrategia:** Sesgos ($\beta$) a 0. Pesos ($\ohm$) aleatorios con media 0 y varianza $\sigma_\ohm²$ 
 **El problema de la varianza**
 Al avanzar por la red (forward pass) la varianza de las activaciones cambia según la varianza de los pesos.
 - Relación de varianzas (asumiendo parte lineal de Tanh):$$\sigma_{k+1}²=D_h·\sigma_\ohm²·\sigma_k²$$
@@ -59,9 +59,9 @@ Para mitigar el problema de que la distribución de las entradas de cada capa ca
 Técnicas para evitar el overfitting ("Make function smoother") y mejorar la generalización.
 #### A. Ensembling y Snapshot Ensembles
 - **Bagging:** Entrenar múltiples modelos independientes y promediar reduce la varianza. En Deep Learning es muy costoso entrenar muchas redes.
-- **Snapshot Ensembling:** Permite hacer un "ensemble" con un solo entrenamiento. Se usa un *learning rate* cíclico que visita varios mínimos locales. Se guardan los parámetros "snapshots" en esos mínimoos y se promedian las predicciones al final.
+- **Snapshot Ensembling:** Permite hacer un "ensemble" con un solo entrenamiento. Se usa un *learning rate* cíclico que visita varios mínimos locales. Se guardan los parámetros "snapshots" en esos mínimos y se promedian las predicciones al final.
 ### B. Dropout (Apagado aleatorio)
-Técnica extremadamente popular que simula entrenar un gran númeroo de sub-redes diferentes.
+Técnica extremadamente popular que simula entrenar un gran número de sub-redes diferentes.
 - **Entrenamiento:** En cada paso, cada neurona se apaga (se pone a 0) con probabilidad *p* (usualmente 0.5). Se usa una máscara de Bernoulli.$$h_{drop}=h·m, m∼Bernoulli(0.5)$$
 - **Inferencia (Test time):**
 	- *Método estándar:* Se usan todas las neuronas, pero se deben escalar los pesos (o las activaciones) por el factor $p$ (o 1/$p$ en entrenamiento) para mantener la esperanza matemática de la señal igual que en el entrenamiento.
