@@ -1,20 +1,36 @@
-## ¿Qué es?
-Etapas por las que pasa un programa en su desarrollo, desde la idea hasta su retirada
-- **Concepción** -> Tener una idea o ver lo que el cliente necesita
-- **Requisitos** -> Pasar las necesidades del cliente a un formato entendible para desarrollarlo
-- **Entrega**
-- **Mantenimiento** -> Parte realmente importante de un ciclo (mejorar app, arreglar app)
-- **Retirada** -> Se vuelve tan obsoleto el programa que se retira o su coste de mantenimiento es demasiado alto como para que sea rentable
-## Modelo de proceso
-Documento normativo que dicta lo que hay que hacer para comprar equipoo, desarrollar software, etc.
+## 1. Concepto de Ciclo de Vida
 
-Antes de hacer un desarrollo, hemos de hacer un análisis, hecho por un analista software que recibe las peticiones del cliente para traducirlas y pasarlas a un diseñador de software.
+¿Qué es el Ciclo de Vida del Software?
+
+Es el proceso por el que pasa el software en su desarrollo, abarcando desde que se concibe la idea hasta que el software deja de utilizarse o se retira.
+
+**Características principales:**
+
+- Está compuesto por un conjunto de **actividades y tareas** necesarias para producir el software y su documentación.
+- Existe una **secuencia temporal** para estas actividades.
+- Cada etapa genera una serie de documentos (salida) que sirven de entrada para la fase siguiente.
+
+**Etapas generales:**
+
 1. Análisis
 2. Diseño
 3. Codificación -> Desarrollo (código) - no estar mucho tiempo programando si quieres dinero
 4. Pruebas 
 5. Integración -> Mezclar todo el contenido del sistema para una versión final
 6. Implantación -> Desplegar el software en máquinas cliente
+
+---
+
+## 2. Modelos de Procesos
+
+Según la norma **ISO/IEC/IEEE 24774:2021**, un modelo de proceso es una representación abstracta consistente en un conjunto de actividades y tareas cuyo objetivo es el desarrollo de un sistema software.
+
+**Función:**
+
+- Son estrategias que ayudan a **organizar** las actividades del ciclo de vida.
+- Facilitan el **control** y la **coordinación** del proyecto.
+- La elección del modelo depende del tipo de proyecto y de los recursos humanos disponibles.
+
 ### Modelo en cascada
 Divide el desarrollo en fases, impidiendo que se empiece la siguiente hasta terminar la anterior. 
 
@@ -66,13 +82,13 @@ Se entrega un producto útil en los primeros momentos
 
 **Desventajas**
 No pueden ser muy grandes, es difícil obtener incrementos equilibrados
-## Proceso unificado de desarrollo (RUP)
+### Proceso unificado de desarrollo (RUP)
 Rational Unified Process. Compuesto por 4 fases:
 - **Inception** -> Idea y visión del proyecto, no tenemos por qué extraer todos los requisitos
 - **Elaboration** -> Se terminan de obtener los requisitos y se plantean los primeros prototipos
 - **Construction** -> Implementación al 100% y se crea un manual
 - **Transition** -> Damos el producto al usuario y hacemos beta testing
-## Metodologías ágiles
+#### Metodologías ágiles
 Proyecto con poco personal para que la entrega de software sea mucho más rápida, además de perder el aspecto de desarrollo de documentación y de una buena arquitectura de proyecto (proyectos de código libre suelen seguir este esquema de desarrollo)
 
 Lo que sea en menos tiempo, reduciendo docs, diseño y teniendo equipos pequeños, rápidos al cambio.
@@ -82,17 +98,17 @@ Producto pequeño o mediano y gran implicación del cliente
 
 **Desventajas**
 Priorizar cambios y mantener lo simple es complejo. 
-### XP (eXtreme Programming)
+#### XP (eXtreme Programming)
 Entregas frecuente y código simple hecho en parejas. Hay entonces un diseño simple, mínimo e imprescindible. 
-### Scrum
+#### Scrum
 Modelo ágil más usado hoy en día. Con equipos pequeños (7-9 personas por ejemplo, no es fijo)
 
 Basado en "sprints" para hacer entregas, teniendo poca documentación y diseño mínimo, teniendo meetings diarios y revisiones cortas en cada sprint. Hay diferentes actores en el equipo, usando repos para almacenar la información
 
 Organizamos los sprints en una cronología, dando a cada uno de 1 a 4 semanas. Cada día nos reunimos para sincronizar el equipo en corta duración siendo muy ágil. Al final del tiempo de cada sprint se hace un review para ver cómo van los requisitos
-### Kanban
+#### Kanban
 Similar a Scrum pero con uso de tarjetas para gestionar las historias de usuario a realizar (Trello), pero sin roles pre-asignados ni sprints, sino siendo un flujo continuo
-### Otras...
+#### Otras...
 - **Basadas en reutilización de software** (COTS, Generativa, SPL)
 - **Orientadas a objetos** (OOAD)
 - **DevOps** (Development & Operations)
@@ -100,4 +116,30 @@ Similar a Scrum pero con uso de tarjetas para gestionar las historias de usuario
 
 > [!NOTE] Sabiduría del profe
 Nunca discutir el sueldo neto, te van a engañar con impuestos en el primer minuto. Discute el sueldo bruto anual, que incluye el sueldo y los impuestos con la retencion
-## Pendiente de leer el estándar ISO
+
+
+---
+
+## 3. Estándar ISO 12207:2017
+
+Este estándar define los procesos del ciclo de vida del software, clasificándolos en diferentes categorías.
+
+### A. Procesos de Soporte
+
+Dan apoyo a otros procesos a lo largo del ciclo de vida.
+
+- **Revisión conjunta:** Reuniones con el cliente y el equipo para revisar el estado del trabajo en una fase determinada.
+- **Auditorías:** Determinan si se han conseguido los objetivos y aseguran el cumplimiento del contrato.
+- **Resolución de problemas:** Analizar y resolver incidencias surgidas durante el desarrollo, explotación o mantenimiento.
+- **Verificación y Validación (V&V):**
+    - **Verificación:** Comprobar que el producto cumple con las **especificaciones** y estándares (¿lo estamos construyendo correctamente?).
+    - **Validación:** Determinar que el producto cumple con los **requisitos** y necesidades del usuario (¿estamos construyendo el producto correcto?).
+
+### B. Procesos Generales
+
+Proporcionan soporte a nivel de organización.
+
+- **Gestión:** Planificación, seguimiento, control y evaluación del proyecto (uso de herramientas como MS Project).
+- **Infraestructura:** Determinar las herramientas y entorno necesario para el desarrollo y explotación.
+- **Mejora:** Medir y evaluar los procesos para optimizarlos.
+- **Formación:** Planes de capacitación para los empleados.
