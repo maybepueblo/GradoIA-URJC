@@ -26,7 +26,7 @@ Es el proceso de recopilación, análisis y documentación de los requisitos. Su
 
 > [!QUOTE] Importancia (Ley de Brooks)
 > 
-> "La parte más difícil de construir un sistema es saber qué construir... Ninguna otra parte del trabajo afecta tanto al sistema si se hace mal ni es tan difícil de corregir más adelante".
+> "La parte más difícil de construir un sistema es saber qué construir... Ninguna otra parte del trabajo afecta tanto al sistema si se hace mal, ni es tan difícil de corregir más adelante".
 
 ---
 

@@ -2,7 +2,7 @@
 
 Objetivos del diseño:
 
-El diseño busca acercar el modelo de análisis al de implementación, refinándolo y descomponiéndolo en subsistemas para su desarrollo en paralelo. Su fin último es producir la arquitectura software del sistema 1.
+El diseño busca acercar el modelo de análisis al de implementación, refinándolo y descomponiéndolo en subsistemas para su desarrollo en paralelo. Su fin último es producir la arquitectura software del sistema.
 
 Modelo de Vistas "4+1" (Kruchten, 1995):
 
@@ -22,20 +22,20 @@ Modelan el comportamiento del sistema a lo largo del tiempo.
 
 ### Diagramas de Secuencia
 
-Muestran la interacción de objetos ordenados temporalmente4.
+Muestran la interacción de objetos ordenados temporalmente.
 
 - **Elementos:**
-    - **Línea de vida (_Lifeline_):** Objeto o actor participante (ej. `nombreobjeto:nombreclase`) 5. 
-    - **Barras de activación:** Indican cuándo el participante está activo (opcionales)6.
-    - **Mensajes:** Síncronos (esperan respuesta), Asíncronos (no bloquean) y de Retorno 7.
+    - **Línea de vida (_Lifeline_):** Objeto o actor participante (ej. `nombreobjeto:nombreclase`). 
+    - **Barras de activación:** Indican cuándo el participante está activo (opcionales).
+    - **Mensajes:** Síncronos (esperan respuesta), Asíncronos (no bloquean) y de Retorno.
 
 ### Diagramas de Actividad
 
-Describen flujos de trabajo o lógica de negocio como una secuencia. Usan nodos de inicio/fin, acciones (rectángulos), decisiones (rombos) y flujos (flechas) 8.
+Describen flujos de trabajo o lógica de negocio como una secuencia. Usan nodos de inicio/fin, acciones (rectángulos), decisiones (rombos) y flujos (flechas).
 
 ### Diagramas de Máquinas de Estado
 
-Muestran los estados por los que pasa un objeto y las transiciones motivadas por eventos. Son útiles para objetos con ciclos de vida complejos 9.
+Muestran los estados por los que pasa un objeto y las transiciones motivadas por eventos. Son útiles para objetos con ciclos de vida complejos.
 
 ---
 
@@ -45,21 +45,21 @@ Muestran los estados por los que pasa un objeto y las transiciones motivadas por
 
 Describe la disposición física de los recursos (hardware/software).
 
-- **Nodo:** Unidad computacional (servidor, dispositivo) que puede contener componentes. Se suelen indicar direcciones IP o protocolos de comunicación (TCP/IP, HTTP) 10.
+- **Nodo:** Unidad computacional (servidor, dispositivo) que puede contener componentes. Se suelen indicar direcciones IP o protocolos de comunicación (TCP/IP, HTTP).
 
 ### Diagrama de Componentes
 
-Modelan el empaquetado físico en unidades reutilizables (librerías, ejecutables, ficheros). Implementan interfaces y clases del diseño 11.
+Modelan el empaquetado físico en unidades reutilizables (librerías, ejecutables, ficheros). Implementan interfaces y clases del diseño.
 
 ### Diagrama de Paquetes
 
-Organizan el diseño en subsistemas o capas. No debe haber paquetes vacíos (salvo en análisis) y definen espacios de nombres 12.
+Organizan el diseño en subsistemas o capas. No debe haber paquetes vacíos (salvo en análisis) y definen espacios de nombres.
 
 ---
 
 ## 4. Estilos Arquitectónicos
 
-Ayudan a organizar paquetes y clases siguiendo principios de diseño 13.
+Ayudan a organizar paquetes y clases siguiendo principios de diseño.
 
 1. **Capas (_Layers_):** Organización vertical. Un paquete superior usa servicios del inferior (relación `<<import>>`). Ej. Presentación -> Negocio -> Datos.
 2. **Cliente/Servidor:** Tres capas horizontales (_tiers_) distribuidas comúnmente en máquinas distintas.
@@ -91,7 +91,7 @@ Describe la estructura del sistema (conceptos del mundo real o software).
 
 ## 6. Patrones de Diseño (Clásicos)
 
-Soluciones reutilizables a problemas recurrentes en un contexto determinado28.
+Soluciones reutilizables a problemas recurrentes en un contexto determinado.
 
 ### A. Patrones Creacionales (Instanciación)
 
@@ -108,6 +108,7 @@ Soluciones reutilizables a problemas recurrentes en un contexto determinado28.
 ### C. Patrones de Comportamiento (Interacción)
 
 - **Observer:** Define una dependencia uno-a-muchos. Cuando un objeto cambia, notifica a sus dependientes automáticamente.
+- **Publish-Suscribe:** Los remitentes envían mensajes no programados a suscriptores.
 - **Mediator:** Encapsula la comunicación entre objetos para reducir el acoplamiento (comunicación indirecta).
 - **Strategy:** Permite elegir el algoritmo (estrategia) a usar en tiempo de ejecución.
 
@@ -115,9 +116,9 @@ Soluciones reutilizables a problemas recurrentes en un contexto determinado28.
 
 ## 7. Patrones de Diseño de IA
 
-Resuelven problemas específicos de sistemas inteligentes e integran IA con ingeniería software tradicional 38.
+Resuelven problemas específicos de sistemas inteligentes e integran IA con ingeniería software tradicional.
 
-- **Layered Caching Strategy:** Usa una caché para responder rápido a _queries_ frecuentes antes de llamar al LLM, permitiendo _fine-tuning_ con los datos guardados .
+- **Layered Caching Strategy:** Usa una caché para responder rápido a _queries_ frecuentes antes de llamar al LLM, permitiendo _fine-tuning_ con los datos guardados.
 - **Multiplexing AI Agents:** Descompone una tarea compleja y la asigna a un "panel de expertos" (agentes o modelos pequeños especializados).
 - **Graph of Thoughts (GoT):** Modela el razonamiento como un grafo arbitrario (refinar, agregar, retroceder pensamientos) para mejorar la salida.
 - **RAG con Knowledge Graphs:** Integra grafos de conocimiento para dar precisión y contexto a los LLMs .
@@ -126,7 +127,7 @@ Resuelven problemas específicos de sistemas inteligentes e integran IA con inge
 
 ## 8. Model Context Protocol (MCP)
 
-Estándar _open-source_ para conectar asistentes de IA a sistemas externos (datos, herramientas) 43.
+Estándar _open-source_ para conectar asistentes de IA a sistemas externos (datos, herramientas).
 
 **Arquitectura:**
 
