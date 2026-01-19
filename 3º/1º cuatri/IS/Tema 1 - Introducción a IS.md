@@ -27,13 +27,13 @@ Es la disciplina de ingeniería encargada de todos los aspectos relacionados con
 
 **La Crisis del Software (1965-1985):**
 
-Surgió debido principalmente al sobrecoste de los proyectos. Se define por la dificultad en escribir programas libres de defectos, comprensibles y verificables (Dijkstra, 1968).
+Surgió debido al sobrecoste de los proyectos. Se define por la dificultad en escribir programas libres de defectos, comprensibles y verificables (Dijkstra, 1968).
 
 **Causas:**
 
 - Los proyectos no terminaban en plazo ni ajustados a coste.
 - El software no cumplía las especificaciones.
-- Código poco mantenible y poca especialización de los ingenieros.
+- Código poco mantenible y había poca especialización de los ingenieros.
 - Carencia de metodologías para sistemas complejos.
 
 **Consecuencias:**
@@ -65,7 +65,7 @@ Surgió debido principalmente al sobrecoste de los proyectos. Se define por la d
 - **Mito:** "Cuanto antes empecemos a programar, antes acabaremos".
     - **Realidad:** Cuanto más pronto se codifica, más se tarda en terminar. Entre el 50% y el 70% del esfuerzo se realiza después de la primera entrega al cliente.
 - **Mito:** "Lo único que importa es que la aplicación funcione; la documentación no se usa".
-    - **Realidad:** La documEl sábado puede ser el día aunque no sé si el dei vi está aquí q recuerdo q se iba @David GIA ?entación es base del desarrollo y guía fundamental para el mantenimiento.
+    - **Realidad:** La documentación es base del desarrollo y guía fundamental para el mantenimiento.
 
 ---
 
