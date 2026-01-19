@@ -40,7 +40,7 @@ Terminó siendo un modelo circular, implicando que se vuelve a la primera fase d
 Se adapta cuando el proyecto es complejo y grande, más bien estructurado desde el inicio. 
 
 **Desventajas**
-En cambio, es limitado, ya que su planteamiento obliga a no pasar de fase hasta terminar la anterior.
+Es limitado, ya que su planteamiento obliga a no pasar de fase hasta terminar la anterior.
 ### Modelo evolutivo
 Posibilidad de mostrar un prototipo sin tener que tener toda su funcionalidad. Esto es flexible, pierdes poco tiempo de trabajo y si gusta la alpha, se sigue el contrato y se va brindando un prototipo más firme cada vez.
 
@@ -50,7 +50,7 @@ Entregamos a corto plazo, reduciendo costos. Importa mucho la interfaz del siste
 **Desventajas**
 Puede tener mala calidad en ciertas etapas, además de que necesitamos buena organización y mucho más hincapié en el diseño
 ### Modelo en espiral
-Combinación del cascada y evolutivo, terminamos cuando se acaban los requisitos, siendo cada ciclo una fase del proyecto (incertidumbre por no saber cuántas vueltas son necesarias)
+Combinación del cascada y evolutivo, donde terminamos cuando se acaban los requisitos, siendo cada ciclo una fase del proyecto (incertidumbre por no saber cuántas vueltas son necesarias)
 
 **Fases**
 - Planificación
@@ -63,17 +63,18 @@ Combinación del cascada y evolutivo, terminamos cuando se acaban los requisitos
 	- Resolver o minimizarlos
 	- Riesgos de cada alternativa y sus soluciones 
 - Ingeniería
-	- Desarrollo
+	- Desarrollamos y verificamos el siguiente nivel del producto.
 - Evaluación
 	- Obtener conformidad del cliente
 	- Revisión
-	- Planificamos la siguiente vuelta y estimamos recursos necesarios
+	- Planificamos la siguiente vuelta. 
+	- Además estimamos recursos necesarios
 
 **Ventajas**
 Para proyectos complejos, sirve muy bien en proyectos innovadores y ambiciosos
 
 **Desventajas**
-Es complejo evaluar riesgos, pero no recomendado para proyectos sin ellos, muy costoso si no.
+Es complejo evaluar riesgos. Y no es recomendado para proyectos sin ellos, muy costoso si no.
 ### Modelo incremental
 Útil para empresas conformadas por varios equipos. Los incrementos vienen en serie y se terminan solapando partes entre sí.
 
@@ -97,7 +98,7 @@ Lo que sea en menos tiempo, reduciendo docs, diseño y teniendo equipos pequeño
 Producto pequeño o mediano y gran implicación del cliente
 
 **Desventajas**
-Priorizar cambios y mantenerlo simple es complejo. 
+Priorizamos cambios y mantenerlo simple es complejo. 
 #### XP (eXtreme Programming)
 Entregas frecuente y código simple hecho en parejas. Hay entonces un diseño simple, mínimo e imprescindible. 
 #### Scrum
