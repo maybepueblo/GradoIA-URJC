@@ -1,9 +1,3 @@
-Aquí tienes el contenido del **Tema 1** adaptado a un formato Markdown estándar, limpio y sin funciones avanzadas (como _callouts_, _frontmatter_ o _wikilinks_). Está listo para copiar y pegar en Obsidian o cualquier editor de texto plano.
-
----
-
-# Tema 1: Introducción a la Ingeniería del Software
-
 ## 1. Definición y Conceptos Básicos
 
 **¿Qué es la Ingeniería del Software?**
