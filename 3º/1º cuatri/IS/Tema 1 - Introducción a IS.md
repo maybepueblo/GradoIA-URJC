@@ -63,9 +63,9 @@ Surgió debido principalmente al sobrecoste de los proyectos. Se define por la d
 ### Sobre los Desarrolladores
 
 - **Mito:** "Cuanto antes empecemos a programar, antes acabaremos".
-    - **Realidad:** Cuanto más pronto se codifica, más se tarda en terminar30. Entre el 50% y el 70% del esfuerzo se realiza después de la primera entrega al cliente.
+    - **Realidad:** Cuanto más pronto se codifica, más se tarda en terminar. Entre el 50% y el 70% del esfuerzo se realiza después de la primera entrega al cliente.
 - **Mito:** "Lo único que importa es que la aplicación funcione; la documentación no se usa".
-    - **Realidad:** La documentación es base del desarrollo y guía fundamental para el mantenimiento.
+    - **Realidad:** La documEl sábado puede ser el día aunque no sé si el dei vi está aquí q recuerdo q se iba @David GIA ?entación es base del desarrollo y guía fundamental para el mantenimiento.
 
 ---
 

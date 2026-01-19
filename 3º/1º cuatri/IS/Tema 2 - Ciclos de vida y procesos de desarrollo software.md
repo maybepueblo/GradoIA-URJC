@@ -97,7 +97,7 @@ Lo que sea en menos tiempo, reduciendo docs, diseño y teniendo equipos pequeño
 Producto pequeño o mediano y gran implicación del cliente
 
 **Desventajas**
-Priorizar cambios y mantener lo simple es complejo. 
+Priorizar cambios y mantenerlo simple es complejo. 
 #### XP (eXtreme Programming)
 Entregas frecuente y código simple hecho en parejas. Hay entonces un diseño simple, mínimo e imprescindible. 
 #### Scrum
