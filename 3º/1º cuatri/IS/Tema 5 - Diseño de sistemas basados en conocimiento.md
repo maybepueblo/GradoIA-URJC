@@ -7,7 +7,7 @@ Los SBC (Knowledge-Based Systems) son sistemas que incorporan una base de conoci
 **Características:**
 
 - Se aplican en dominios diversos (médico, militar, transporte).
-- A menudo dependen de sensores para extraer contexto3.
+- A menudo dependen de sensores para extraer contexto.
 - Usan un **motor de inferencias** para razonar sobre reglas y heurísticas.
 - Evolucionaron hacia la **Ingeniería del Conocimiento** (años 70-80) y los Sistemas Expertos (SE).
 
