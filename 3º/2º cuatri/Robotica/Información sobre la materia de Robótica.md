@@ -5,4 +5,7 @@
 Alternar clases teóricas y clases prácticas
 - 50-50
 
+**Práctica los Martes**
+****
+**Teoría los Viernes**
 ## Proyectos en grupo
