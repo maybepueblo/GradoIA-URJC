@@ -8,6 +8,8 @@ Máquina programable capaz de hacer tareas con autonomía total o parcial.
 - **Controladores** para procesar info y tomar decisiones
 - **Programas** para guiar el comportamiento del robot
 
+Se considera un robot a un ser programable, con entradas y salidas para interactuar con el entorno y finalmente, con medios de procesar información y tomar decisiones.
+
 [Página para conocer distintos robots](https://robotsguide.com/)
 ## 2. Historia y evolución de la robótica
 En Grecia se define el concepto **autómata**, máquina que imita la figura y movimientos de un ser animado.

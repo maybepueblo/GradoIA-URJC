@@ -1,0 +1,1 @@
+256x256x256 es por conveniencia y generalización, podría ser 512x512x512 pero no es de interés
