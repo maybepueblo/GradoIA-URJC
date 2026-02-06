@@ -1,0 +1,1 @@
+Los shaders dependen de un lenguaje de programación además de la arquitectura específica de la GPU

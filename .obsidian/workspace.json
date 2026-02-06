@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4º/2º cuatri/AIA/How it all started - AI, from CPU to GPU.md",
+                "file": "3º/2º cuatri/Robotica/Tema 2 - Diseño y arquitectura de robots.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How it all started - AI, from CPU to GPU"
+              "title": "Tema 2 - Diseño y arquitectura de robots"
+            }
+          },
+          {
+            "id": "c2ee738ec1b7834f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -162,21 +176,21 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "e94fc2f1706cb5e7",
+  "active": "c2ee738ec1b7834f",
   "lastOpenFiles": [
-    "4º/2º cuatri/AIA/Understanding LUT-Based Logic Neural Networks.md",
-    "4º/2º cuatri/AIA/How it all started - AI, from CPU to GPU.md",
-    "3º/2º cuatri/Robotica/Práctica 1.md",
     "3º/2º cuatri/Robotica/Tema 2 - Diseño y arquitectura de robots.md",
     "3º/2º cuatri/Robotica/Tema 1 - Introducción a la robótica.md",
+    "3º/2º cuatri/PLN I/Tema 2 - Análisis textual y recursos lingüísticos.md",
+    "3º/2º cuatri/Visión artificial/Tema 1 - Formación de la imagen.md",
+    "3º/2º cuatri/Visión artificial/Visión Artificial.md",
+    "4º/2º cuatri/AIA/How it all started - AI, from CPU to GPU.md",
+    "4º/2º cuatri/AIA/Understanding LUT-Based Logic Neural Networks.md",
+    "3º/2º cuatri/Robotica/Práctica 1.md",
     "3º/2º cuatri/Multi-agente/Sistemas Multi-agente.md",
     "3º/2º cuatri/Multi-agente/Tema 1 - Agentes, entornos, sistemas multiagente.md",
     "3º/2º cuatri/Robotica/Información sobre la materia de Robótica.md",
-    "3º/2º cuatri/PLN I/Tema 2 - Análisis textual y recursos lingüísticos.md",
     "3º/2º cuatri/PLN I/Procesamiento del Lenguaje Natural I.md",
     "3º/2º cuatri/PLN I/Tema 1 - Introducción al Procesamiento de Lenguaje Natural.md",
-    "3º/2º cuatri/Visión artificial/Tema 1 - Formación de la imagen.md",
-    "3º/2º cuatri/Visión artificial/Visión Artificial.md",
     "4º/2º cuatri/AIA/Understanding Deep Image Priors.md",
     "Recording 20260127143802.m4a",
     "3º/2º cuatri/Robotica/Robótica.md",
