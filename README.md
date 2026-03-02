@@ -168,15 +168,3 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 ## 🚀 Uso
 
 Se recomienda visualizar este repositorio con **Obsidian** para mantener la integridad de los enlaces entre notas y el renderizado de fórmulas matemáticas.
-
----
-
-### Instrucciones para crear el archivo:
-1. Abre un editor de texto (Bloc de notas, VS Code, TextEdit).
-2. Pega el código de arriba.
-3. Guarda el archivo con el nombre `README.md`.
-4. ¡Súbelo a tu repositorio de GitHub!
-
-¿Te gustaría que añada una sección de **"Contribuciones"** por si compartes estos apuntes con tus compañeros de clase?
-
-```
