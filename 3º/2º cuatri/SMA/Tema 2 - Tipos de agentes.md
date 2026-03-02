@@ -19,3 +19,20 @@ Las decisiones se toman en función de su memoria ($m$), sus objetivos ($O$) y e
 - **Clasificación:
 	- **Reactivos con estado:** Responden a estímulos usando el historial para evitar bucles, sin prever el futuro. No suelen usar modelo del mundo.
 	- **Deliberativos:** Usan el modelo del mundo para deliberar y prever las consecuencias de sus acciones antes de actuar.
+## Agentes de Planificación
+- **Deliberación Guiada:** Son agentes basados en metas explícitas que mantienen un modelo simbólico del mundo (creencias)
+- **Proceso:** Usan técnicas de inteligencia artificial (como el algoritmo $A*$) para planificar secuencias completas de acciones antes de actuar ($plan \leftarrow planificar(e,O,A)$)
+- **Replanificación:** Si el entorno o los objetivos cambian, el plan inicial puede volverse inválido.
+	1. El agente percibe tras cada acción
+	2. Actualiza su estado
+	3. Comprueba si el plan sigue siendo válido
+	4. Si falla, ejecuta un proceso de replanificación (aquí entran otras materias como [[Algoritmos de Búsqueda II]])
+## Agentes Híbridos
+- **Definición:** Combinan la velocidad de los agentes reactivos con la capacidad de los agentes deliberativos o de planificación.
+	- Dos o más, por ejemplo:
+		- Uno deliberativo que contiene el mundo simbólico y desarrolla planes con toma de decisión a medio o largo plazo.
+		- Uno reactivo, que reacciona a eventos sin razonamiento complejo.
+- **Arquitectura:** Se estructuran en capas (ej. Máquinas de Touring de Ferguson: Capa de Modelado, Capa de Planificación, Capa Reactiva)
+- **Control:** Un mecanismo decide qué subsistema y capa toma el control en cada instante, dando normalmente prioridad a los componentes reactivos ante emergencias.
+## Agentes BDI (Belief, Desire, Intention)
+- **Razonamiento**

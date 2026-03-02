@@ -1,0 +1,550 @@
+.
+├── 1º
+│   ├── Ética y legislación en IA
+│   │   ├── Ética y Legislación de IA.md
+│   │   ├── Lección 1 - Colegios profesionales.md
+│   │   ├── Lección 2.md
+│   │   ├── Lección 3.md
+│   │   ├── Lección 4.md
+│   │   ├── Lección 5.md
+│   │   ├── Lección 6.md
+│   │   ├── Lección 7.md
+│   │   ├── Lección 8.md
+│   │   ├── Prácticas 11-4.md
+│   │   ├── Prácticas 15-4.md
+│   │   └── Prácticas 8-4.md
+│   ├── FAC
+│   │   ├── PROYECTO_grupo3.circ
+│   │   ├── Tema 7.md
+│   │   └── Trabajo Ensamblador FAC.pdf
+│   ├── Paradigmas de programación.md
+│   ├── Probabilidad y Estadística
+│   │   ├── Inferencia Estadística.md
+│   │   ├── Probabilidad y Estadística - Índice.md
+│   │   ├── Tema 1.md
+│   │   ├── Tema 2.md
+│   │   ├── Tema 3.md
+│   │   ├── Tema 4 - Variables Aleatorias.md
+│   │   └── Tema 5 - Inferencia Estadística.md
+│   ├── Prog Declarativa
+│   │   ├── Ejercicios Scala.md
+│   │   ├── Programación Declarativa.md
+│   │   ├── Topic 5 - TADs y recursividad.md
+│   │   ├── Topic 6 - Funciones de orden superior.md
+│   │   └── Topic 7 - Aplicaciones.md
+│   └── Programación II
+│       ├── Anexo C++.md
+│       ├── Ejercicios Examen 2022-2023.md
+│       ├── Examen Extra Ord. 2022-2023.md
+│       ├── Ficheros binarios.md
+│       ├── Ficheros de texto.md
+│       ├── Ficheros.md
+│       ├── Práctica 2 - Agenda.md
+│       ├── Práctica 3 - Agenda con ficheros de texto.md
+│       ├── Práctica 4 - Agenda con ficheros binarios.md
+│       ├── Práctica 5 - TAD.md
+│       ├── Práctica 6 - POO.md
+│       ├── Práctica 7 - POO (Herencia).md
+│       ├── Práctica 8 - Polimorfismos y clases abstractas.md
+│       ├── Programación Colaborativa - git y GitHub.md
+│       ├── Programación II - Índice.md
+│       ├── Tema 10 - Abstracción.md
+│       ├── Tema 11 - TADs.md
+│       ├── Tema 12 - Introducción a POO.md
+│       ├── Tema 8 - Tipos enumerados y registros.md
+│       └── Tema 9 - Operaciones con ficheros.md
+├── 2º
+│   ├── Primer cuatri
+│   │   ├── Algoritmos
+│   │   │   ├── AlgoritmosJuez
+│   │   │   │   ├── Divide y Vencerás.md
+│   │   │   │   ├── Voraces_Grafos.md
+│   │   │   │   └── Voraces.md
+│   │   │   ├── Algoritmos.md
+│   │   │   ├── Código Juez
+│   │   │   │   └── algoritmosJuez
+│   │   │   │       ├── backtracking
+│   │   │   │       │   ├── caballeroLuna.py
+│   │   │   │       │   ├── dana.py
+│   │   │   │       │   ├── estancia.py
+│   │   │   │       │   ├── pedroPedro.py
+│   │   │   │       │   ├── Pedro.py
+│   │   │   │       │   └── sonic.py
+│   │   │   │       ├── divide_and_conquer
+│   │   │   │       │   ├── ciegaAcitas.py
+│   │   │   │       │   ├── clearSouls.py
+│   │   │   │       │   ├── reyDiamantes.py
+│   │   │   │       │   └── soyPadre.py
+│   │   │   │       ├── voraces
+│   │   │   │       │   ├── alfombraRoja.py
+│   │   │   │       │   ├── mochila_clase.py
+│   │   │   │       │   ├── negociosEspaciales.py
+│   │   │   │       │   ├── secondDates.py
+│   │   │   │       │   ├── veladaIV.py
+│   │   │   │       │   └── vueltaalatierra.py
+│   │   │   │       └── voraces_grafos
+│   │   │   │           ├── catSparrow.py
+│   │   │   │           ├── mitosYmortales.py
+│   │   │   │           ├── sobreviviendo.py
+│   │   │   │           ├── tengoPromo.py
+│   │   │   │           └── viajeAsegurado.py
+│   │   │   ├── Drawing 2024-09-25 15.25.12.excalidraw.md
+│   │   │   ├── Drawing 2024-09-30 17.21.27.excalidraw.md
+│   │   │   ├── Ejercicio Casa.md
+│   │   │   ├── PDFs Algoritmos
+│   │   │   │   ├── prob-AlfombraRoja.pdf
+│   │   │   │   ├── prob-A Por la Velada del Año IV.pdf
+│   │   │   │   ├── prob-CapitanCatSparrow.pdf
+│   │   │   │   ├── prob-Ciega a citas.pdf
+│   │   │   │   ├── prob-Clear Souls.pdf
+│   │   │   │   ├── prob-Mitos y mortales.pdf
+│   │   │   │   ├── prob-Negocios espaciales.pdf
+│   │   │   │   ├── prob-Rey de Diamantes.pdf
+│   │   │   │   ├── prob-Second Dates.pdf
+│   │   │   │   ├── prob-Sobreviviendo.pdf
+│   │   │   │   ├── prob-TengoPromo.pdf
+│   │   │   │   ├── prob-ViajeAsegurado.pdf
+│   │   │   │   ├── prob-Vuelta a la Tierra.pdf
+│   │   │   │   └── prob-Yo soy tu padre.pdf
+│   │   │   ├── Tema 1 - Introducción a los algoritmos.md
+│   │   │   ├── Tema 2 - Voraces y voraces_grafos.md
+│   │   │   ├── Tema 3 - Divide y vencerás.md
+│   │   │   ├── Tema 4 - Backtracking.md
+│   │   │   ├── Tema 5 - Ramificación y poda.md
+│   │   │   └── Tema 6 - Programación Dinámica.md
+│   │   ├── Estructura de Datos
+│   │   │   ├── Bloque II ED Lineales
+│   │   │   │   ├── Tema 3 - Listas.md
+│   │   │   │   ├── Tema 4 - Pilas.md
+│   │   │   │   └── Tema 5 - Colas.md
+│   │   │   ├── Bloque III ED NO Lineales
+│   │   │   │   ├── Tema 6 - Conjuntos.md
+│   │   │   │   ├── Tema 7 - Árboles.md
+│   │   │   │   └── Tema 8 - Grafos.md
+│   │   │   ├── Bloque I TADs
+│   │   │   │   ├── Complejidad Algorítmica.md
+│   │   │   │   └── Tema 2 - Abstracción de datos.md
+│   │   │   ├── CódigoED
+│   │   │   │   ├── Colas
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── main.c
+│   │   │   │   │   ├── tColaPrioridad.c
+│   │   │   │   │   ├── tColaPrioridad.h
+│   │   │   │   │   ├── tElemento.c
+│   │   │   │   │   └── tElemento.h
+│   │   │   │   ├── Dioses
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── main.c
+│   │   │   │   │   ├── tArbolDioses.c
+│   │   │   │   │   ├── tArbolDioses.h
+│   │   │   │   │   ├── tDios.c
+│   │   │   │   │   └── tDios.h
+│   │   │   │   ├── implementacionesListas
+│   │   │   │   │   ├── cmake-build-debug
+│   │   │   │   │   │   ├── build.ninja
+│   │   │   │   │   │   ├── CMakeCache.txt
+│   │   │   │   │   │   ├── CMakeFiles
+│   │   │   │   │   │   │   ├── 3.30.5
+│   │   │   │   │   │   │   │   ├── CMakeCCompiler.cmake
+│   │   │   │   │   │   │   │   ├── CMakeDetermineCompilerABI_C.bin
+│   │   │   │   │   │   │   │   ├── CMakeRCCompiler.cmake
+│   │   │   │   │   │   │   │   ├── CMakeSystem.cmake
+│   │   │   │   │   │   │   │   └── CompilerIdC
+│   │   │   │   │   │   │   │       ├── a.exe
+│   │   │   │   │   │   │   │       └── CMakeCCompilerId.c
+│   │   │   │   │   │   │   ├── clion-Debug-log.txt
+│   │   │   │   │   │   │   ├── clion-environment.txt
+│   │   │   │   │   │   │   ├── cmake.check_cache
+│   │   │   │   │   │   │   ├── CMakeConfigureLog.yaml
+│   │   │   │   │   │   │   ├── implementacionesListas.dir
+│   │   │   │   │   │   │   │   ├── main.c.obj
+│   │   │   │   │   │   │   │   ├── tElemento.c.obj
+│   │   │   │   │   │   │   │   ├── tListaCircularCabecera.c.obj
+│   │   │   │   │   │   │   │   ├── tListaCircular.c.obj
+│   │   │   │   │   │   │   │   ├── tListaDoubleEnlazada.c.obj
+│   │   │   │   │   │   │   │   ├── tListaDoubleEnlazadaPunteroInitEnd.c.obj
+│   │   │   │   │   │   │   │   ├── tListaEnlazadaSimple.c.obj
+│   │   │   │   │   │   │   │   └── tListaOrdenada.c.obj
+│   │   │   │   │   │   │   ├── rules.ninja
+│   │   │   │   │   │   │   └── TargetDirectories.txt
+│   │   │   │   │   │   ├── cmake_install.cmake
+│   │   │   │   │   │   ├── implementacionesListas
+│   │   │   │   │   │   ├── implementacionesListas.exe
+│   │   │   │   │   │   └── Testing
+│   │   │   │   │   │       └── Temporary
+│   │   │   │   │   │           └── LastTest.log
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── main.c
+│   │   │   │   │   ├── tElemento.c
+│   │   │   │   │   ├── tElemento.h
+│   │   │   │   │   ├── tListaCircular.c
+│   │   │   │   │   ├── tListaCircularCabecera.c
+│   │   │   │   │   ├── tListaCircularCabecera.h
+│   │   │   │   │   ├── tListaCircular.h
+│   │   │   │   │   ├── tListaDoubleEnlazada.c
+│   │   │   │   │   ├── tListaDoubleEnlazada.h
+│   │   │   │   │   ├── tListaDoubleEnlazadaPunteroInitEnd.c
+│   │   │   │   │   ├── tListaDoubleEnlazadaPunteroInitEnd.h
+│   │   │   │   │   ├── tListaEnlazadaSimple.c
+│   │   │   │   │   ├── tListaEnlazadaSimple.h
+│   │   │   │   │   ├── tListaOrdenada.c
+│   │   │   │   │   └── tListaOrdenada.h
+│   │   │   │   ├── Kaggle
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── main.c
+│   │   │   │   │   ├── tABB.c
+│   │   │   │   │   ├── tABB.h
+│   │   │   │   │   ├── tElemento.c
+│   │   │   │   │   └── tElemento.h
+│   │   │   │   ├── Listas
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── main.c
+│   │   │   │   │   ├── tElemento.c
+│   │   │   │   │   ├── tElemento.h
+│   │   │   │   │   ├── tListaCabecerayFinal.c
+│   │   │   │   │   ├── tListaCabecerayFinal.h
+│   │   │   │   │   ├── tListaCircular.c
+│   │   │   │   │   ├── tListaCircular.h
+│   │   │   │   │   ├── tListaDobEnlace.c
+│   │   │   │   │   ├── tListaDobEnlace.h
+│   │   │   │   │   ├── tListaEnlazadaInsertFinal.c
+│   │   │   │   │   ├── tListaEnlazadaInsertFinal.h
+│   │   │   │   │   ├── tListaEnlazadaSimple.c
+│   │   │   │   │   ├── tListaEnlazadaSimple.h
+│   │   │   │   │   ├── tListaOrdenada.c
+│   │   │   │   │   └── tListaOrdenada.h
+│   │   │   │   ├── MetroMAD
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── main.c
+│   │   │   │   │   ├── tElemento.c
+│   │   │   │   │   ├── tElemento.h
+│   │   │   │   │   ├── tGrafo.c
+│   │   │   │   │   └── tGrafo.h
+│   │   │   │   ├── Pilas
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── main.c
+│   │   │   │   │   ├── tElemento.c
+│   │   │   │   │   ├── tElemento.h
+│   │   │   │   │   ├── tPila.c
+│   │   │   │   │   └── tPila.h
+│   │   │   │   ├── Twitter
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── main.c
+│   │   │   │   │   ├── tArbolTweets.c
+│   │   │   │   │   ├── tArbolTweets.h
+│   │   │   │   │   ├── tElemento.c
+│   │   │   │   │   ├── tElemento.h
+│   │   │   │   │   ├── tHashtag.c
+│   │   │   │   │   ├── tHashtag.h
+│   │   │   │   │   ├── tListaTweets.c
+│   │   │   │   │   ├── tListaTweets.h
+│   │   │   │   │   ├── tTweet.c
+│   │   │   │   │   └── tTweet.h
+│   │   │   │   └── Vuelos
+│   │   │   │       ├── CMakeLists.txt
+│   │   │   │       ├── main.c
+│   │   │   │       ├── tElemento.c
+│   │   │   │       ├── tElemento.h
+│   │   │   │       ├── tGrafo.c
+│   │   │   │       └── tGrafo.h
+│   │   │   ├── Estructura de datos.md
+│   │   │   ├── Exámenes años anteriores.md
+│   │   │   ├── fractales
+│   │   │   │   ├── Bitmap.c
+│   │   │   │   ├── Bitmap.h
+│   │   │   │   ├── cmake-build-debug
+│   │   │   │   │   ├── build.ninja
+│   │   │   │   │   ├── CMakeCache.txt
+│   │   │   │   │   ├── CMakeFiles
+│   │   │   │   │   │   ├── 3.29.6
+│   │   │   │   │   │   │   ├── CMakeCCompiler.cmake
+│   │   │   │   │   │   │   ├── CMakeCXXCompiler.cmake
+│   │   │   │   │   │   │   ├── CMakeDetermineCompilerABI_C.bin
+│   │   │   │   │   │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+│   │   │   │   │   │   │   ├── CMakeSystem.cmake
+│   │   │   │   │   │   │   ├── CompilerIdC
+│   │   │   │   │   │   │   │   ├── a.out
+│   │   │   │   │   │   │   │   └── CMakeCCompilerId.c
+│   │   │   │   │   │   │   └── CompilerIdCXX
+│   │   │   │   │   │   │       ├── a.out
+│   │   │   │   │   │   │       └── CMakeCXXCompilerId.cpp
+│   │   │   │   │   │   ├── clion-Debug-log.txt
+│   │   │   │   │   │   ├── clion-environment.txt
+│   │   │   │   │   │   ├── cmake.check_cache
+│   │   │   │   │   │   ├── CMakeConfigureLog.yaml
+│   │   │   │   │   │   ├── fractales.c.dir
+│   │   │   │   │   │   │   ├── Bitmap.c.o
+│   │   │   │   │   │   │   ├── colourScale.c.o
+│   │   │   │   │   │   │   ├── complejos.c.o
+│   │   │   │   │   │   │   └── fractales.c.o
+│   │   │   │   │   │   ├── rules.ninja
+│   │   │   │   │   │   └── TargetDirectories.txt
+│   │   │   │   │   ├── cmake_install.cmake
+│   │   │   │   │   ├── fractales.c
+│   │   │   │   │   ├── gradiente.bmp
+│   │   │   │   │   ├── mandelbrot.bmp
+│   │   │   │   │   ├── mandelbrotInverso.bmp
+│   │   │   │   │   └── Testing
+│   │   │   │   │       └── Temporary
+│   │   │   │   │           └── LastTest.log
+│   │   │   │   ├── CMakeLists.txt
+│   │   │   │   ├── colourScale.h
+│   │   │   │   ├── complejos.c
+│   │   │   │   ├── complejos.h
+│   │   │   │   └── fractales.c
+│   │   │   ├── Imágenes - Excalidraw
+│   │   │   │   ├── Estructura Práctica.md
+│   │   │   │   ├── Implementación Estática Array.md
+│   │   │   │   ├── Implementación Lista Dinámica.md
+│   │   │   │   └── Repaso ED Listas.md
+│   │   │   ├── Práctica Fractales.md
+│   │   │   ├── Repaso punteros breve.md
+│   │   │   └── Simulacro Examen.md
+│   │   ├── ITLF
+│   │   │   ├── Informática Teórica y Lenguajes Formales.md
+│   │   │   ├── Tema 1 - Introducción a ITLF.md
+│   │   │   ├── Tema 2 - Introducción a los autómatas finitos.md
+│   │   │   ├── Tema 3.1 - Gramáticas Libres de Contexto y árboles de derivación.md
+│   │   │   └── Tema 3.2 - Lenguajes, gramáticas y ambigüedad.md
+│   │   └── MOEG
+│   │       ├── Aprendizaje Inductivo.md
+│   │       ├── Descenso de Gradientes.md
+│   │       ├── Guía Examen MOEG.md
+│   │       ├── Métodos Operativos y Estadísticos de Gestión.md
+│   │       └── Programación Matemática.md
+│   └── Segundo cuatri
+│       ├── Algoritmos de Búsqueda I
+│       │   ├── Algoritmos de Búsqueda.md
+│       │   ├── Bloque I
+│       │   │   ├── Tema 1 - Intro a los problemas de búsqueda.md
+│       │   │   ├── Tema 2 - Búsqueda no informada.md
+│       │   │   ├── Tema 3 - Busqueda heurística.md
+│       │   │   └── Tema 4 - Búsqueda heurística avanzada.md
+│       │   ├── Bloque II
+│       │   │   ├── Tema 5 - Introducción a problemas de búsqueda en juegos.md
+│       │   │   └── Tema 6 - Algoritmos mini-max y poda alfa-beta.md
+│       │   ├── Bloque III
+│       │   │   ├── Resumen Bloque III AB.md
+│       │   │   ├── Tema 7 - Restricciones.md
+│       │   │   └── Tema 8 - Algoritmos para búsqueda con restricciones.md
+│       │   ├── Bloque IV
+│       │   │   ├── Tema 10 - Heurística en la planificación.md
+│       │   │   └── Tema 9 - Resolución de problemas con planificación.md
+│       │   └── Image
+│       ├── Aprendizaje Automático I
+│       │   ├── Aprendizaje Automático I.md
+│       │   ├── Bloque I
+│       │   │   ├── 0 - Introducción a ML I.md
+│       │   │   ├── 1 - Tipos de datos.md
+│       │   │   ├── 2 - Separar, explorar y rellenar datos.md
+│       │   │   ├── 3 - Ingeniería de características.md
+│       │   │   ├── 4 - Filtrado de características.md
+│       │   │   ├── 5 - Análisis de componentes principales.md
+│       │   │   └── 6 - Visualización de elementos básicos.md
+│       │   ├── Bloque II
+│       │   │   ├── 10 - Función de perdida y problema general de optimización para aprendizaje supervisado.md
+│       │   │   ├── 11a - Descenso de gradiente.md
+│       │   │   ├── 11b - Aplicación del descenso de gradiente.md
+│       │   │   ├── 12 - Regularización.md
+│       │   │   ├── 7 - Modelos lineales.md
+│       │   │   ├── 8 - Regresión logística para clasificación binaria.md
+│       │   │   └── 9 - Evaluación modelos.md
+│       │   ├── Bloque III
+│       │   │   ├── SVM, ejemplo con código.md
+│       │   │   ├── SVM lineal y hinge Loss.md
+│       │   │   └── SVM no lineal y kernels.md
+│       │   ├── CuadernosJupyter
+│       │   │   ├── CuadernoML.ipynb
+│       │   │   └── sample_data
+│       │   │       └── CCPP
+│       │   │           ├── Folds5x2_pp.ods
+│       │   │           ├── Folds5x2_pp.xlsx
+│       │   │           ├── Readme.txt
+│       │   │           └── Readme.txt~
+│       │   ├── Imágenes
+│       │   └── Resumen Primer Examen.md
+│       ├── Bases de Datos
+│       │   ├── Bases de Datos.md
+│       │   ├── Bloque I - Fundamentos y modelado de alto nivel
+│       │   │   ├── Tema 1 - Sistemas de Información y Bases de Datos.md
+│       │   │   ├── Tema 2 - Sistemas de Ficheros y Sistemas de Gestión.md
+│       │   │   ├── Tema 3 - Concepto de Modelo de Datos.md
+│       │   │   ├── Tema 4 - Modelo E - R extendido.md
+│       │   │   └── Tema 5 - Modelo Conceptual.md
+│       │   ├── Bloque III - Implementación
+│       │   │   └── Tema 8 - SQL.md
+│       │   ├── Bloque II - Modelo relacional y diseño
+│       │   │   ├── Modelo Relacional.md
+│       │   │   ├── Tema 6 - Modelo Relacional.md
+│       │   │   └── Tema 7 - Diseño lógico.md
+│       │   ├── Dudas BD.md
+│       │   ├── Ejercicios
+│       │   │   ├── Hoja 1 - Base de Datos.md
+│       │   │   ├── Hoja 3 -  Base de Datos.md
+│       │   │   ├── Hoja 4 - Base de Datos.md
+│       │   │   ├── Hoja 5 - Base de Datos.md
+│       │   │   ├── Hoja 6 - Base de datos.md
+│       │   │   └── Hoja 7 - Base de Datos.md
+│       │   ├── ImágenesBD
+│       │   └── PDFs
+│       │       ├── Ejercicios_02__2025_02_21.pdf
+│       │       ├── Hoja 1 BD.pdf
+│       │       └── Hoja 5 BD.pdf
+│       ├── Estructura de Datos II
+│       │   ├── Estructura de Datos II.md
+│       │   ├── Exámenes Años Pasados.md
+│       │   ├── Hoja 1 - Base de Datos.md
+│       │   ├── Images
+│       │   ├── PDFs
+│       │   │   ├── Parcial 2_ Árboles_ Revisión del intento.pdf
+│       │   │   ├── Parcial 3_ Tablas hash y grafos_ Revisión del intento.pdf
+│       │   │   └── Prueba Parcial - Introducción_ Revisión del intento.pdf
+│       │   ├── Tema 1 - Introducción a ED2.md
+│       │   ├── Tema 2 - Árboles generales.md
+│       │   ├── Tema 3 - Mapas y Diccionarios Ordenados.md
+│       │   ├── Tema 4 - Mapas y diccionarios NO ordenados.md
+│       │   └── Tema 5 - Grafos.md
+│       └── Sistemas Operativos
+│           ├── Estructuras de un SO.md
+│           ├── Introducción a SO.md
+│           ├── Practica1
+│           │   └── maintenance.sh
+│           ├── Procesos.md
+│           ├── Resumen SO.md
+│           └── Sistemas Operativos.md
+├── 3º
+│   ├── 1º cuatri
+│   │   ├── AB II
+│   │   │   ├── Algoritmos de Búsqueda II.md
+│   │   │   ├── Bonus 2 - Introducción al lenguaje Java.md
+│   │   │   ├── Bonus - Introducción a la POO.md
+│   │   │   ├── Images
+│   │   │   ├── Tema 1 - Introducción a la optimización.md
+│   │   │   ├── Tema 2 - Introducción a las heurísticas y metaheurísticas.md
+│   │   │   ├── Tema 3 - Métodos constructivos.md
+│   │   │   ├── Tema 4 - Tabu Search.md
+│   │   │   ├── Tema 5 - Simulated Annealing.md
+│   │   │   ├── Tema 6 - Variable Neighborhood Search.md
+│   │   │   ├── Tema 7 - Scatter Search y Path Relinking.md
+│   │   │   └── Tema 8 - Introducción a los métodos de inteligencia de enjambres.md
+│   │   ├── IACU
+│   │   │   ├── Capa de Percepción.md
+│   │   │   ├── Capa de Procesamiento.md
+│   │   │   ├── Capa de Transporte.md
+│   │   │   ├── Inteligencia Ambiental y Computación Ubicua.md
+│   │   │   ├── recopilacion ubicua.md
+│   │   │   ├── Resumen General.md
+│   │   │   ├── Tema 1 - Introducción a IACO.md
+│   │   │   ├── Tema 2 - Arquitecturas.md
+│   │   │   └── udpSoket.md
+│   │   ├── IS
+│   │   │   ├── Ingeniería del Software.md
+│   │   │   ├── Tema 1 - Introducción a IS.md
+│   │   │   ├── Tema 2 - Ciclos de vida y procesos de desarrollo software.md
+│   │   │   ├── Tema 3 - Análisis de requisitos.md
+│   │   │   ├── Tema 4 - Diseño software y modelado.md
+│   │   │   └── Tema 5 - Diseño de sistemas basados en conocimiento.md
+│   │   ├── ML II
+│   │   │   ├── Aprendizaje Automático II.md
+│   │   │   ├── Árboles de Decisión.md
+│   │   │   ├── Fundamento matemático Primer Examen.md
+│   │   │   ├── Introducción a PyTorch.md
+│   │   │   ├── ML2CodigoyEntregables
+│   │   │   │   ├── 0_FuncionesDePérdida_ToDo.ipynb
+│   │   │   │   ├── Descenso_Gradiente_Estocástico_ToDo.ipynb
+│   │   │   │   ├── Entregable 1
+│   │   │   │   │   ├── Entregable_1 - Anexo Dataset.ipynb
+│   │   │   │   │   └── Entregable_1 - Regresión Logística y Backpropagation_2526_ToDo.ipynb
+│   │   │   │   ├── Entregable 2
+│   │   │   │   │   └── Entregable_2 - Gradient Boosting_2526_ToDo.ipynb
+│   │   │   │   ├── Entregable 3
+│   │   │   │   │   └── Entregable_3 - Backpropagation MLP_2526_ToDo.ipynb
+│   │   │   │   ├── iframe_figures
+│   │   │   │   │   ├── figure_30.html
+│   │   │   │   │   ├── figure_31.html
+│   │   │   │   │   ├── figure_32.html
+│   │   │   │   │   ├── figure_33.html
+│   │   │   │   │   ├── figure_34.html
+│   │   │   │   │   ├── figure_35.html
+│   │   │   │   │   ├── figure_36.html
+│   │   │   │   │   ├── figure_37.html
+│   │   │   │   │   ├── figure_38.html
+│   │   │   │   │   └── figure_53.html
+│   │   │   │   ├── JHC_E1
+│   │   │   │   │   └── Entregable_1_Regresión_Logística_y_Backpropagation_2526_Jesus_Humanes.ipynb
+│   │   │   │   ├── P1 - Repaso Clasificadores y Regresores_ToDo.ipynb
+│   │   │   │   └── PrácticaExamen1
+│   │   │   │       └── Untitled.ipynb
+│   │   │   ├── Tema 1 - Introducción a ML II.md
+│   │   │   ├── Tema 2 - Optimización y regularización de la pérdida esperada.md
+│   │   │   ├── Tema 3 - Combinación de estimadores.md
+│   │   │   ├── Tema 4 - Redes de neuronas.md
+│   │   │   ├── Tema 5 - Redes de neuronas profundas.md
+│   │   │   ├── Tema 6 - Redes convolucionales.md
+│   │   │   └── Tema 7 - Aspectos avanzados.md
+│   │   └── RCR I
+│   │       ├── Representación del Conocimiento y Razonamiento I.md
+│   │       ├── Tema 1 - Grafos de conocimiento.md
+│   │       ├── Tema 2 - Aplicaciones.md
+│   │       ├── Tema 3 - Lógica.md
+│   │       ├── Tema 4 - Lógica de descripciones.md
+│   │       ├── Tema 5 - OWL.md
+│   │       ├── Tema 6 - Cálculo de eventos y situaciones.md
+│   │       └── Tema 7 - Lógicas Modales.md
+│   └── 2º cuatri
+│       ├── PLN I
+│       │   ├── Procesamiento del Lenguaje Natural I.md
+│       │   ├── Tema 1 - Introducción al Procesamiento de Lenguaje Natural.md
+│       │   └── Tema 2 - Análisis textual y recursos lingüísticos.md
+│       ├── RCR II
+│       │   ├── Hoja Problemas Tema 1.md
+│       │   ├── Representación del Conocimiento y del Razonamiento II.md
+│       │   └── Tema 1 - Sistemas basados en conocimiento.md
+│       ├── Robotica
+│       │   ├── Información sobre la materia de Robótica.md
+│       │   ├── Práctica 1.md
+│       │   ├── Robótica.md
+│       │   ├── Tema 1 - Introducción a la robótica.md
+│       │   └── Tema 2 - Diseño y arquitectura de robots.md
+│       ├── SMA
+│       │   ├── Sistemas Multi-agente.md
+│       │   ├── Tema 1 - Agentes, entornos, sistemas multiagente.md
+│       │   ├── Tema 2 - Tipos de agentes.md
+│       │   ├── Tema 3 - Agentes basados en Procesos de Decisión de Markov.md
+│       │   └── Tema 4 - Aprendizaje por refuerzo.md
+│       └── Visión artificial
+│           ├── Tema 1 - Formación de la imagen.md
+│           ├── Tema 2 - Preproceso y filtrado de imágenes digitales.md
+│           └── Visión Artificial.md
+├── 4º
+│   └── 2º cuatri
+│       └── AIA
+│           ├── Aplicaciones de la Inteligencia Artificial.md
+│           ├── CAPO
+│           │   ├── Esteganografía con DL.md
+│           │   ├── How it all started - AI, from CPU to GPU.md
+│           │   ├── Modelado de Temáticas.md
+│           │   ├── Understanding Deep Image Priors.md
+│           │   └── Understanding LUT-Based Logic Neural Networks.md
+│           ├── CETINIA
+│           ├── Gavab
+│           │   └── Clasificación sobre series temporales usando HMM.md
+│           └── GRAFO
+├── estructura.txt
+├── Otros
+│   ├── Excalidraw
+│   │   ├── Árbol derivado 01110.md
+│   │   ├── Árboles de derivación.md
+│   │   ├── Árbol implícito Backtracking.md
+│   │   ├── Averiguar primer elemento.md
+│   │   ├── Drawing 2024-10-24 15.28.48.excalidraw.md
+│   │   ├── Implementación Dinámica Pilas.md
+│   │   ├── Pila estática ejemplo.md
+│   │   └── Pila Estática.md
+│   ├── Images
+│   ├── Meetings
+│   │   └── Why is AI a social problem in 2024.md
+│   └── Prompts Útiles.md
+└── README.md
+
+110 directories, 438 files
