@@ -203,7 +203,7 @@ Metadatos para describir recursos
 - Conversión de datos en varios formatos a RDF mediante herramientas como GRDDL, RDFa, etc.
 - Uso de SPARQL y razonadores OWL para consultar y enriquecer datos
 #### Web of Things
-- Estándar del W3C para integrar dispositivos IoT, véase [[Inteligencia Ambiental y Computación Obicua]] con la Web Semántica
+- Estándar del W3C para integrar dispositivos IoT, véase [[Inteligencia Ambiental y Computación Ubicua]] con la Web Semántica
 - Describe dispositivos como recursos web con propiedades, acciones y eventos
 - **Ejemplo**
 
