@@ -1,4 +1,4 @@
-# 🎓 Grado en Inteligencia Artificial - Mis Apuntes
+# 🎓 Grado en Inteligencia Artificial
 
 Este repositorio contiene la recopilación organizada de apuntes teóricos, ejercicios prácticos, diagramas y cuadernos de código desarrollados durante el grado.
 
@@ -8,6 +8,7 @@ Este repositorio contiene la recopilación organizada de apuntes teóricos, ejer
 
 A continuación se detalla la jerarquía de archivos. Se han omitido archivos de configuración y binarios para priorizar la navegabilidad académica.
 
+--- 
 ### 🟢 1º Curso
 *Fundamentos de computación, matemáticas y bases de la IA.*
 
@@ -36,14 +37,13 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 </details>
 
 ---
-
 ### 🔵 2º Curso
 
 *Algoritmia, aprendizaje automático y sistemas operativos.*
 
 <details>
 <summary><b>Primer Cuatrimestre</b></summary>
-
+<br>
 ```text
 ├── Algoritmos
 │   ├── AlgoritmosJuez (Voraces, Grafos, DyV)
@@ -65,7 +65,7 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 
 <details>
 <summary><b>Segundo Cuatrimestre</b></summary>
-
+<br>
 ```text
 ├── Algoritmos de Búsqueda I
 │   ├── Búsqueda heurística e informada
@@ -90,14 +90,13 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 </details>
 
 ---
-
 ### 🟠 3º Curso
 
 *Especialización en Deep Learning, Robótica y Visión.*
 
 <details>
 <summary><b>Primer Cuatrimestre</b></summary>
-
+<br>
 ```text
 ├── AB II (Metaheurísticas)
 │   ├── Optimización, Tabu Search y Simulated Annealing
@@ -119,7 +118,7 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 
 <details>
 <summary><b>Segundo Cuatrimestre</b></summary>
-
+<br>
 ```text
 ├── PLN I (Procesamiento de Lenguaje Natural)
 │   └── Análisis textual y recursos lingüísticos.md
@@ -137,14 +136,13 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 </details>
 
 ---
-
 ### 🔴 4º Curso
 
 *Aplicaciones avanzadas.*
 
 <details>
 <summary><b>Ver asignaturas de 4º</b></summary>
-
+<br>
 ```text
 └── AIA (Aplicaciones de la IA)
     ├── CAPO (Esteganografía con DL, Temáticas)
@@ -156,7 +154,6 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 </details>
 
 ---
-
 ## 🛠️ Herramientas y Tecnologías
 
 * **Lenguajes:** Python (PyTorch), C++, Scala, Bash.
@@ -164,7 +161,6 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 * **Esquemas:** Diagramas lógicos realizados con Excalidraw.
 
 ---
-
 ## 🚀 Uso
 
 Se recomienda visualizar este repositorio con **Obsidian** para mantener la integridad de los enlaces entre notas y el renderizado de fórmulas matemáticas.
