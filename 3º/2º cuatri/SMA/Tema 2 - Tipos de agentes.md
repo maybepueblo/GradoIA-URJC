@@ -35,4 +35,28 @@ Las decisiones se toman en función de su memoria ($m$), sus objetivos ($O$) y e
 - **Arquitectura:** Se estructuran en capas (ej. Máquinas de Touring de Ferguson: Capa de Modelado, Capa de Planificación, Capa Reactiva)
 - **Control:** Un mecanismo decide qué subsistema y capa toma el control en cada instante, dando normalmente prioridad a los componentes reactivos ante emergencias.
 ## Agentes BDI (Belief, Desire, Intention)
-- **Razonamiento**
+- **Razonamiento Práctico**: Son agentes que evalúan qué hacer sopesando consideraciones conflictivas entre lo que desean y lo que creen, a diferencia del razonamiento puramente teórico.
+- **Conceptos clave:**
+	- **Creencias (Beliefs)**: Información y visión del mundo actual
+	- **Deseos (Desires):** Opciones, valores y estados del mundo que el agente quiere alcanzar simultáneamente
+	- **Intenciones (Intentions):** Deseos concretos con los que el agente ya se ha comprometido
+	- **Planes:** Secuencias de acciones para cumplir dichas intenciones
+- **Procesos principales:**
+	1. **Deliberación** -> Identificar opciones (deseos) y filtrarlas para convertirlas en intenciones comprometidas.
+	2. **Planificación (Means-end reasoning)**: Decidir el cómo cumplir esas intenciones. El resultado es un plan de acción.
+- **Gestión del compromiso:**
+	- **Mente cerrada (Single minded):** Persigue una intención hasta lograrla o hasta que sea imposible, sin mirar otras opciones.
+	- **Mente abierta (Open-minded):** Reconsidera sus intenciones mientras actúa, ganando flexibilidad ante nuevas oportunidades *(Ejemplo: Un robot aspirador BDI se dirige a limpiar la cocina (intención original), pero si detecta que se derramó zumo en el pasillo (nueva creencia), abandona la cocina para limpiar el pasillo primero (reconsideración de intención))*.
+	- **Meta-razonamiento:** Reconsiderar constantemente es costoso y puede impedir avanzar. El agente debe calcular cuán razonable es deternerse a replantear sus intenciones.
+## Agentes Basados en Utilidad
+- **Más allá de metas binarias:** A diferencia de los agentes de planificación donde un estado es "meta" (1) o "no meta" (0), estos agentes operan en entornos donde existen grados de deseabilidad , representados por una **función de utilidad** $U(s)$
+- **Coste:** La preferencia sobre qué acciones tomar se formaliza con una función de coste, que actúa como una utilidad inversa.
+- **Utilidad Esperada y Óptimo:** Un agente óptimo toma sus decisiones para maximizar la utilidad esperada de sus acciones futuras. Esto se formula matemáticamente ponderando la utilidad de los estados futuros por la probabilidad de alcanzarlos mediante una acción.$$a_k=argmax_{a_i\in A(s_p)}\sum_{j=1}^mp(s_j|ŕa_i)·EU_{max}(ŕa_is_j)$$
+- **Racionalidad vs. Omnisciencia:** La racionalidad implica tomar la mejor acción dado el conocimiento e incertidumbre actual del agente, no significa que acierte perfectamente el futuro como si fuera omnisciente. 
+## Agentes que aprenden
+- **Adaptación:** Vitales en entornos cambiantes o desconocidos para mejorar continuamente su desempeño. Buscan ser más eficientes ("cómo hacerlo") o efectivos ("qué hacer").
+- **Componentes de la arquitectura**:
+	- **Análisis crítico** -> Evalúa los resultados reales obtenidos tras actuar comparándolos con las expectativas, usando una medida de evaluación.
+	- **Revisión del modelo (aprendizaje)** -> Usa retroalimentación del crítico para actualizar el conocimiento del agente.
+	- **Selección-acción (desempeño)** -> Elige la próxima acción basándose en el modelo ya ajustado/actualizado.
+	- **Generador de descubrimiento** -> Propone acciones subóptimas a corto plazo para explorar nuevas situaciones beneficiosas a largo plazo, enfrentándose al dilema de exploración vs. explotación *(Ejemplo: Un recomendador como Spotify, en lugar de sugerir siempre la banda favorita del usuario (explotación), de vez en cuando sugiere un género totalmente distinto (exploración) para aprender si sus gustos se han expandido)*. 

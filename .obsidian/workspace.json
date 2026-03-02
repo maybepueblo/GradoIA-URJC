@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/2º cuatri/SMA/Sistemas Multi-agente.md",
+                "file": "3º/2º cuatri/SMA/Tema 2 - Tipos de agentes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sistemas Multi-agente"
+              "title": "Tema 2 - Tipos de agentes"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,11 +177,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "025afcd4df87aca1",
+  "active": "af2ff961ae59869b",
   "lastOpenFiles": [
+    "3º/2º cuatri/SMA/Sistemas Multi-agente.md",
+    "README.md",
     "3º/2º cuatri/SMA/Tema 2 - Tipos de agentes.md",
     "Untitled.md",
-    "3º/2º cuatri/SMA/Sistemas Multi-agente.md",
     "3º/2º cuatri/SMA/Tema 1 - Agentes, entornos, sistemas multiagente.md",
     "Otros/Prompts Útiles.md",
     "estructura_limpia.txt",
@@ -211,7 +211,6 @@
     "3º/2º cuatri/Robotica/Información sobre la materia de Robótica.md",
     "3º/2º cuatri/Robotica/Tema 2 - Diseño y arquitectura de robots.md",
     "3º/2º cuatri/Robotica/Tema 1 - Introducción a la robótica.md",
-    "3º/2º cuatri/Robotica/Práctica 1.md",
     "Recording 20260127143802.m4a",
     "Recording 20260126111446.m4a",
     "Recording 20260126111432.m4a",
