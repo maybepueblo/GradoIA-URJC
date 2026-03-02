@@ -43,7 +43,7 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 
 <details>
 <summary><b>Primer Cuatrimestre</b></summary>
-<br>
+
 ```text
 ├── Algoritmos
 │   ├── AlgoritmosJuez (Voraces, Grafos, DyV)
@@ -65,7 +65,7 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 
 <details>
 <summary><b>Segundo Cuatrimestre</b></summary>
-<br>
+
 ```text
 ├── Algoritmos de Búsqueda I
 │   ├── Búsqueda heurística e informada
@@ -96,7 +96,7 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 
 <details>
 <summary><b>Primer Cuatrimestre</b></summary>
-<br>
+
 ```text
 ├── AB II (Metaheurísticas)
 │   ├── Optimización, Tabu Search y Simulated Annealing
@@ -118,7 +118,7 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 
 <details>
 <summary><b>Segundo Cuatrimestre</b></summary>
-<br>
+
 ```text
 ├── PLN I (Procesamiento de Lenguaje Natural)
 │   └── Análisis textual y recursos lingüísticos.md
@@ -142,7 +142,7 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 
 <details>
 <summary><b>Ver asignaturas de 4º</b></summary>
-<br>
+
 ```text
 └── AIA (Aplicaciones de la IA)
     ├── CAPO (Esteganografía con DL, Temáticas)
