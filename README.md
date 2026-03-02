@@ -169,8 +169,6 @@ A continuación se detalla la jerarquía de archivos. Se han omitido archivos de
 
 Se recomienda visualizar este repositorio con **Obsidian** para mantener la integridad de los enlaces entre notas y el renderizado de fórmulas matemáticas.
 
-```
-
 ---
 
 ### Instrucciones para crear el archivo:
