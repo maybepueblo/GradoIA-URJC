@@ -6,3 +6,5 @@
 - [[Tema 5 - Transformers y Modelos de Lenguaje]]
 - [[Tema 6 - Aumento de datos]]
 - [[Tema 7 - Reconocimiento de Entidades Nombradas]]
+## Examen
+- Parte de teoría y parte práctica11

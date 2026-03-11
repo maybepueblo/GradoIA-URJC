@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "af2ff961ae59869b",
+            "id": "e7cbf9f1197c0bfc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/2º cuatri/RCR II/Tema 2 - Sistemas basados en reglas.md",
+                "file": "3º/2º cuatri/PLN I/Tema 2 - Análisis textual y recursos lingüísticos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 2 - Sistemas basados en reglas"
-            }
-          },
-          {
-            "id": "3a9006513e96f6e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Otros/Prompts Útiles.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Prompts Útiles"
+              "title": "Tema 2 - Análisis textual y recursos lingüísticos"
             }
           }
         ]
@@ -177,12 +163,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "af2ff961ae59869b",
+  "active": "e7cbf9f1197c0bfc",
   "lastOpenFiles": [
+    "3º/2º cuatri/PLN I/Tema 1 - Introducción al Procesamiento de Lenguaje Natural.md",
     "Otros/Prompts Útiles.md",
+    "3º/2º cuatri/PLN I/Procesamiento del Lenguaje Natural I.md",
+    "3º/2º cuatri/PLN I/Tema 2 - Análisis textual y recursos lingüísticos.md",
+    "3º/2º cuatri/RCR II/Tema 1 - Sistemas basados en conocimiento.md",
     "3º/2º cuatri/RCR II/Tema 2 - Sistemas basados en reglas.md",
     "3º/2º cuatri/RCR II/Representación del Conocimiento y del Razonamiento II.md",
-    "3º/2º cuatri/RCR II/Tema 1 - Sistemas basados en conocimiento.md",
     "Untitled.md",
     "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
     "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
@@ -204,9 +193,6 @@
     "3º/2º cuatri/Visión artificial/Tema 2 - Preproceso y filtrado de imágenes digitales.md",
     "3º/2º cuatri/RCR II/Hoja Problemas Tema 1.md",
     "4º/2º cuatri/AIA/CAPO/Modelado de Temáticas.md",
-    "4º/2º cuatri/AIA/CAPO/Understanding LUT-Based Logic Neural Networks.md",
-    "4º/2º cuatri/AIA/Gavab/Clasificación sobre series temporales usando HMM.md",
-    "4º/2º cuatri/AIA/CAPO/Esteganografía con DL.md",
     "4º/2º cuatri/AIA/CETINIA",
     "4º/2º cuatri/AIA/Gavab",
     "4º/2º cuatri/AIA/CAPO",

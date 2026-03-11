@@ -43,7 +43,7 @@ CLIPS es una herramienta en C/ANSI para SBR por encadenamiento hacia delante.
 - **Hechos no ordenados (`deftemplate`):** Abstracciones con nombre. `slot` para valores únicos y `multislot` para listas. Al instanciarlos, el orden no importa y se pueden omitir campos. 
 - **Hechos iniciales (`deffacts`):** Bloques de hechos que se cargan automáticamente. Siempre existe el `initial-fact`.
 - **Índices (time-tags):** CLIPS asigna un índice temporal único y secuencial a cada hecho (ej. `f-0`, `f-1`) para identificarlo y conocer su antigüedad. 
-- **Órdenes de consola:** `(facts)` lista, `(assert)` añade, `(retract)` elimina, `(modify)` cambia valores, `(duplicate)` clona, `(clear)` borra todo el sistema, `(reset)` restaura al estado inicial .
+- **Órdenes de consola:** `(facts)` lista, `(assert)` añade, `(retract)` elimina, `(modify)` cambia valores y borra la anterior versión al completo, `(duplicate)` clona y hace cambios sobre la copia, `(clear)` borra todo el sistema, `(reset)` restaura al estado inicial .
 **La Base de Reglas (`defrule`)**
 - **Patrones y Comodines**: El antecedente evalúa patrones contra la MT. Los comodines abarcan valores irrelevantes: `?` (un campo) y `$?` (cero a N campos)
 - **Variables:** Extraen datos de los hechos para usarlos. Siguen la lógica `?x` (un valor) o `$?x` (multivalor). Deben equiparar con el mismo valor en todas sus ocurrencias dentro de la regla.
