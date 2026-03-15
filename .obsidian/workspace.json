@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/2º cuatri/PLN I/Tema 2 - Análisis textual y recursos lingüísticos.md",
+                "file": "3º/2º cuatri/PLN I/Tema 1 - Introducción al Procesamiento de Lenguaje Natural.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 2 - Análisis textual y recursos lingüísticos"
+              "title": "Tema 1 - Introducción al Procesamiento de Lenguaje Natural"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -165,10 +164,10 @@
   },
   "active": "e7cbf9f1197c0bfc",
   "lastOpenFiles": [
+    "3º/2º cuatri/PLN I/Tema 2 - Análisis textual y recursos lingüísticos.md",
     "3º/2º cuatri/PLN I/Tema 1 - Introducción al Procesamiento de Lenguaje Natural.md",
     "Otros/Prompts Útiles.md",
     "3º/2º cuatri/PLN I/Procesamiento del Lenguaje Natural I.md",
-    "3º/2º cuatri/PLN I/Tema 2 - Análisis textual y recursos lingüísticos.md",
     "3º/2º cuatri/RCR II/Tema 1 - Sistemas basados en conocimiento.md",
     "3º/2º cuatri/RCR II/Tema 2 - Sistemas basados en reglas.md",
     "3º/2º cuatri/RCR II/Representación del Conocimiento y del Razonamiento II.md",

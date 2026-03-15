@@ -8,7 +8,7 @@ Lo vemos como la capacidad de que algo se entienda de más de una forma. Hay tip
 ## Niveles básicos de procesamiento
 Existen diferentes niveles de análisis:
 - Análisis fonológico: Pronunciación
-- Análisis morfológico: Identificación de los lexemas y morfemas de una palabra
+- Análisis morfológico: Identificación de los lexemas y morfemas de una palabrak<
 
 reducir variabilidad en palabras para que los vectores no sean tan grandes, en esto consiste el stemming y la lematización.
 
