@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e7cbf9f1197c0bfc",
+            "id": "93b87e0dfd67f7fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/2º cuatri/Robotica/Tema 1 - Intro a robótica.md",
+                "file": "3º/2º cuatri/PLN I/Tema 5 - Transformers y Modelos de Lenguaje.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 1 - Intro a robótica"
+              "title": "Tema 5 - Transformers y Modelos de Lenguaje"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -162,34 +163,46 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "e7cbf9f1197c0bfc",
+  "active": "93b87e0dfd67f7fa",
   "lastOpenFiles": [
-    "3º/2º cuatri/Robotica/Tema 0 - Introducción a la Asignatura.md",
-    "3º/2º cuatri/Robotica/Tema 7 - Navegación y Localización.md",
+    "3º/2º cuatri/PLN I/Procesamiento del Lenguaje Natural I.md",
+    "3º/2º cuatri/PLN I/Tema 5 - Transformers y Modelos de Lenguaje.md",
+    "3º/2º cuatri/PLN I/Tema 4 - Redes Neuronales en Procesamiento del Lenguaje Natural.md",
+    "3º/2º cuatri/PLN I/Tema 3 - Representación del texto.md",
     "3º/2º cuatri/Robotica/Tema 6 - Percepción en Robots.md",
+    "Untitled 1.md",
+    "Untitled 2.md",
+    "Untitled.md",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518111112.png",
+    "3º/2º cuatri/PLN I/Tema 2 - Análisis textual y recursos lingüísticos.md",
+    "3º/2º cuatri/PLN I/Images",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518123707.png",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518123105.png",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518122826.png",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518122759.png",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518122347.png",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518122341.png",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518122108.png",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518120508.png",
+    "3º/2º cuatri/PLN I/Images/Pasted image 20260518120446.png",
+    "3º/2º cuatri/PLN I/Tema 1 - Introducción al Procesamiento de Lenguaje Natural.md",
     "3º/2º cuatri/Robotica/Tema 5 - Robots móviles.md",
-    "3º/2º cuatri/Robotica/Robótica.md",
     "3º/2º cuatri/Robotica/Tema 4 - Control de robots.md",
     "3º/2º cuatri/Robotica/Tema 3 - Cinemática de Robots.md",
     "3º/2º cuatri/Robotica/Tema 2 - Diseño y arquitectura de robots.md",
-    "3º/2º cuatri/Robotica/Tema 2 - Diseño y arquitectura de bots.md",
-    "3º/2º cuatri/Robotica/Tema 1 - Intro a robótica.md",
+    "3º/2º cuatri/Robotica/Hojas de Problemas/Hoja de Problemas 1.md",
+    "3º/2º cuatri/Robotica/Hojas de Problemas",
+    "3º/2º cuatri/Robotica/Tema 7 - Navegación y Localización.md",
+    "3º/2º cuatri/Visión artificial/Tema 2 - Preproceso y filtrado de imágenes digitales.md",
+    "3º/2º cuatri/Visión artificial/Visión Artificial.md",
+    "3º/2º cuatri/Visión artificial/Tema 1 - Formación de la imagen.md",
     "3º/2º cuatri/Robotica/Tema 1 - Introducción a la robótica.md",
-    "3º/2º cuatri/PLN I/Tema 1 - Introducción al Procesamiento de Lenguaje Natural.md",
-    "3º/2º cuatri/PLN I/Tema 2 - Análisis textual y recursos lingüísticos.md",
+    "3º/2º cuatri/Robotica/Robótica.md",
+    "3º/2º cuatri/Robotica/Información sobre la materia de Robótica.md",
+    "3º/2º cuatri/Robotica/Tema 0 - Introducción a la Asignatura.md",
     "Otros/Prompts Útiles.md",
-    "3º/2º cuatri/PLN I/Procesamiento del Lenguaje Natural I.md",
     "3º/2º cuatri/RCR II/Tema 1 - Sistemas basados en conocimiento.md",
     "3º/2º cuatri/RCR II/Tema 2 - Sistemas basados en reglas.md",
-    "3º/2º cuatri/RCR II/Representación del Conocimiento y del Razonamiento II.md",
-    "Untitled.md",
-    "3º/1º cuatri/RCR I/Tema 1 - Grafos de conocimiento.md",
-    "3º/1º cuatri/RCR I/Tema 2 - Aplicaciones.md",
-    "3º/1º cuatri/RCR I/Tema 3 - Lógica.md",
-    "3º/1º cuatri/RCR I/Tema 4 - Lógica de descripciones.md",
-    "3º/1º cuatri/RCR I/Tema 5 - OWL.md",
-    "3º/2º cuatri/SMA/Tema 1 - Agentes, entornos, sistemas multiagente.md",
-    "3º/2º cuatri/SMA/Tema 4 - Aprendizaje por refuerzo.md",
     "estructura_limpia.txt",
     "estructura.txt",
     "4º/2º cuatri/AIA/CETINIA",
@@ -197,18 +210,6 @@
     "4º/2º cuatri/AIA/CAPO",
     "4º/2º cuatri/AIA/GRAFO",
     "Recording 20260127143802.m4a",
-    "Recording 20260126111446.m4a",
-    "Recording 20260126111432.m4a",
-    "4º/2º cuatri/AIA",
-    "3º/1º cuatri/AB II/Images/EsquemaGeneralTabuSearch.png",
-    "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/mandelbrotInverso.bmp",
-    "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/mandelbrot.bmp",
-    "2º/Primer cuatri/Estructura de Datos/fractales/cmake-build-debug/gradiente.bmp",
-    "2º/Segundo cuatri/Estructura de Datos II/Images/Configuraciones Caso 1.png",
-    "2º/Segundo cuatri/Bases de Datos/ImágenesBD/EjGen_Esp.png",
-    "2º/Segundo cuatri/Bases de Datos/ImágenesBD/Pasted image 20250226115838.png",
-    "2º/Segundo cuatri/Bases de Datos/ImágenesBD/Ejercicio 2 Hoja 1 BD.png",
-    "2º/Segundo cuatri/Bases de Datos/ImágenesBD/Ejemplo1.png",
-    "2º/Segundo cuatri/Aprendizaje Automático I/Imágenes/Problema dibujar planos.png"
+    "Recording 20260126111446.m4a"
   ]
 }

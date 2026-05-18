@@ -134,3 +134,5 @@ El documento concluye exponiendo una paradoja fundamental en la robótica delibe
 - Depender exclusivamente de la odometría (cálculo de posición basado en el giro de las ruedas) genera malos resultados, ya que los errores se acumulan rápidamente desviando la trayectoria.
     
 - La solución óptima requiere el uso de marcadores únicos para estimar la localización y el desarrollo de sistemas que permitan construir el mapa a la vez que el robot se localiza en él.
+
+# 

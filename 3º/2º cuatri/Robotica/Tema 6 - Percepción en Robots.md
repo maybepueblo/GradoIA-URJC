@@ -1,26 +1,17 @@
 **1. Introducción y el Ciclo "Ver-Pensar-Actuar"** La percepción es la fase de "Ver", donde el robot utiliza sensores para obtener datos crudos (Raw data) del entorno, extrae información relevante, y construye un mapa local para estimar su posición y crear un mapa global. Esta fase de percepción alimenta a la fase de "Pensar" (planificación de trayectorias y tareas) y finalmente a la fase de "Actuar" (control de movimiento y ejecución de la trayectoria) en el mundo real. La visión artificial en robótica busca que el robot perciba, interprete y "comprenda" su entorno a través de imágenes o secuencias de vídeo, requiriendo procesamiento en tiempo real, robustez ante cambios en el entorno y bajo consumo de recursos.
 
 **2. Aplicaciones y Casos de Uso de la Visión en Robótica**
-
 La visión artificial tiene diversas aplicaciones críticas en robótica:
-
 - **Navegación y localización:** Permite a robots móviles y vehículos autónomos percibir objetos, entender la escena y localizarse (SLAM visual). Ejemplos incluyen detección de líneas, peatones y señales de tráfico.
-    
 - **Manipulación robótica:** Usada en robots industriales y brazos robóticos para detectar, reconocer, clasificar y manipular objetos.
-    
 - **Interacción con humanos:** Esencial en robots de servicio para reconocer personas, rostros, gestos y realizar seguimientos.
-    
 
 Los desafíos principales en estas aplicaciones incluyen la iluminación variable, condiciones adversas (reflejos, oclusiones) y la necesidad de procesamiento en tiempo real.
 
 **3. Hardware para Percepción y Sensores**
-
 El documento aborda los componentes de hardware que integran los sistemas de percepción, diferenciando entre:
-
 - **Sensores Propioceptivos:** Miden el estado interno del robot (ej. Encoders, IMU, GPS).
-    
 - **Sensores Exteroceptivos:** Miden el entorno externo (ej. Cámaras, LIDAR, ultrasonidos).
-    
 
 Se detallan componentes específicos para robots acuáticos (cámaras frontales, traseras, ordenadores de visión, IMU, sensores de presión) y aéreos (cámaras FPV, cámaras digitales, LIDAR, controladores de vuelo, estabilizadores).
 
@@ -28,25 +19,18 @@ Se detallan componentes específicos para robots acuáticos (cámaras frontales,
 
 Se profundiza en el funcionamiento de las cámaras utilizadas en robótica:
 
-- **Cámaras RGB:** Basadas en la síntesis aditiva del color, utilizan sensores CCD o CMOS con un filtro de Bayer, el cual interpola colores primarios para generar píxeles de color.
-    
+- **Cámaras RGB:** Basadas en la síntesis aditiva del color, utilizan sensores CCD o CMOS con un filtro de Bayer, el cual interpola colores primarios pa0ra generar píxeles de color.
 - **Cámaras RGB-D (Depth):** Combinan imágenes a color con información de profundidad. La profundidad, representada en escala de grises (donde la intensidad indica la distancia), se puede obtener mediante tres métodos principales:
-    
     - **Luz estructurada:** Un proyector emite un patrón infrarrojo (IR) que es capturado por una cámara IR. La profundidad se calcula mediante triangulación, analizando la distorsión del patrón sobre los objetos en comparación con un patrón de referencia en una superficie plana conocida ($Z = \frac{f \cdot b}{d}$).
-        
     - **Time-of-Flight (ToF):** Utiliza la velocidad de la luz para calcular la distancia. Se divide en **dToF (Direct ToF)**, que emite un pulso láser y mide el tiempo directo de retorno ($d = \frac{c \cdot t}{2}$) ; e **iToF (Indirect ToF)**, que emite una onda continua y modulada de luz IR y calcula la distancia midiendo el desfase entre la onda emitida y la reflejada. Ambos sistemas ToF pueden fallar en superficies especulares, reflectantes, negras profundas o bajo luz solar directa.
-        
     - **Disparidad estéreo:** Explicado más adelante en el punto 7.
-        
 
 **5. Profundidad con LIDAR** Los sistemas LIDAR (Light Detection and Ranging) funcionan bajo el principio dToF, emitiendo pulsos láser breves, potentes y muy focalizados, barriendo la escena mediante espejos giratorios para generar una nube de puntos 3D. A diferencia de los sensores RGB-D, los LIDAR funcionan bien en exteriores gracias a la alta energía del pulso láser, el uso de filtros de banda estrecha y su geometría directa.
 
 **6. Detección y Seguimiento de Objetos: Casos Prácticos** El documento presenta tres problemas prácticos y cómo abordarlos con técnicas de visión clásicas:
 
 - **Sigue-líneas con visión:**
-    
     1. Conversión a espacio de color HSV para una extracción de color más robusta ante cambios de iluminación.
-        
     2. Segmentación por color y aplicación de máscara binaria, seguida de operaciones morfológicas (erosión/dilatación) para eliminar ruido.
         
     3. Detección de bordes usando filtros como Canny.

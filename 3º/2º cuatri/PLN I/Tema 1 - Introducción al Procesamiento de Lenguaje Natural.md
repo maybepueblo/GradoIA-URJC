@@ -7,7 +7,7 @@ tokenización: dividir el texto en partes más pequeños
 - Los datos crecen de forma exponencial en el mundo
 - 80% de datos están no estructurados, siendo estos texto.
 	- Datos estructurados: formato predefinido y que siguen una estructura clara.
-	- Datos no estructurados: no tienen una estructura predefinida y que, por tanto, no se pueden organizar fácilmente en tablas o en bases de datos relacionales.
+	- Datos no estructurados: no tienen una estructura predefinida y que, por lo tanto, no se pueden organizar fácilmente en tablas o en bases de datos relacionales.
 
 Por ende, hay una cantidad ingente de información que tenemos que gestionar para generar conocimiento.
 - Sin embargo, el lenguaje natural es extremadamente complejo
@@ -25,7 +25,9 @@ Lo dividimos en dos aspectos esenciales:
 - Lingüística
 - Ciencia de datos
 
-Convierten el texto en algo entendible por la máquina, creando representaciones vectoriales. Para ello hay que preprocesar el texto haciendo por ejemplo:
+Convierten el texto en algo entendible por la máquina, creando representaciones vectoriales. 
+
+Para ello preprocesamos el texto haciendo por ejemplo:
 - Segmentación
 - Tokenización
 - Eliminación de stop words
@@ -48,6 +50,7 @@ Convierten el texto en algo entendible por la máquina, creando representaciones
 	- Donde si $\beta = 1$, es el mismo peso a precisión y recall combinados, si es 0.5, se prioriza precisión y en 2, se prioriza el recall.
 - **Accuracy (Exactitud)**
 	- Porcentaje de casos en los que el algoritmo acierta en ambas clases, es decir, acierta en los TP, pero también en los TN.$$accuracy=\frac{TP+TN}{TP+TN+FP+FN}$$
+	- ¡OJO! MEDIDA NO FIABLE SI LAS CLASES NO ESTÁN BALANCEADAS
 ## Librerías para PLN
 - Usamos Python
 	- [NLTK](https://www.nltk.org/)
@@ -56,5 +59,12 @@ Convierten el texto en algo entendible por la máquina, creando representaciones
 	- [TextBlob](https://textblob.readthedocs.io/en/dev/)
 	- [Stanza](https://stanfordnlp.github.io/stanza/)
 - Librerías para ML
+	- Numpy
+	- Pandas
+	- Matplotlib
+	- Scikit-learn
 - Librerías de DL
+	- Tensorflow
+	- Pytorch
+	- Keras
 - Hugging Face
