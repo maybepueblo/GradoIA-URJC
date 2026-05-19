@@ -11,6 +11,17 @@ Las redes se pueden clasificar según su arquitectura y cómo transmiten la info
 - **Redes Prealimentadas (Feedforward):** La información fluye en una única dirección (de entrada a salida) sin formar bucles ni ciclos. Un ejemplo clásico es el Perceptrón de Múltiples Capas (MLP).
 - **Redes de Retropropagación (Backpropagation):** Diseñadas para entrenar redes multicapa. Calculan el error en la salida y lo propagan hacia atrás para actualizar los pesos de las conexiones eficientemente mediante la técnica de descenso por gradiente.
     - _Desventajas:_ Dependen mucho de cómo se inicialicen y sufren del "desvanecimiento del gradiente", donde la señal de error se vuelve tan pequeña en redes profundas que los pesos dejan de actualizarse y el entrenamiento se detiene.
+- **Otros tipos de redes:**
+	- Redes Neuronales Simples o prealimentadas:
+		- Todos los nodos de una capa están conectados con los nodos de la siguiente capa
+		- Sólo tiene una capa oculta
+	- Redes con varias capas ocultas (Deep Learning, véase [[Aprendizaje Automático II]])
+		- **CNNs**: Procesamiento de imágenes. Tres tipos de capas:
+			- Convolucionales que extraen información de datos de entrada mediante filtros preconfigurados
+			- Capas de poolings para reducir dimensionalidad
+			- Capas densas (fully connected) que combinan todas las características para realizar la predicción final.
+		- Redes Neuronales Recurrentes (RNNs): Diseñadas para procesar secuencias de datos como texto, audio o series temporales.
+			- Tienen la capacidad de mantener y recordar información pasada usando conexiones recurrentes. Esto las hace especialmente adecuadas para aplicaciones en las que el contexto y la secuencia de los datos son importantes.
 **Métodos de aprendizaje utilizados durante el entrenamiento:**
 - **Supervisado:** Se proporcionan los datos de entrada junto con las salidas esperadas para que la red ajuste sus cálculos.
 - **No supervisado:** La red no conoce las respuestas correctas; debe encontrar patrones basándose únicamente en las observaciones de entrada.
@@ -29,16 +40,20 @@ Para usar una CNN en texto, el proceso requiere adaptar la información a un for
 - **Filtros en PLN:** Dado que el texto tiene una sola dimensión (la secuencia de tokens), los filtros actúan como "ventanas" de palabras. Un filtro que abarque $N$ palabras tendrá una dimensión matricial de $N \times dim$ (siendo $dim$ la dimensión del embedding).
 ### 5. Redes Neuronales Recurrentes (RNN)
 Las RNN están específicamente diseñadas para datos secuenciales (texto, audio o series temporales) porque tienen "memoria".
-- **Funcionamiento:** En lugar de procesar los datos de forma aislada, contienen conexiones recurrentes (bucles de retroalimentación) donde la salida de una neurona vuelve a entrar en ella misma en el siguiente paso.
+- **Funcionamiento:** En lugar de procesar los datos de forma aislada, contienen conexiones recurrentes (**bucles de retroalimentación**) donde la salida de una neurona vuelve a entrar en ella misma en el siguiente paso.
 - **Estados Ocultos (_Hidden States_):** Actúan como la memoria de la red. Al procesar una secuencia, el estado oculto actual se calcula usando la entrada del momento presente y el estado oculto del paso anterior.
-- **Entrenamiento en NLP:** En PLN, la red recibe una secuencia de embeddings (matriz de dimensión $|V| \times d$). Utiliza la técnica de Retropropagación a Través del Tiempo (BPTT) para actualizar los pesos retrocediendo en la secuencia. Finalmente, suele aplicar la función Softmax en la salida para calcular probabilidades (ej. predecir la siguiente palabra).
+- **Funcionamiento**
+	1. Propagación hacia adelante -> En cada paso de tiempo la entrada actual y el estado oculto anterior se usan para calcular el estado oculto actual.
+	2. Retropropagación a través del tiempo -> Se calculan los gradientes a través de cada paso de tiempo para actualizar los pesos, lo que permite a la red aprender de secuencias de entrada.
+- **Entrenamiento en NLP:** En PLN, la red recibe una secuencia de embeddings (matriz de dimensión $|V| \times d$). Utiliza la técnica de Retropropagación a Través del Tiempo (BPTT) para actualizar los pesos retrocediendo en la secuencia. Finalmente, suele aplicar la función **Softmax** en la salida para calcular probabilidades (ej. predecir la siguiente palabra).
 - **Limitaciones críticas:** Al intentar procesar secuencias largas, la red "olvida" las primeras palabras. Además, son extremadamente vulnerables al **desvanecimiento del gradiente** (los parámetros dejan de actualizarse) y a la **explosión del gradiente** (crecen sin control haciendo inestable el aprendizaje).
 ### 6. Redes de Memoria a Corto y Largo Plazo (LSTM) y Bi-LSTM
-Para solucionar los olvidos y mitigar el desvanecimiento del gradiente de las RNN estándar, se crearon las LSTM. Estas redes integran "celdas de memoria" complejas que priorizan qué información retener a largo plazo ($C_t$) y qué información mantener a corto plazo ($h_t$) a través de un sistema de "puertas" (_gates_):
+Para solucionar los olvidos y mitigar el desvanecimiento del gradiente de las RNN estándar, se crearon las LSTM. Estas redes integran "**celdas de memoria**" complejas que priorizan qué información retener a largo plazo ($C_t$) y qué información mantener a corto plazo ($h_t$) a través de un sistema de "puertas" (_gates_):
 1. **Puerta de entrada (_Input gate_):** Decide qué información nueva (de la entrada actual y el estado previo) es importante y debe añadirse a la memoria.
 2. **Puerta de olvido (_Forget gate_):** Analiza los datos actuales y pasados para decidir qué información almacenada ya está obsoleta y debe ser eliminada.
 3. **Puerta candidata (_Candidate gate_ / _State cell_):** Tras evaluar las dos puertas anteriores, calcula y guarda el estado actual combinado de la celda de memoria ($C_t$).
 4. **Puerta de salida (_Output gate_):** Determina qué información de la celda de memoria actualizada debe salir en este momento a corto plazo ($h_t$).
+5. **Estado de celda (*State cell*)**: Guarda el estado de la celda actual.
 **Ventajas y Desventajas de las LSTM:**
 - Minimizan radicalmente el problema del descenso del gradiente, permitiendo un aprendizaje estable a lo largo del tiempo.
 - Sin embargo, son computacionalmente costosas, difíciles de entrenar por su cantidad de hiperparámetros, requieren bases de datos inmensas y tienden al sobreentrenamiento si los datos no son variados.
