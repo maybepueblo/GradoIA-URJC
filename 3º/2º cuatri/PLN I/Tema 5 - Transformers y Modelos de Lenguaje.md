@@ -105,7 +105,6 @@ La arquitectura se apoya en varios conceptos clave:
 - El mecanismo de **self-attention sí permite paralelización** (multi-head), a diferencia del mecanismo de atención anterior.
 
 **Estructura general:**
-
 - Se mantiene el modelo **encoder-decoder**.
 - Tanto el codificador como el descodificador son **pilas con varias capas** (mismo número en cada uno):
     - En los codificadores: la entrada pasa al siguiente codificador.

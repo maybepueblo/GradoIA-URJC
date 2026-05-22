@@ -49,7 +49,7 @@ Para ello preprocesamos el texto haciendo por ejemplo:
 	- Medida armónica entre precisión y recall$$F1=2*\frac{precision*recall}{precision+recall}$$ $$F_\beta=(1+\beta²)*\frac{precision*recall}{(\beta²*precision)+recall}$$
 	- Donde si $\beta = 1$, es el mismo peso a precisión y recall combinados, si es 0.5, se prioriza precisión y en 2, se prioriza el recall.
 - **Accuracy (Exactitud)**
-	- Porcentaje de casos en los que el algoritmo acierta en ambas clases, es decir, acierta en los TP, pero también en los TN.$$accuracy=\frac{TP+TN}{TP+TN+FP+FN}$$
+	- Porcentaje de casos en los que el algoritmo acierta en ambas clases, es decir, acierta en los TP, pero también en los TN.$$accuracy=\frac{TP+TN}{TP+TN+FP+FN}$$[[Tema 3 - Representación del texto]]
 	- ¡OJO! MEDIDA NO FIABLE SI LAS CLASES NO ESTÁN BALANCEADAS
 ## Librerías para PLN
 - Usamos Python
