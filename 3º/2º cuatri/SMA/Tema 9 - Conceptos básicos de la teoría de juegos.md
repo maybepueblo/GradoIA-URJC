@@ -461,7 +461,3 @@ Al generalizar la idea del algoritmo de mejor respuesta iterada a esta situació
 - Yoav Shoham y Kevin Leyton-Brown (2009): *Multiagent Systems – Algorithmic, Game-Theoretic, and Logical Foundations*. Cambridge University Press. Caps. 9 y 10.
 - Michael Wooldridge (2009): *An Introduction to MultiAgent Systems* (2ª ed.). John Wiley & Sons. Caps. 11, 14 y 15.
 - Shaheen Fatima, Sarit Kraus y Michal Wooldridge (2015): *Principles of Automated Negotiation*. Cambridge University Press. Caps. 2, 3, 5 y 6.
-
----
-
-*Fin del Tema 9*

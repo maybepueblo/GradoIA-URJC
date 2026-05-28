@@ -21,17 +21,14 @@
 - **Diseño de Mecanismos** (*mechanism design*):
 	- Definir unas **reglas del juego** para la interacción entre agentes ("protocolo de coordinación")…
 	- …tal que el resultado cumpla unas **propiedades deseadas** (por el diseñador del mecanismo)
-
 ### Asunciones del Diseño de Mecanismos
 - Los agentes son **individualmente racionales** (actúan para que el resultado de la interacción sea el más preferido por ellos mismos)
 - Los agentes tienen **información privada** que pueden no revelar de forma certera (pueden **"mentir"** acerca de sus preferencias)
-
 ### Propiedades Deseadas
 - … del **resultado de la interacción**, respecto a las preferencias individuales de los agentes participantes
 - … de la **información revelada** por los agentes
 
 ---
-
 ### Elementos de un Mecanismo
 
 | Elemento | Descripción |
@@ -56,7 +53,6 @@ El planificador social se enfrenta a **dos problemas**:
 
 1. **Elección Social (agregación de preferencias):**
 	- Dado un perfil de preferencias $\theta$, ¿qué resultado $x$ elegir?
-
 2. **Revelación de la información (elicitación de preferencias):**
 	- ¿Cómo hacer que cada agente $i$ elija su estrategia en base a su **verdadero tipo** $\theta_i$ (que forma parte de su información privada)?
 

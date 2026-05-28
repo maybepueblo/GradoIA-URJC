@@ -37,12 +37,12 @@
 
 Los sistemas multiagente se sitúan en un espectro que va desde sistemas **abiertos** (sin control global, objetivos individuales) hasta sistemas **cerrados** (control global total, objetivos globales):
 
-|Tipo de sistema|Control|Objetivos|
-|---|---|---|
-|Sociedades de agentes (tráfico, P2P…)|Sin control global|Individuales|
-|Equipos de agentes (fútbol, supply chains…)|Intermedio|Mixtos|
-|Organizaciones de agentes (sistemas empresariales…)|Existencia de autoridad global|Mixtos|
-|**Sistemas de componentes (gestión, flotas…)**|**Control global total**|**Globales**|
+| Tipo de sistema                                     | Control                        | Objetivos    |
+| --------------------------------------------------- | ------------------------------ | ------------ |
+| Sociedades de agentes (tráfico, P2P…)               | Sin control global             | Individuales |
+| Equipos de agentes (fútbol, supply chains…)         | Intermedio                     | Mixtos       |
+| Organizaciones de agentes (sistemas empresariales…) | Existencia de autoridad global | Mixtos       |
+| **Sistemas de componentes (gestión, flotas…)**      | **Control global total**       | **Globales** |
 
 > _"The integration and harmonious adjustment of individual work efforts towards the accomplishment of a larger goal"_ — B. Singh
 
@@ -119,12 +119,12 @@ Dos actividades principales en CDPS:
 
 #### Etapas
 
-|#|Etapa|Descripción|
-|---|---|---|
-|1|**Anuncio**|El agente gestor (que tiene una tarea que no puede realizar) hace un anuncio a otros agentes con una especificación de la tarea y un tiempo para responder. El anuncio se distribuye a todos los agentes o a los candidatos si se conocen.|
-|2|**Puja**|Los agentes evalúan si tienen las capacidades relevantes para la tarea anunciada. Si encajan, pujan (indicando sus capacidades).|
-|3|**Concesión**|El gestor decide entre las propuestas recibidas el agente más apropiado y comunica su decisión a todos los que pujaron.|
-|4|**Ejecución**|Una vez ejecutada la tarea, se informa al gestor.|
+| #   | Etapa         | Descripción                                                                                                                                                                                                                                |
+| --- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | **Anuncio**   | El agente gestor (que tiene una tarea que no puede realizar) hace un anuncio a otros agentes con una especificación de la tarea y un tiempo para responder. El anuncio se distribuye a todos los agentes o a los candidatos si se conocen. |
+| 2   | **Puja**      | Los agentes evalúan si tienen las capacidades relevantes para la tarea anunciada. Si encajan, pujan (indicando sus capacidades).                                                                                                           |
+| 3   | **Concesión** | El gestor decide entre las propuestas recibidas el agente más apropiado y comunica su decisión a todos los que pujaron.                                                                                                                    |
+| 4   | **Ejecución** | Una vez ejecutada la tarea, se informa al gestor.                                                                                                                                                                                          |
 
 ---
 
@@ -266,13 +266,14 @@ La asignación secuencial puede generar cruces y asignaciones subóptimas, mient
 
 #### Ejemplo de matriz de costes
 
-|C(t,a)|t₁|t₂|t₃|t₄|
-|---|---|---|---|---|
-|a₁|2|1|4|1|
-|a₂|4|7|2|8|
-|a₃|6|2|1|9|
+| C(t,a) | t₁  | t₂  | t₃  | t₄  |
+| ------ | --- | --- | --- | --- |
+| a₁     | 2   | 1   | 4   | 1   |
+| a₂     | 4   | 7   | 2   | 8   |
+| a₃     | 6   | 2   | 1   | 9   |
 
-En este ejemplo, la asignación óptima tiene un **coste total = 5** (a₁→t₂, a₂→t₃, a₃→t₄ no; véase el ejemplo completo abajo).
+En este ejemplo, la asignación óptima tiene un **coste total = 5**; donde esto se consigue haciendo:
+- $a_1\rightarrow t_4 ; a_2\rightarrow t_3 ; a_3\rightarrow t_2$ 
 
 ---
 
@@ -281,17 +282,17 @@ En este ejemplo, la asignación óptima tiene un **coste total = 5** (a₁→t�
 - Los **agentes pujan** por tareas (la menos costosa).
 - Las **tareas tienen un precio** (inicialmente 0).
 - Cada agente emite una puja para la **tarea preferida** (la más valiosa/barata para él).
-- El **importe de la puja** es el precio de la tarea más la diferencia entre el segundo mejor coste y el mejor coste.
+- El **importe de la puja** es el ***precio de la tarea** **más la diferencia entre el segundo mejor coste y el mejor coste***.
 - Si hay varios agentes que quieren la misma tarea, ésta **aumenta su precio**.
 
 #### Ejemplo de cálculo de puja
 
-Dados precio(t₁) = 4 y precio(t₂) = 1:
+Dados precio $(t₁) = 4$ y precio $(t₂) = 1$:
 
-- cost_{a₁}(t₁) = c(a₁, t₁) + precio(t₁) = 2 + 4 = **6**
-- cost_{a₁}(t₂) = c(a₁, t₂) + precio(t₂) = 3 + 1 = **4**
+- $cost_{a₁}(t₁) = c(a₁, t₁) + precio(t₁) = 2 + 4 = **6**$
+- $cost_{a₁}(t₂) = c(a₁, t₂) + precio(t₂) = 3 + 1 = **4**$
 
-→ a₁ puja por t₂ (menor coste) con puja_{a₁} = cost_{a₁}(t₁) − cost_{a₁}(t₂) = 6 − 4 = **2**
+→ a₁ puja por t₂ (menor coste) con $puja_{a₁} = cost_{a₁}(t₁) − cost_{a₁}(t₂) = 6 − 4 = 2$
 
 > El valor de la puja representa la **ventaja** de la tarea t₂ respecto a la siguiente mejor (t₁). Si alguien pagara más por t₂, el agente cambiaría su opinión, pujando por t₁.
 
@@ -373,11 +374,11 @@ _Fase de asignación:_
 
 Usando la matriz de costes:
 
-|C(t,a)|t₁|t₂|t₃|t₄|
-|---|---|---|---|---|
-|a₁|2|1|4|1|
-|a₂|4|7|2|8|
-|a₃|6|2|1|9|
+| C(t,a) | t₁  | t₂  | t₃  | t₄  |
+| ------ | --- | --- | --- | --- |
+| a₁     | 2   | 1   | 4   | 1   |
+| a₂     | 4   | 7   | 2   | 8   |
+| a₃     | 6   | 2   | 1   | 9   |
 
 #### Iteración 0 — Inicialización
 
@@ -385,11 +386,11 @@ Precios: p(t₁)=0, p(t₂)=0, p(t₃)=0, p(t₄)=0
 
 Matriz p(t) + c(a,t) (coincide con C(t,a)):
 
-|p+c|t₁|t₂|t₃|t₄|
-|---|---|---|---|---|
-|a₁|2|1|4|1|
-|a₂|4|7|2|8|
-|a₃|6|2|1|9|
+| p+c | t₁  | t₂  | t₃  | t₄  |
+| --- | --- | --- | --- | --- |
+| a₁  | 2   | 1   | 4   | 1   |
+| a₂  | 4   | 7   | 2   | 8   |
+| a₃  | 6   | 2   | 1   | 9   |
 
 #### Iteración 1 — Fase de apuestas
 
@@ -409,20 +410,20 @@ Fase de asignación:
 
 Estado tras iteración 1:
 
-|Iteración||t₁|t₂|t₃|t₄|
-|---|---|---|---|---|---|
-|0|precio|0|0|0|0|
-|1|pujas||a₁(0)|a₂(2); a₃(1)||
-||asignación||a₁|a₂||
-||precio|0|0|2|0|
+| Iteración | Fase       | t₁    | t₂  | t₃           | t₄  |
+| --------- | ---------- | ----- | --- | ------------ | --- |
+| 0         | Precio     | 0     | 0   | 0            | 0   |
+| 1         | Pujas      | a₁(0) | 0   | a₂(2); a₃(1) | 0   |
+| 1         | Asignación | a₁    | 0   | a₂           | 0   |
+| 1         | Precio     | 0     | 0   | 2            | 0   |
 
 Matriz p(t) + c(a,t) actualizada:
 
-|p+c|t₁|t₂|t₃|t₄|
-|---|---|---|---|---|
-|a₁|2|1|2+4=6|1|
-|a₂|4|7|2+2=4|8|
-|a₃|6|2|2+1=3|9|
+| p+c | t₁  | t₂  | t₃    | t₄  |
+| --- | --- | --- | ----- | --- |
+| a₁  | 2   | 1   | 2+4=6 | 1   |
+| a₂  | 4   | 7   | 2+2=4 | 8   |
+| a₃  | 6   | 2   | 2+1=3 | 9   |
 
 #### Iteración 2 — Solo a₃ no asignado
 
@@ -432,18 +433,18 @@ Pujas: t₂: a₃(1).
 
 Asignación: t₂ → a₃ (desplaza a a₁). precio(t₂) = 0 + 1 = **1**. a₁ queda libre.
 
-||t₁|t₂|t₃|t₄|
-|---|---|---|---|---|
-|asignación||a₃|a₂||
-|precio|0|1|2|0|
+|            | t₁  | t₂  | t₃  | t₄  |
+| ---------- | --- | --- | --- | --- |
+| asignación | 0   | a₃  | a₂  | 0   |
+| precio     | 0   | 1   | 2   | 0   |
 
 Matriz actualizada:
 
-|p+c|t₁|t₂|t₃|t₄|
-|---|---|---|---|---|
-|a₁|2|1+1=2|2+4=6|1|
-|a₂|4|1+7=8|2+2=4|8|
-|a₃|6|1+2=3|2+1=3|9|
+| p+c | t₁  | t₂    | t₃    | t₄  |
+| --- | --- | ----- | ----- | --- |
+| a₁  | 2   | 1+1=2 | 2+4=6 | 1   |
+| a₂  | 4   | 1+7=8 | 2+2=4 | 8   |
+| a₃  | 6   | 1+2=3 | 2+1=3 | 9   |
 
 #### Iteración 3 — Solo a₁ no asignado
 
@@ -453,10 +454,11 @@ Pujas: t₄: a₁(1).
 
 Asignación: t₄ → a₁. precio(t₄) = 0 + 1 = **1**.
 
-||t₁|t₂|t₃|t₄|
-|---|---|---|---|---|
-|asignación||a₃|a₂|a₁|
-|precio|0|1|2|1|
+|            | t₁  | t₂  | t₃  | t₄  |
+| ---------- | --- | --- | --- | --- |
+| asignación | 0   | a₃  | a₂  | a₁  |
+| precio     | 0   | 1   | 2   | 1   |
+|            |     |     |     |     |
 
 **Todos los agentes asignados. Algoritmo terminado.**
 
@@ -471,7 +473,7 @@ Coste total = c(a₁,t₄) + c(a₂,t₃) + c(a₃,t₂) = 1 + 2 + 2 = **5** ✓
 - El algoritmo encuentra la **solución óptima** si:
     - Los costes son **enteros**, y
     - **ε < 1/n**
-- Si **m < n** (más tareas que agentes), entonces las tareas pujan por agentes.
+- Si **m < n** (menos tareas que agentes), entonces las tareas pujan por agentes.
 - **Complejidad** (peor caso): _O(n³C/ε)_, donde _C_ es el máximo coste.
 - Se puede reducir la complejidad a **O(n³log(nC))** con la técnica de _ε-scaling_.
 

@@ -154,14 +154,10 @@ Los conceptos de **confianza y reputación** permiten a un agente:
 
 - **Relaciones Sociales:** Evalúan la confianza basada en la dinámica de las interacciones y la historia de relaciones entre agentes. Importantes en redes donde la estructura social influye en la toma de decisiones.
 - **Dependencias:** Consideran cómo la confianza en un agente depende de sus roles y responsabilidades dentro de un sistema, evaluando cómo estos roles afectan la percepción de confiabilidad.
-
 #### 3. Modelos Basados en Reputación y/o Experiencia Propia
-
 - **Reputación:** Incorporan evaluaciones basadas en las percepciones colectivas de las acciones pasadas de un agente, compiladas de múltiples fuentes dentro del sistema.
 - **Experiencia Propia:** Se basan en las interacciones directas e individuales con otros agentes, proporcionando una medida de confianza ajustada a experiencias específicas del evaluador.
-
 #### 4. Modelos de Nivel Físico
-
 - **Seguridad de Infraestructura:** Mecanismos como autenticación y autorización, uso de certificados y credenciales para asegurar las transacciones y las comunicaciones entre agentes.
 - Fundamental en contextos donde la verificación de la identidad y la autoridad del agente son cruciales para la seguridad y el cumplimiento normativo.
 
@@ -174,31 +170,24 @@ Los conceptos de **confianza y reputación** permiten a un agente:
 ### Idea general del modelo
 
 **Notación base:**
-
 - Sociedad de agentes: **A = {a₁, …, aₙ}**
 - Interacciones posibles: **I = {i₁, …, iₘ}** (actividades/tareas realizadas entre varios agentes)
 - Roles posibles: **R = {r₁, …, rₖ}** (papel que un agente asume en una interacción)
 
 **Ejemplos:**
-
 - Interacción: "Un vendedor vende un coche a un cliente", "Dos alumnos realizan una práctica"
 - Roles: Vendedor, cliente, defensa, delantero, administrativo, profesor, cocinero…
 
 Los agentes quieren encontrar **"agentes fiables"** para realizar interacciones con ellos.
-
 ### Concepto de Fiabilidad
-
 **Fiabilidad:** Capacidad y previsibilidad con la que un agente cumple sus roles y responsabilidades dentro de una interacción específica.
 
 **Características de un agente fiable:**
-
 - **Consistencia:** Actúa de manera uniforme y predecible, cumpliendo con las expectativas basadas en interacciones previas.
 - **Competencia:** Posee las habilidades y conocimientos necesarios para realizar el rol asignado eficazmente.
 - **Honestidad:** Actúa de acuerdo con los principios éticos y no engaña ni manipula a otros agentes para beneficio propio.
 - **Responsabilidad:** Asume la responsabilidad de sus acciones y sus resultados, y está dispuesto a rectificar en caso de errores o fallos.
-
 **Importancia de la fiabilidad:**
-
 - **Confianza Interpersonal:** La fiabilidad fortalece la confianza entre los participantes y es crucial para la formación de relaciones duraderas y efectivas.
 - **Eficiencia del Sistema:** Agentes fiables mejoran la eficiencia de las operaciones y reducen los costos asociados con supervisión y corrección de errores.
 - **Seguridad del Sistema:** Incrementa la seguridad al asegurar que cada agente cumpla con sus deberes, reduciendo el riesgo de fallas y vulnerabilidades.
@@ -262,12 +251,12 @@ Cada registro tiene un **valor de experiencia** y uno de **fiabilidad**.
 
 _"Un estudiante **a** necesita encontrar un compañero (Estudiante-Rol) para realizar una práctica de IA (Interacción)"_
 
-|Agente/Rol/Interacción|Experiencia|Fiabilidad|
-|---|---|---|
-|`<Pepe, estudiante, practica IA>`|0.6|0.7|
-|`<Juan, estudiante, practica IA>`|0.9|0.1|
-|`<Rosa, estudiante, practica IA>`|0.8|0.8|
-|`<Pepe, delantero, partido>`|0.5|0.3|
+| Agente/Rol/Interacción            | Experiencia | Fiabilidad |
+| --------------------------------- | ----------- | ---------- |
+| `<Pepe, estudiante, practica IA>` | 0.6         | 0.7        |
+| `<Juan, estudiante, practica IA>` | 0.9         | 0.1        |
+| `<Rosa, estudiante, practica IA>` | 0.8         | 0.8        |
+| `<Pepe, delantero, partido>`      | 0.5         | 0.3        |
 
 → _a_ elegiría a Juan (mayor experiencia = 0.9), pero su fiabilidad es muy baja (0.1), lo que plantea el problema de cómo tratar la fiabilidad reducida.
 
@@ -314,10 +303,10 @@ $$c_a(<x_i, r_j, i_p>) = f_a(<x_i, r_j, i_p>) \cdot e_a(<x_i, r_j, i_p>) + (1 - 
 
 Dados los siguientes datos (agente **a** y conjunto de recomendadores RA = {b₁, b₂, b₃, b₄}):
 
-||Agente a|b₁|b₂|b₃|b₄|
-|---|---|---|---|---|---|
-|Experiencia `eₓ(<xᵢ,rⱼ,iₚ>)`|0.8|0.1|0.3|0.1|0.2|
-|Fiabilidad `fₓ(<xᵢ,rⱼ,iₚ>)`|**0.9 / 0.5 / 0.1**|0.2|0.1|0.3|0.8|
+|                              | Agente a        | b₁  | b₂  | b₃  | b₄  |
+| ---------------------------- | --------------- | --- | --- | --- | --- |
+| Experiencia `eₓ(<xᵢ,rⱼ,iₚ>)` | 0.8             | 0.1 | 0.3 | 0.1 | 0.2 |
+| Fiabilidad `fₓ(<xᵢ,rⱼ,iₚ>)`  | 0.9 / 0.5 / 0.1 | 0.2 | 0.1 | 0.3 | 0.8 |
 
 **Reputación:** $$r_{a_RA} = \frac{(0.1 \cdot 0.2) + (0.3 \cdot 0.1) + (0.1 \cdot 0.3) + (0.2 \cdot 0.8)}{0.2 + 0.1 + 0.3 + 0.8} = 0.17$$
 
