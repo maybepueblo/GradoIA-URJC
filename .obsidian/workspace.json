@@ -135,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -233,9 +232,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "fbe1da9ecad23dc0",
+  "active": "46f4ec8ce7b1f762",
   "lastOpenFiles": [
-    "Pasted image 20260531222245.png",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260531222245.png",
     "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 6 - Variable Neighborhood Search.md",
     "3º/1º cuatri/AB II/Images/Pasted image 20260531215150.png",
     "3º/1º cuatri/AB II/Images/Pasted image 20260531214350.png",
