@@ -13,15 +13,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º/1º cuatri/AB II/Tema 2 - Introducción a las heurísticas y metaheurísticas.md",
+                "file": "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 3 - Métodos constructivos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tema 2 - Introducción a las heurísticas y metaheurísticas"
+              "title": "Tema 3 - Métodos constructivos"
+            }
+          },
+          {
+            "id": "fbe1da9ecad23dc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 7 - Scatter Search y Path Relinking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 7 - Scatter Search y Path Relinking"
+            }
+          },
+          {
+            "id": "012681bdae2045c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 5 - Simulated Annealing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 5 - Simulated Annealing"
+            }
+          },
+          {
+            "id": "ec9c265692c85df5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 6 - Variable Neighborhood Search.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 6 - Variable Neighborhood Search"
+            }
+          },
+          {
+            "id": "5e348b39102f3f4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 7 - Scatter Search y Path Relinking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tema 7 - Scatter Search y Path Relinking"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +135,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -175,18 +233,30 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "a677293f92cce38d",
+  "active": "fbe1da9ecad23dc0",
   "lastOpenFiles": [
+    "Pasted image 20260531222245.png",
+    "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 6 - Variable Neighborhood Search.md",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260531215150.png",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260531214350.png",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260531213401.png",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260531204336.png",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260531203447.png",
+    "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 5 - Simulated Annealing.md",
+    "3º/1º cuatri/AB II/Bloque 4 - Evolutivos",
+    "3º/1º cuatri/AB II/Bloque 3 - Enjambre",
+    "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales",
+    "3º/1º cuatri/AB II/Bloque 1 - Introducción",
+    "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 4 - Tabu Search.md",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260531184110.png",
+    "3º/1º cuatri/AB II/Bloque 1 - Introducción/Tema 2 - Introducción a las heurísticas y metaheurísticas.md",
+    "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 7 - Scatter Search y Path Relinking.md",
+    "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 3 - Métodos constructivos.md",
     "3º/1º cuatri/AB II/Images/Pasted image 20260528132607.png",
-    "3º/1º cuatri/AB II/Tema 1 - Introducción a la optimización.md",
+    "3º/1º cuatri/AB II/Bloque 1 - Introducción/Tema 1 - Introducción a la optimización.md",
     "3º/1º cuatri/AB II/Images/Pasted image 20260528125644.png",
     "3º/1º cuatri/AB II/Images/Pasted image 20260528125244.png",
-    "3º/1º cuatri/AB II/Tema 2 - Introducción a las heurísticas y metaheurísticas.md",
-    "3º/1º cuatri/AB II/Tema 8 - Introducción a los métodos de inteligencia de enjambres.md",
-    "3º/1º cuatri/AB II/Tema 6 - Variable Neighborhood Search.md",
-    "3º/1º cuatri/AB II/Tema 5 - Simulated Annealing.md",
-    "3º/1º cuatri/AB II/Tema 4 - Tabu Search.md",
-    "3º/1º cuatri/AB II/Tema 3 - Métodos constructivos.md",
+    "3º/1º cuatri/AB II/Bloque 3 - Enjambre/Tema 8 - Introducción a los métodos de inteligencia de enjambres.md",
     "Análisis Diagramas Despliegue y Secuencia.md",
     "3º/2º cuatri/SMA/Tema 12 - Subastas y mecanismos cuasi-lineales.md",
     "3º/2º cuatri/SMA/Resumen.md",
@@ -208,20 +278,8 @@
     "3º/2º cuatri/SMA/Tema .zip.dhp9cq.part",
     "3º/2º cuatri/SMA/Tema 11 - Diseño de mecanismos y agregación de preferencias.md",
     "3º/2º cuatri/PLN I/Images/Pasted image 20260518172002.png",
-    "3º/2º cuatri/PLN I/Images/Pasted image 20260518170756.png",
-    "3º/2º cuatri/PLN I/Images/Pasted image 20260518171029.png",
-    "3º/2º cuatri/PLN I/Images/Pasted image 20260518171136.png",
-    "3º/2º cuatri/PLN I/Images/Pasted image 20260518171441.png",
-    "3º/2º cuatri/PLN I/Images/Pasted image 20260518171835.png",
-    "3º/2º cuatri/SMA/Tema 1 - Agentes, entornos, sistemas multiagente.md",
-    "3º/2º cuatri/PLN I/Images/Pasted image 20260518111112.png",
     "3º/2º cuatri/PLN I/Images",
-    "3º/2º cuatri/PLN I/Images/Pasted image 20260518123707.png",
     "3º/2º cuatri/Robotica/Hojas de Problemas",
-    "estructura_limpia.txt",
-    "estructura.txt",
-    "4º/2º cuatri/AIA/CETINIA",
-    "4º/2º cuatri/AIA/Gavab",
-    "4º/2º cuatri/AIA/CAPO"
+    "estructura_limpia.txt"
   ]
 }
