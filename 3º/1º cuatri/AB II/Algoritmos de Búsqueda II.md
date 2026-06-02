@@ -14,7 +14,7 @@
 - [[Tema 9 - Optimización por enjambre de partículas]]
 - [[Tema 10 - Optimización por colonia de hormigas]]
 ### Bloque IV - Algoritmos Evolutivos
-- [[Ŧema 11 - Introducción a los algoritmos evolutivos]]
+- [[Tema 11 - Introducción a los algoritmos evolutivos]]
 - [[Tema 12 - Algoritmos genéticos y meméticos]]
 - [[Tema 13 - Programación genética]]
 ## Evaluación
