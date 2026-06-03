@@ -1,12 +1,9 @@
->[!Warning]
->Material complementario, no es parte de la asignatura, pero al impartirse esta en Java, sirve para dar una pincelada de cara a entender este lenguaje un poco mejor
-
 ## Índice
-1. [[#1. Historia y ecosistema|Historia y ecosistema]]
-2. [[#2. Compilación y ejecución|Compilación y ejecución]]
-3. [[#3. Paquetes de Java|Paquetes de Java]]
-4. [[#4. Primer programa Hola Mundo|Primer programa Hola Mundo]]
-5. [[#5. Comentarios y Javadoc|Comentarios y Javadoc]]
+1. [Historia y ecosistema](#1-historia-y-ecosistema)
+2. [Compilación y ejecución](#2-compilación-y-ejecución)
+3. [Paquetes de Java](#3-paquetes-de-java)
+4. [Primer programa: Hola Mundo](#4-primer-programa-hola-mundo)
+5. [Comentarios y Javadoc](#5-comentarios-y-javadoc)
 6. [Palabras reservadas](#6-palabras-reservadas)
 7. [Tipos primitivos y variables](#7-tipos-primitivos-y-variables)
 8. [Operadores](#8-operadores)
@@ -840,3 +837,5 @@ paquete automovilismo
 | Constantes | MAYÚSCULAS_CON_GUIÓN | `MAX_VELOCIDAD`, `PI` |
 
 ---
+
+*Documento elaborado a partir de las diapositivas del Tema 2 — Introducción al lenguaje Java, Programación Orientada a Objetos, URJC.*
