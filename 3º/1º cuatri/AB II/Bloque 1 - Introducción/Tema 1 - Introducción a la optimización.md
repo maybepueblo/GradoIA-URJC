@@ -1,7 +1,7 @@
 ## ¿Qué es?
 - Disciplina fundamental en campos de ciencia como la informática, inteligencia artificial o la investigación operativa.
 - Es el proceso de intentar encontrar la **mejor solución posible** a un problema (tiempo limitado de normal).
-- La búsqueda de la **solución óptima** a un problema de optimización.
+- Decimos que es la búsqueda de la **solución óptima** a un problema de optimización.
 
 Por ende, consiste en el proceso para encontrar el valor de unas variables de decisión (en base a restricciones) para los que una función matemática (objetivo) alcance su min o max.
 
@@ -50,7 +50,7 @@ Dicho de otro modo, dada una solución x, cada solución de su vecindad $y\in N(
 - Podemos resolver en tiempo polinómico cuando el tiempo de ejecución se relaciona con el tamaño de entrada con fórmula polinómica. Se denomina $P$ a estos problemas
 	- Tiempo razonable pa resolverlos en equipos recientes
 - Otros son difíciles de resolver, no tenemos polinómicos.
-	- En algunos sabemos se puede saber en P si un valor se corresponde con la sol del problema. Estos se llaman NP.
+	- En algunos sabemos que se puede saber en P si un valor se corresponde con la sol del problema. Estos se llaman NP.
 		- Ejemplo: raíz cuadrada
 
 Todo problema P es a su vez NP. Los NP-completos son aquellos que no tienen algoritmo polinómico que los resuelva.

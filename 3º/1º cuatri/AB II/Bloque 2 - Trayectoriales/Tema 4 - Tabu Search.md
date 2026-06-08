@@ -1,4 +1,4 @@
-Para abreviarlo, lo llamaré TS a lo largo de este documento.
+ Para abreviarlo, lo llamaré TS a lo largo de este documento.
 # Introducción 
 Es un procedimiento de **búsqueda trayectorial**, véase la taxonomía del [[Tema 2 - Introducción a las heurísticas y metaheurísticas]]. 
 
@@ -70,7 +70,7 @@ Este concepto es el que permite determinar cuándo pueden ser reemplazadas las r
 - Forma global: si la solución resultante es la mejor encontrada hasta el momento
 - Forma local: si la solución resultante es la mejor encontrada hasta el momento en una región determinada.
 **Aspiración por defecto**
-- Si todos los movimientos son tabú y no se pueden aplicar criterios de aspiración sobre ellos, s- **AB II:** Tema 12 (Genéticos) y Tema 13 (Programación Genética).e elige el menos tabú.
+- Si todos los movimientos son tabú y no se pueden aplicar criterios de aspiración sobre ellos, se elige el menos tabú.
 # Memoria a largo plazo
 Tener información guardada que permite **guiar la búsqueda** a posteriori, después de una primera etapa en la que se han realizadoo una o varias ejecuciones del algoritmo usando la memoria a corto plazo.
 

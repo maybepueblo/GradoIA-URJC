@@ -641,10 +641,7 @@ En **segmentación semántica** el objetivo es asignar una etiqueta de clase a c
 La solución más común es una arquitectura en forma de reloj de arena (_hourglass_):
 
 1. **Encoder (parte descendente):** aplica capas convolucionales + pooling para reducir la resolución progresivamente mientras aumenta el número de canales. Aprende representaciones abstractas de alto nivel con gran campo receptivo. Típicamente basado en una red de clasificación (VGG, ResNet...).
-    
 2. **Decoder (parte ascendente):** aplica upsampling + convoluciones traspuestas para recuperar progresivamente la resolución espacial hasta llegar al tamaño original de la imagen.
-    
-
 #### Ejemplo: Red de Noh et al. (2015)
 
 ```

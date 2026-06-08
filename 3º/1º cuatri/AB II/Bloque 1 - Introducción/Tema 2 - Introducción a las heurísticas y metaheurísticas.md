@@ -77,7 +77,6 @@ Son la base para que una metaheurística funcione. En general son conceptos cont
 Definimos:
 - **Intensificación**: definimos un proceso de búsqueda muy exhaustivo para explorar una vecindad muy limitada, buscando su óptimo local.
 - **Diversificación:** definimos un proceso que permite visitar vecindades lejanas sin explorarlas en profundidad
-
 ### Estrategias para escapar de óptimos locales
 - Búsqueda multi-arranque
 - Búsqueda aleatorizada

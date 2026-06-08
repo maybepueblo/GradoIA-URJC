@@ -130,11 +130,8 @@ En una red de dos capas ocultas **sin restricciones**, los 9 pesos $\psi_{ij}$ p
 Esta analogía (del libro _Understanding Deep Learning_) ayuda a visualizar qué hace cada capa:
 
 1. **Primera red/capa:** "dobla" el espacio de entrada. Múltiples puntos de $x$ se mapean al mismo valor de $y$. La función output de la primera red crea esta correspondencia muchos-a-uno.
-    
 2. **Segunda red/capa:** aplica su función sobre el espacio ya plegado. Como múltiples valores de $x$ producen el mismo $y$, el efecto de la segunda red se duplica en esas regiones.
-    
 3. Al "desdoblar" mentalmente el resultado, vemos que la función de la segunda red aparece **replicada con posibles inversiones y reescalados** según las pendientes de las regiones de la primera red.
-    
 
 Esta intuición explica por qué la profundidad genera regiones lineales con una estructura interna de dependencias y simetrías que no existe en las redes shallow.
 
@@ -192,19 +189,19 @@ Escribir cada neurona individualmente se vuelve inmanejable con redes grandes. L
 
 Partimos de las ecuaciones de la primera capa oculta:
 
-$$h_1 = a[\theta_{10} + \theta_{11},x], \quad h_2 = a[\theta_{20} + \theta_{21},x], \quad h_3 = a[\theta_{30} + \theta_{31},x]$$
+$$h_1 = a[\theta_{10} + \theta_{11}x], \quad h_2 = a[\theta_{20} + \theta_{21}x], \quad h_3 = a[\theta_{30} + \theta_{31}x]$$
 
 En forma vectorial-matricial:
 
-$$\begin{bmatrix} h_1 \ h_2 \ h_3 \end{bmatrix} = a!\left(\begin{bmatrix}\theta_{10}\\theta_{20}\\theta_{30}\end{bmatrix} + \begin{bmatrix}\theta_{11}\\theta_{21}\\theta_{31}\end{bmatrix} x\right) \quad \Longrightarrow \quad \mathbf{h} = a[\boldsymbol{\beta}_0 + \boldsymbol{\Omega}_0, \mathbf{x}]$$
+$$\begin{bmatrix} h_1 \ h_2 \ h_3 \end{bmatrix} = a!\left(\begin{bmatrix}\theta_{10}\\theta_{20}\\theta_{30}\end{bmatrix} + \begin{bmatrix}\theta_{11}\\theta_{21}\\theta_{31}\end{bmatrix} x\right) \quad \Longrightarrow \quad \mathbf{h} = a[\boldsymbol{\beta}_0 + \boldsymbol{\Omega}_0 \mathbf{x}]$$
 
 La segunda capa oculta:
 
-$$\begin{bmatrix} h_1' \ h_2' \ h_3' \end{bmatrix} = a!\left(\begin{bmatrix}\psi_{10}\\psi_{20}\\psi_{30}\end{bmatrix} + \begin{bmatrix}\psi_{11}&\psi_{12}&\psi_{13}\\psi_{21}&\psi_{22}&\psi_{23}\\psi_{31}&\psi_{32}&\psi_{33}\end{bmatrix} \begin{bmatrix} h_1 \ h_2 \ h_3 \end{bmatrix}\right) \quad \Longrightarrow \quad \mathbf{h}' = a[\boldsymbol{\beta}_1 + \boldsymbol{\Omega}_1, \mathbf{h}]$$
+$$\begin{bmatrix} h_1' \ h_2' \ h_3' \end{bmatrix} = a!\left(\begin{bmatrix}\psi_{10}\\psi_{20}\\psi_{30}\end{bmatrix} + \begin{bmatrix}\psi_{11}&\psi_{12}&\psi_{13}\\psi_{21}&\psi_{22}&\psi_{23}\\psi_{31}&\psi_{32}&\psi_{33}\end{bmatrix} \begin{bmatrix} h_1 \ h_2 \ h_3 \end{bmatrix}\right) \quad \Longrightarrow \quad \mathbf{h}' = a[\boldsymbol{\beta}_1 + \boldsymbol{\Omega}_1 \mathbf{h}]$$
 
 La capa de salida:
 
-$$y' = \phi_0' + [\phi_1'; \phi_2'; \phi_3']\begin{bmatrix} h_1' \ h_2' \ h_3' \end{bmatrix} \quad \Longrightarrow \quad \mathbf{y} = \boldsymbol{\beta}_2 + \boldsymbol{\Omega}_2, \mathbf{h}'$$
+$$y' = \phi_0' + [\phi_1'; \phi_2'; \phi_3']\begin{bmatrix} h_1' \ h_2' \ h_3' \end{bmatrix} \quad \Longrightarrow \quad \mathbf{y} = \boldsymbol{\beta}_2 + \boldsymbol{\Omega}_2 \mathbf{h}'$$
 
 #### Notación estándar (estandarización de nombres)
 
@@ -217,11 +214,11 @@ $$y' = \phi_0' + [\phi_1'; \phi_2'; \phi_3']\begin{bmatrix} h_1' \ h_2' \ h_3' \
 
 #### Ecuaciones generales de una red de $K$ capas ocultas
 
-$$\mathbf{h}_1 = a[\boldsymbol{\beta}_0 + \boldsymbol{\Omega}_0, \mathbf{x}]$$ $$\mathbf{h}_2 = a[\boldsymbol{\beta}_1 + \boldsymbol{\Omega}_1, \mathbf{h}_1]$$ $$\mathbf{h}_3 = a[\boldsymbol{\beta}_2 + \boldsymbol{\Omega}_2, \mathbf{h}_2]$$ $$\vdots$$ $$\mathbf{h}_K = a[\boldsymbol{\beta}_{K-1} + \boldsymbol{\Omega}_{K-1}, \mathbf{h}_{K-1}]$$ $$\mathbf{y} = \boldsymbol{\beta}_K + \boldsymbol{\Omega}_K, \mathbf{h}_K$$
+$$\mathbf{h}_1 = a[\boldsymbol{\beta}_0 + \boldsymbol{\Omega}_0 \mathbf{x}]$$ $$\mathbf{h}_2 = a[\boldsymbol{\beta}_1 + \boldsymbol{\Omega}_1 \mathbf{h}_1]$$ $$\mathbf{h}_3 = a[\boldsymbol{\beta}_2 + \boldsymbol{\Omega}_2 \mathbf{h}_2]$$ $$\vdots$$ $$\mathbf{h}_K = a[\boldsymbol{\beta}_{K-1} + \boldsymbol{\Omega}_{K-1} \mathbf{h}_{K-1}]$$ $$\mathbf{y} = \boldsymbol{\beta}_K + \boldsymbol{\Omega}_K \mathbf{h}_K$$
 
 En forma compacta (composición anidada):
 
-$$\mathbf{y} = \boldsymbol{\beta}_K + \boldsymbol{\Omega}_K, a!\Big[\boldsymbol{\beta}_{K-1} + \boldsymbol{\Omega}_{K-1}, a\big[\ldots, a[\boldsymbol{\beta}_0 + \boldsymbol{\Omega}_0, \mathbf{x}] \ldots\big]\Big]$$
+$$\mathbf{y} = \boldsymbol{\beta}_K + \boldsymbol{\Omega}_K a\Big[\boldsymbol{\beta}_{K-1} + \boldsymbol{\Omega}_{K-1} a\big[\ldots a[\boldsymbol{\beta}_0 + \boldsymbol{\Omega}_0, \mathbf{x}] \ldots\big]\Big]$$
 
 Los parámetros del modelo son: $\phi = {\boldsymbol{\beta}_k, \boldsymbol{\Omega}_k}_{k=0}^{K}$.
 
