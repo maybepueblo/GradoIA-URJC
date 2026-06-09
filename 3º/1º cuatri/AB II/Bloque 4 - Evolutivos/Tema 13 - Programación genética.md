@@ -172,12 +172,12 @@ El fenotipo del descendiente **no es una combinación exacta** de los fenotipos 
 
 ### 4.5 Ventajas de la EG frente a AG y PG
 
-| Vs. Algoritmos Genéticos | Vs. Programación Genética |
-|---|---|
-| Cromosoma de tamaño variable (se usa parcial o totalmente) | Codificación de árboles **mucho más sencilla** |
-| La gramática ajusta la búsqueda sin cambiar el motor | Controla el *bloating* limitando el número de wraps |
-| Incorpora restricciones del dominio | Operadores genéticos más simples de aplicar |
-| Delimita individuos no válidos | — |
+| Vs. Algoritmos Genéticos                                   | Vs. Programación Genética                           |
+| ---------------------------------------------------------- | --------------------------------------------------- |
+| Cromosoma de tamaño variable (se usa parcial o totalmente) | Codificación de árboles **mucho más sencilla**      |
+| La gramática ajusta la búsqueda sin cambiar el motor       | Controla el *bloating* limitando el número de wraps |
+| Incorpora restricciones del dominio                        | Operadores genéticos más simples de aplicar         |
+| Delimita individuos no válidos                             | —                                                   |
 
 ### 4.6 Inconvenientes de la EG
 

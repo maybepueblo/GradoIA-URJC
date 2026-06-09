@@ -5,12 +5,12 @@ Nos basamos en el comportamiento de búsqueda de alimento de las colonias de hor
 	- Al recorrer un camino, depositan feromonas
 	- A mayor número de hormigas por camino, más feromonas
 	- La cantidad de feromonas determina la probabilidad de seguir dicho camino, aunque podemos explorar otros
-	- Se evaporan las feromonas, variando caminos cuandoo la fuente de alimento se agota.
+	- Se evaporan las feromonas, variando caminos cuando la fuente de alimento se agota.
 - Cada hormiga es un organismo simple e independiente.
 ## Características principales
 - Es una metaheurística poblacional, véase [[Tema 2 - Introducción a las heurísticas y metaheurísticas]]
 - El **recorrido** de cada hormiga construye una **solución** al problema.
-- La **decisión** de qué camino tomar en cada punto viene dada por una **probabilidad** definida aquí.
+- La **decisión** de qué camino tomar en cada punto viene dada por una **probabilidad** definida en este documento.
 - La **inicialización** de una hormiga suele ser **aleatoria**:
 	- Las colocamos aleatoriamente en puntos de decisión (nodos del grafo)
 	- Puede haber varias hormigas en el mismo nodo.

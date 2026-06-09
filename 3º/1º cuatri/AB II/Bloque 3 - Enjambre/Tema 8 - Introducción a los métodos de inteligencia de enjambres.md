@@ -17,13 +17,13 @@ También se inspiran en fenómenos físicos como el enfriamiento simulado.
 - **Algoritmos basados en fenómenos físicos**
 	- Enfriamiento simulado (SA), véase [[Tema 5 - Simulated Annealing]]
 ## Características principales
-- **Población de soluciones**: No como los trayectoriales, suelen trabajar con una población de soluciones, no una solo. Esto nos da amplitud al explorar el espacio de soluciones y nos ayuda a escapar de mínimos locales.
+- **Población de soluciones**: No como los trayectoriales, suelen trabajar con una población de soluciones, no una solución solamente. Esto nos da amplitud al explorar el espacio de soluciones y nos ayuda a escapar de mínimos locales.
 - **Aleatoriedad y estocasticidad**: Incorporan elementos aleatorios en sus procesos, como la selección de soluciones, mutaciones o movimientos en el espacio de soluciones. Esto nos hace explorar mejor el espacio de búsqueda y a evitar quedarnos atrapados en soluciones subóptimas
 - **Iteratividad y generación de nuevas soluciones**: Funcionan de forma iterativa generando nuevas soluciones a partir de la población actual mediante operadores como recombinar, mutar o moverse basado en reglas (actualizar velocidades en caso de enjambres)
 - **Adaptación y aprendizaje**: Simulan estos presentes en lo biológico. E.j -> la selección natural, las mejores soluciones (aptas) tienen mayor probabilidad de sobrevivir y propagarse.
 - **Paralelismo intrínseco**: Por su naturaleza de poblaciones son muy paralelizables. Podemos evaluar y modificar varias soluciones en paralelo (eficiente)
 - **Robustez y flexibilidad**: Son generalmente robustos y pueden adaptarse a diferentes tipos de problemas (optimización combinatoria, continua o multiobjetivo).
-- **Exploración y explotación del espacio de búsqueda**: Equilibramos estas a través de viersos mecanismos como la mutación en GA o el ajuste de parámetros en PSO.
+- **Exploración y explotación del espacio de búsqueda**: Equilibramos estas a través de diversos mecanismos como la mutación en GA o el ajuste de parámetros en PSO.
 - **Uso de heurísticas**: Muchos algoritmos bioinspirados dependen de heurísticas simples que guían la generación y selección de nuevas soluciones. Esto los hace fáciles de implementar y ajustar a diversos problemas.
 - **No requieren gradientes:** Ventajoso para problemas no diferenciables o con múltiples óptimos locales.
 - **Son explicables**: Siguen reglas sencillas y fáciles de explicar.

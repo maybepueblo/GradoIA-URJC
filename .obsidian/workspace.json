@@ -11,42 +11,10 @@
             "id": "379a4e2e8f33e74e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 5 - Simulated Annealing.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Tema 5 - Simulated Annealing"
-            }
-          },
-          {
-            "id": "9c6538eeb0555c91",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 6 - Variable Neighborhood Search.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tema 6 - Variable Neighborhood Search"
-            }
-          },
-          {
-            "id": "f2f579211cc87416",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 7 - Scatter Search y Path Relinking.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tema 7 - Scatter Search y Path Relinking"
+              "title": "New tab"
             }
           }
         ]
@@ -106,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "296c4faa44f28150",
@@ -206,12 +173,28 @@
   },
   "active": "379a4e2e8f33e74e",
   "lastOpenFiles": [
+    "3º/1º cuatri/AB II/Implementaciones_AB_II-1.pdf",
+    "3º/1º cuatri/AB II/Implementaciones_AB_II.pdf",
+    "3º/1º cuatri/AB II/ImplementacionesABII.pdf",
+    "3º/1º cuatri/AB II/Implementaciones AB2.md",
+    "3º/1º cuatri/AB II/Implementaciones_AB_II.md",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260609232921.png",
+    "3º/1º cuatri/AB II.zip",
+    "3º/1º cuatri/AB II.zip.3c69xs.part",
+    "3º/1º cuatri/AB II/Bloque 4 - Evolutivos/Tema 13 - Programación genética.md",
+    "3º/1º cuatri/AB II/Bloque 4 - Evolutivos/Tema 12 - Algoritmos genéticos y meméticos.md",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260609232909.png",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260609232854.png",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260609232812.png",
+    "3º/1º cuatri/AB II/Images/Pasted image 20260609232357.png",
+    "3º/1º cuatri/AB II/Bloque 4 - Evolutivos/Tema 11 - Introducción a los algoritmos evolutivos.md",
+    "3º/1º cuatri/AB II/Bloque 3 - Enjambre/Tema 10 - Optimización por colonia de hormigas.md",
+    "3º/1º cuatri/AB II/Bloque 3 - Enjambre/Tema 9 - Optimización por enjambre de partículas.md",
+    "3º/1º cuatri/AB II/Bloque 3 - Enjambre/Tema 8 - Introducción a los métodos de inteligencia de enjambres.md",
+    "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 5 - Simulated Annealing.md",
     "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 7 - Scatter Search y Path Relinking.md",
     "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 6 - Variable Neighborhood Search.md",
-    "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 5 - Simulated Annealing.md",
     "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 4 - Tabu Search.md",
-    "3º/1º cuatri/AB II/Bloque 3 - Enjambre/Tema 9 - Optimización por enjambre de partículas.md",
-    "3º/1º cuatri/AB II/Bloque 4 - Evolutivos/Tema 11 - Introducción a los algoritmos evolutivos.md",
     "3º/1º cuatri/ML II/Tema 6 - Redes convolucionales.md",
     "3º/1º cuatri/ML II/Tema 7 - Aspectos avanzados.md",
     "Pasted image 20260608161435.png",
@@ -219,37 +202,22 @@
     "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales/Tema 3 - Métodos constructivos.md",
     "3º/1º cuatri/AB II/Bloque 1 - Introducción/Tema 2 - Introducción a las heurísticas y metaheurísticas.md",
     "3º/1º cuatri/AB II/Bloque 1 - Introducción/Tema 1 - Introducción a la optimización.md",
-    "3º/1º cuatri/AB II/Bloque 4 - Evolutivos/Tema 13 - Programación genética.md",
-    "3º/1º cuatri/AB II/Bloque 4 - Evolutivos/Tema 12 - Algoritmos genéticos y meméticos.md",
-    "3º/1º cuatri/AB II/Bloque 3 - Enjambre/Tema 10 - Optimización por colonia de hormigas.md",
     "3º/1º cuatri/AB II/Bloque 1 - Introducción/introduccion_java.md",
-    "3º/1º cuatri/AB II/Bloque 3 - Enjambre/Tema 8 - Introducción a los métodos de inteligencia de enjambres.md",
     "3º/1º cuatri/IS/Tema 5 - Diseño de sistemas basados en conocimiento.md",
     "3º/1º cuatri/ML II/Tema 5 - Redes de neuronas profundas.md",
     "3º/1º cuatri/AB II/Images/Pasted image 20260603185511.png",
     "3º/1º cuatri/AB II/Images/Pasted image 20260603203113.png",
     "3º/1º cuatri/AB II/Images/Pasted image 20260603192613.png",
     "3º/1º cuatri/AB II/Images/Pasted image 20260603192132.png",
-    "3º/1º cuatri/AB II/Images/Pasted image 20260603191643.png",
-    "3º/1º cuatri/AB II/Images/Pasted image 20260603191629.png",
-    "3º/1º cuatri/AB II/Images/Pasted image 20260603185528.png",
-    "3º/1º cuatri/AB II/Images/Pasted image 20260603161349.png",
-    "3º/1º cuatri/AB II/Images/Pasted image 20260603161906.png",
     "3º/1º cuatri/AB II/Bloque 1 - Introducción/Bonus 2 - Introducción al lenguaje Java.md",
     "1. Historia y ecosistema.md",
     "Historia y ecosistema.md",
     "3º/1º cuatri/AB II/Bloque 1 - Introducción/Bonus - Introducción a la POO.md",
-    "3º/1º cuatri/AB II/Bloque 4 - Evolutivos/Tema 12 - Algoritmos genéticos y meméticosf.md",
-    "3º/1º cuatri/AB II/Bloque 4 - Evolutivos/Tema13_Resumen_PG_EG.md",
     "3º/1º cuatri/AB II/Bloque 4 - Evolutivos",
     "3º/1º cuatri/AB II/Bloque 3 - Enjambre",
     "3º/1º cuatri/AB II/Bloque 2 - Trayectoriales",
     "3º/1º cuatri/AB II/Bloque 1 - Introducción",
     "3º/2º cuatri/SMA/Temas1-11_SMA .zip",
-    "3º/2º cuatri/SMA/Tema .zip",
-    "3º/2º cuatri/SMA/Tema .zip.dhp9cq.part",
-    "3º/2º cuatri/PLN I/Images",
-    "3º/2º cuatri/Robotica/Hojas de Problemas",
-    "estructura_limpia.txt"
+    "3º/2º cuatri/SMA/Tema .zip"
   ]
 }

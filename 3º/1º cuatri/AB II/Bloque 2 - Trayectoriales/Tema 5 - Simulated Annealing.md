@@ -54,7 +54,7 @@ Veamos la analogía entre los procesos termodinámicos y los procesos de optimiz
 | Estado congelado    | Solución heurística           |
 # Parametrización
 Lo que solemos llamar temperatura (**t**) es un parámetro que controla la probabilidad de que se produzca un movimiento de escape.
-- Cuando **t** es alto, se producen **movimientos de escape** (EM a partir de ahora) muy facilmente. SIn embargo, si es lo suficientemente pequeño, no se producen EMs y la búsqueda acaba en un **óptimo local**
+- Cuando **t** es alto, se producen **movimientos de escape** (EM a partir de ahora) muy facilmente. Sin embargo, si es lo suficientemente pequeño, no se producen EMs y la búsqueda acaba en un **óptimo local**
 - **Teóricamente** está probada la convergencia al óptimo cuando la temperatura se reduce lentamente. El problema es que los tiempos de cómputo no son asumibles.
 ## Decisiones a tomar
 - **Genéricas**

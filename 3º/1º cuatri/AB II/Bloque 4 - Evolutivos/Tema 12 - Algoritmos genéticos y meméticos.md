@@ -102,7 +102,7 @@ El cruce de 1 punto sufre de **sesgo posicional**: los genes cercanos tienen má
 
 ## 7. ¿Son necesarios cruce y mutación?
 
-Hay consenso en que **ambos son necesarios**, aunque su impacto depende del problema. Un algoritmo de solo mutación es posible; uno de solo cruce, no.
+Hay consenso en que **ambos son necesarios**, aunque su impacto depende del problema. **Un algoritmo de solo mutación es posible; uno de solo cruce, no.**
 
 |                                      | **Cruce**                                     | **Mutación**                            |
 | ------------------------------------ | --------------------------------------------- | --------------------------------------- |
@@ -124,15 +124,14 @@ Hoy en día se acepta que es mejor codificar las variables numéricas **directam
 
 En binario estándar, un pequeño cambio de valor puede requerir cambiar muchos bits (ej: 7 = 0111 → 8 = 1000). El **código Gray** garantiza que valores consecutivos difieran en **exactamente 1 bit**, haciendo la asignación genotipo-fenotipo más "suave" y beneficiosa para el GA.
 
+![[Pasted image 20260609232357.png]]
 ### 8.2 Representación con enteros
-
 - Útil para problemas con variables enteras o categóricas (ej: {azul, verde, amarillo, rosa})
 - Los cruces uniformes y de punto N funcionan directamente
 - La mutación *bit-flip* se modifica:
 	- **Creep:** mayor probabilidad de moverse a un valor similar
 	- **Elección aleatoria:** especialmente para variables categóricas
 	- Para problemas ordinales se usan dos operadores de mutación en tándem
-
 ### 8.3 Representación con números reales
 
 - Para problemas de optimización continua: $f: \mathbb{R}^n \to \mathbb{R}$
@@ -178,12 +177,12 @@ Hay dos tipos de información a preservar:
 
 Los operadores normales (*bit-flip*) crean soluciones inválidas porque rompen la condición de permutación. Por eso **deben cambiarse al menos dos valores** simultáneamente. El parámetro $p_m$ ahora refleja la probabilidad de aplicar algún operador una vez a **toda la cadena**, no gen a gen o en otras palabras no individualmente en cada posición.
 
-| Operador               | Descripción                                               | Preserva                                        |
-| ---------------------- | --------------------------------------------------------- | ----------------------------------------------- |
-| **Inserción**          | Elige 2 alelos; mueve el segundo para que siga al primero | Orden y adyacencia                              |
-| **Intercambio (swap)** | Elige 2 alelos e intercambia sus posiciones               | Adyacencia (4 enlaces rotos), altera orden      |
-| **Inversión**          | Elige 2 alelos e invierte la subcadena entre ellos        | Adyacencia (solo 2 enlaces rotos), altera orden |
-| **Mezcla (scramble)**  | Selecciona un subconjunto y reorganiza aleatoriamente     | Ninguno en particular                           |
+| Operador               | Descripción                                               | Preserva                                        | Imagen                                            |
+| ---------------------- | --------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------- |
+| **Inserción**          | Elige 2 alelos; mueve el segundo para que siga al primero | Orden y adyacencia                              | ![[Pasted image 20260609232812.png\|50000000000]] |
+| **Intercambio (swap)** | Elige 2 alelos e intercambia sus posiciones               | Adyacencia (4 enlaces rotos), altera orden      | ![[Pasted image 20260609232854.png\|50000000]]    |
+| **Inversión**          | Elige 2 alelos e invierte la subcadena entre ellos        | Adyacencia (solo 2 enlaces rotos), altera orden | ![[Pasted image 20260609232909.png\|5000000]]     |
+| **Mezcla (scramble)**  | Selecciona un subconjunto y reorganiza aleatoriamente     | Ninguno en particular                           | ![[Pasted image 20260609232921.png\|500000]]      |
 
 ### 10.2 Cruce de permutaciones
 

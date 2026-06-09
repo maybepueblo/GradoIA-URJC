@@ -20,7 +20,7 @@ Estos hechos justifican el uso de múltiples estructuras de vecinos para abordar
 **Hechos**
 - Lo cerca que están los óptimos locales entre sí respecto a diferentes estructuras de vecindad es empírico. Esto nos dice que los óptimos locales nos dan información acerca del óptimo global.
 - Puede ser por ejemplo, que ambas soluciones tengan características comunes.
-	- Sin embargo, de forma generar no conocemos dichas características.
+	- Sin embargo, de forma general no conocemos dichas características.
 		- Por ello, hemos de realizar un estudio organizado en las proximidades de este óptimo local hasta encontrar uno mejor.
 ## Implementaciones
 
