@@ -124,7 +124,6 @@ El principal reto en deep learning es la **necesidad de grandes cantidades de da
 #### Definición
 
 **Transfer Learning:** el modelo resuelve 2 o más tareas diferentes, pero muchos factores que explican las variaciones en la Tarea 1 (T1) también lo hacen en la Tarea 2 (T2).
-
 - Se aplica a aprendizaje supervisado donde la entrada es parecida pero la salida es de diferente naturaleza.
 - La idea: entrenar una representación con los muchos datos de T1 y reutilizarla en T2 con pocos datos.
 

@@ -156,12 +156,12 @@ $$h_i = a!\left[\beta + \omega_1 x_{i-1} + \omega_2 x_i + \omega_3 x_{i+1}\right
 donde $a[\cdot]$ es la función de activación (habitualmente ReLU), $\boldsymbol{\omega} = [\omega_1, \omega_2, \omega_3]^T$ es el kernel y $\beta$ es el sesgo.
 
 #### Comparación con capa MLP
-
-||Capa convolucional|Capa fully connected (MLP)|
-|:--|:--|:--|
-|$i$-ésima activación|$h_i = a!\left[\beta + \sum_{j=1}^{K} \omega_j x_{i+j-2}\right]$|$h_i = a!\left[\beta_i + \sum_{j=1}^{D} \omega_{ij} x_j\right]$|
-|Parámetros por neurona|$K$ pesos + 1 sesgo compartidos|$D$ pesos propios + 1 sesgo propio|
-|Total parámetros ($D$ neuronas, $D$ entradas)|$K + 1$|$D^2 + D$|
+ 
+| Característica                                    | Capa convolucional                                              | Capa fully connected (MLP)                                     |
+| :------------------------------------------------ | :-------------------------------------------------------------- | :------------------------------------------------------------- |
+| **i-ésima activación**                            | $h_i = a\left[\beta + \sum_{j=1}^{K} \omega_j x_{i+j-2}\right]$ | $h_i = a\left[\beta_i + \sum_{j=1}^{D} \omega_{ij} x_j\right]$ |
+| **Parámetros por neurona**                        | $K$ pesos + 1 sesgo compartidos                                 | $D$ pesos propios + 1 sesgo propio                             |
+| **Total parámetros ($D$ neuronas, $D$ entradas)** | $K + 1$                                                         | $D^2 + D$                                                      |
 
 **La capa convolucional es un caso especial de la capa FC:** la matriz de pesos de la FC equivalente tiene la mayoría de sus pesos a cero, y los no nulos son iguales entre sí (pesos compartidos). La convolución impone dos restricciones sobre la FC general: **sparsidad** (conexiones locales) y **compartición de pesos** (el mismo filtro en todas las posiciones).
 
@@ -386,9 +386,11 @@ Consideramos una red simple:
 x (6×1) → Conv1D(K=3, Co=1, S=1, P=0) → z₀ (4×1) → a() → h₁ (4×1) → FC → y (1×1)
 ```
 
-El kernel es $\boldsymbol{\omega}_0 = (w_1, w_2, w_3)^T$ y la convolución produce: $$\mathbf{z}_0 = \begin{bmatrix} w_1 x_1 + w_2 x_2 + w_3 x_3 + \beta_0 \ w_1 x_2 + w_2 x_3 + w_3 x_4 + \beta_0 \ w_1 x_3 + w_2 x_4 + w_3 x_5 + \beta_0 \ w_1 x_4 + w_2 x_5 + w_3 x_6 + \beta_0 \end{bmatrix}$$
+![[Pasted image 20260613192526.png]]
 
-En notación matricial: $\mathbf{z}_0 = \mathbf{W} \mathbf{x} + \beta_0 \mathbf{1}$ donde $\mathbf{W}$ es la **matriz de Toeplitz**: $$\mathbf{W} = \begin{bmatrix} w_1 & w_2 & w_3 & 0 & 0 & 0 \ 0 & w_1 & w_2 & w_3 & 0 & 0 \ 0 & 0 & w_1 & w_2 & w_3 & 0 \ 0 & 0 & 0 & w_1 & w_2 & w_3 \end{bmatrix}$$
+El kernel es $\boldsymbol{\omega}_0 = (w_3, w_2, w_1)^T$ y la convolución produce: $$ \mathbf{z}_0 = \begin{bmatrix} w_1 x_1 + w_2 x_2 + w_3 x_3 + \beta_0 \\ w_1 x_2 + w_2 x_3 + w_3 x_4 + \beta_0 \\ w_1 x_3 + w_2 x_4 + w_3 x_5 + \beta_0 \\ w_1 x_4 + w_2 x_5 + w_3 x_6 + \beta_0 \end{bmatrix} $$
+
+En notación matricial: $\mathbf{z}_0 = \mathbf{W} \mathbf{x} + \beta_0 \mathbf{1}$ donde $\mathbf{W}$ es la **matriz de Toeplitz**: $$ \mathbf{W} = \begin{bmatrix} w_1 & w_2 & w_3 & 0 & 0 & 0 \\ 0 & w_1 & w_2 & w_3 & 0 & 0 \\ 0 & 0 & w_1 & w_2 & w_3 & 0 \\ 0 & 0 & 0 & w_1 & w_2 & w_3 \end{bmatrix} $$
 
 Suponemos conocido el gradiente $\frac{\partial L}{\partial \mathbf{z}_0} = (a, b, c, d)^T$.
 
@@ -396,20 +398,55 @@ Suponemos conocido el gradiente $\frac{\partial L}{\partial \mathbf{z}_0} = (a, 
 
 $$\frac{\partial L}{\partial \mathbf{x}} = \frac{\partial \mathbf{z}_0}{\partial \mathbf{x}} \cdot \frac{\partial L}{\partial \mathbf{z}_0} = \mathbf{W}^T \cdot \frac{\partial L}{\partial \mathbf{z}_0}$$
 
-$$\mathbf{W}^T = \begin{bmatrix} w_1 & 0 & 0 & 0 \ w_2 & w_1 & 0 & 0 \ w_3 & w_2 & w_1 & 0 \ 0 & w_3 & w_2 & w_1 \ 0 & 0 & w_3 & w_2 \ 0 & 0 & 0 & w_3 \end{bmatrix}$$
+$$
+\mathbf{W}^T = \begin{bmatrix} 
+w_1 & 0 & 0 & 0 \\ 
+w_2 & w_1 & 0 & 0 \\ 
+w_3 & w_2 & w_1 & 0 \\ 
+0 & w_3 & w_2 & w_1 \\ 
+0 & 0 & w_3 & w_2 \\ 
+0 & 0 & 0 & w_3 
+\end{bmatrix}
+$$
 
-Resultado: $$\frac{\partial L}{\partial \mathbf{x}} = \begin{bmatrix} w_1 a \ w_2 a + w_1 b \ w_3 a + w_2 b + w_1 c \ w_3 b + w_2 c + w_1 d \ w_3 c + w_2 d \ w_3 d \end{bmatrix} = r(\boldsymbol{\omega}_0) * \frac{\partial L}{\partial \mathbf{z}_0}$$
+Resultado: 
+$$
+\frac{\partial L}{\partial \mathbf{x}} = \begin{bmatrix} 
+w_1 a \\ 
+w_2 a + w_1 b \\ 
+w_3 a + w_2 b + w_1 c \\ 
+w_3 b + w_2 c + w_1 d \\ 
+w_3 c + w_2 d \\ 
+w_3 d 
+\end{bmatrix} = r(\boldsymbol{\omega}_0) * \frac{\partial L}{\partial \mathbf{z}_0}
+$$
 
-donde $r(\boldsymbol{\omega}_0) = (w_1, w_2, w_3)^T$ es el kernel **sin invertir** (en este caso el kernel es igual a su reverso, pero en general sería el kernel original).
+donde $r(\boldsymbol{\omega}_0) = (w_1, w_2, w_3)^T$ es el kernel **original**
 
 > **Resultado clave:** el gradiente hacia atrás respecto a la entrada $\mathbf{x}$ es una **convolución del gradiente** $\frac{\partial L}{\partial \mathbf{z}_0}$ con el kernel original $r(\boldsymbol{\omega}_0)$ (con zero padding para recuperar la dimensión original). El backprop también es una operación de convolución.
 
 #### Gradiente respecto al kernel $\boldsymbol{\omega}_0$
 
-$$\frac{\partial \mathbf{z}_0}{\partial \boldsymbol{\omega}_0} = \begin{bmatrix} x_1 & x_2 & x_3 & x_4 \ x_2 & x_3 & x_4 & x_5 \ x_3 & x_4 & x_5 & x_6 \end{bmatrix}$$
-
-$$\frac{\partial L}{\partial \boldsymbol{\omega}_0} = \frac{\partial \mathbf{z}_0}{\partial \boldsymbol{\omega}_0} \cdot \frac{\partial L}{\partial \mathbf{z}_0} = \begin{bmatrix} x_1 & x_2 & x_3 & x_4 \ x_2 & x_3 & x_4 & x_5 \ x_3 & x_4 & x_5 & x_6 \end{bmatrix} \begin{bmatrix} a \ b \ c \ d \end{bmatrix} = r!\left(\frac{\partial L}{\partial \mathbf{z}_0}\right) * \mathbf{x}$$
-
+$$$$
+$$
+\frac{\partial \mathbf{z}_0}{\partial \boldsymbol{\omega}_0} = \begin{bmatrix} 
+x_1 & x_2 & x_3 & x_4 \\ 
+x_2 & x_3 & x_4 & x_5 \\ 
+x_3 & x_4 & x_5 & x_6 
+\end{bmatrix}
+$$
+$$
+\frac{\partial L}{\partial \boldsymbol{\omega}_0} = \frac{\partial \mathbf{z}_0}{\partial \boldsymbol{\omega}_0} \cdot \frac{\partial L}{\partial \mathbf{z}_0} = \begin{bmatrix} 
+x_1 & x_2 & x_3 & x_4 \\ 
+x_2 & x_3 & x_4 & x_5 \\ 
+x_3 & x_4 & x_5 & x_6 
+\end{bmatrix} \begin{bmatrix} 
+a \\ 
+b \\ 
+c \\ 
+d 
+\end{bmatrix} = r\left(\frac{\partial L}{\partial \mathbf{z}_0}\right) * \mathbf{x}
+$$
 donde la convolución es de tipo "valid" del filtro $(d, c, b, a)^T$ con la entrada $\mathbf{x}$.
 
 > **Resultado clave:** el gradiente respecto al kernel es también una convolución: es la correlación cruzada entre el gradiente $\frac{\partial L}{\partial \mathbf{z}_0}$ y la entrada $\mathbf{x}$.
@@ -434,6 +471,7 @@ Para $K=3$: $$h_{ij} = a!\left[\beta + \sum_{m=1}^{3}\sum_{n=1}^{3} \omega_{mn} 
 
 El kernel se traslada tanto horizontal como verticalmente a través de la imagen 2D, generando una salida en cada posición (figura: imagen de entrada → kernel deslizante → mapa de activación).
 
+![[Pasted image 20260613222317.png]]
 #### Tamaño de salida en 2D
 
 Para una imagen de entrada $H_i \times W_i$ con kernel $K_H \times K_W$, stride $(S_H, S_W)$ y padding $(P_H, P_W)$: $$H_o = \left\lfloor \frac{H_i - K_H + 2P_H}{S_H} + 1 \right\rfloor, \qquad W_o = \left\lfloor \frac{W_i - K_W + 2P_W}{S_W} + 1 \right\rfloor$$
@@ -527,6 +565,7 @@ La convolución traspuesta usa $\mathbf{W}^T \in \mathbb{R}^{8 \times 4}$, multi
 
 Visualmente: en la convolución normal cada salida recibe contribuciones de 3 inputs. En la traspuesta, cada input contribuye a 3 outputs, y donde los outputs se solapan, se suman.
 
+![[Pasted image 20260613225759.png]]
 #### Propiedades importantes
 
 - La convolución traspuesta **no es la inversa matemática** de la convolución. En general, $\mathbf{W}^T\mathbf{W}\mathbf{x} \neq \mathbf{x}$ (a menos que $\mathbf{W}^T\mathbf{W} = \mathbf{I}$).
@@ -806,11 +845,8 @@ Diseñada específicamente para **estimación de pose humana** (detectar las art
 **Conceptos clave:**
 
 1. **Bloque Hourglass:** un solo módulo encoder-decoder (con estructura similar a U-Net, usando conexiones skip por suma en lugar de concatenación). Produce mapas de calor (heatmaps) de las localizaciones de las articulaciones.
-    
 2. **Apilamiento de bloques (stacking):** se apilan múltiples bloques hourglass en serie. La salida de un hourglass alimenta al siguiente. Esto permite refinar iterativamente la estimación de pose.
-    
-3. **Supervisión intermedia:** cada bloque hourglass produce su propia predicción de pose, y se calcula una pérdida en cada uno. Esto facilita el entrenamiento de la red completa por propagación de gradientes.
-    
+3. **Supervisión intermedia:** cada bloque hourglass produce su propia predicción de pose, y se calcula una pérdida en cada uno. Esto facilita el entrenamiento de la red completa por propagación de gradientes. 
 
 **Intuición:** el primer hourglass procesa la imagen de forma global, estimando una pose inicial aproximada. Los siguientes hourglasses refinan esta estimación incorporando el contexto que viene de la predicción anterior.
 
@@ -833,12 +869,12 @@ Diseñada específicamente para **estimación de pose humana** (detectar las art
 
 **Número de parámetros:**
 
-|Tipo|Parámetros (pesos + sesgos)|
-|:--|:--|
-|Conv 1D, $C_i$ entradas, $C_o$ salidas, kernel $K$|$C_i \cdot C_o \cdot K + C_o$|
-|Conv 2D, $C_i$ entradas, $C_o$ salidas, kernel $K\times K$|$C_i \cdot C_o \cdot K^2 + C_o$|
-|Conv 1×1, $C_i$ entradas, $C_o$ salidas|$C_i \cdot C_o + C_o$|
-|FC, $D_i$ entradas, $D_o$ salidas|$D_i \cdot D_o + D_o$|
+| Tipo                                                       | Parámetros (pesos + sesgos)     |
+| :--------------------------------------------------------- | :------------------------------ |
+| Conv 1D, $C_i$ entradas, $C_o$ salidas, kernel $K$         | $C_i \cdot C_o \cdot K + C_o$   |
+| Conv 2D, $C_i$ entradas, $C_o$ salidas, kernel $K\times K$ | $C_i \cdot C_o \cdot K^2 + C_o$ |
+| Conv 1×1, $C_i$ entradas, $C_o$ salidas                    | $C_i \cdot C_o + C_o$           |
+| FC, $D_i$ entradas, $D_o$ salidas                          | $D_i \cdot D_o + D_o$           |
 
 **Campo receptivo** (kernel K, stride 1, sin dilatación): $$\text{RF}_k = \text{RF}_{k-1} + (K-1) \qquad \text{con } \text{RF}_1 = K$$
 

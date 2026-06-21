@@ -319,7 +319,7 @@ Queremos entender cómo varía la magnitud de las señales a medida que avanzan 
 **Preactivación de la $i$-ésima neurona en la capa $k$:** $$z_k(i) = \sum_{j=1}^{D_h} w_{ij} , h_k(j)$$
 
 **Esperanza de la preactivación** (usando $E[w_{ij}]=0$ y la linealidad de la esperanza): $$E[z_k(i)] = \sum_{j=1}^{D_h} E[w_{ij}] \cdot E[h_k(j)] = 0$$
-
+ística: **la definición ma**
 Con media cero en los pesos, la media de las preactivaciones es 0. ✓
 
 **Varianza de la preactivación:**
