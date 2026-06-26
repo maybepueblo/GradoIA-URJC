@@ -1,118 +1,230 @@
-## Redes Bayesianas
+# Redes Bayesianas
+## Introducción
+Son herramientas para comprender y resolver problemas relacionados con **sucesos inciertos**. Se conocen como redes de Bayes, redes de creencias, redes de decisión o modelos bayesianos.
 
-### Introducción y Conceptos Básicos
+Son **gráficos probabilísticos** que se pueden usar para construir modelos de datos a partir de datos/opiniones de expertos. 
+- Amplia gama de tareas.
+- Específicamente usados para actividades de análisis.
 
-- Las redes bayesianas son herramientas y gráficos probabilísticos que resultan de gran valor para modelar, comprender y resolver problemas que involucran sucesos inciertos, basándose en opiniones de expertos o en la extracción de datos empíricos.
-    
-- A estas estructuras también se las conoce bajo múltiples denominaciones, tales como redes de Bayes, redes de creencias, redes de decisión o simplemente modelos bayesianos.
-    
-- Tienen un amplio rango de aplicación analítica (descriptiva, diagnóstica, predictiva y prescriptiva) para tareas como el modelado causal, el razonamiento, la toma de decisiones bajo incertidumbre y la detección de anomalías.
-    
-- En la visualización gráfica de estas redes, cada variable (ya sea de naturaleza continua o discreta) está representada por un nodo.
-    
-- Las influencias directas entre las distintas variables se modelan utilizando enlaces o arcos conectados entre los nodos.
-    
-- La ausencia de un enlace directo entre dos nodos no implica que sean variables completamente independientes, puesto que podrían conectarse indirectamente a través de terceros nodos o volver su dependencia dependiente de las nuevas evidencias que se incorporen al modelo.
-    
+Las redes bayesianas podemos graficarlas, si bien opcional, nos ayuda a entenderlas.
+- Cada **nodo representa una variable** -> *discreta* o *continua* 
+- Los **enlaces** se usan para **indicar que un nodo influye directamente en el otro**
+- Cuando **no existe** un enlace entre dos nodos **no significa** que sean **completamente independientes**, pueden estar conectados a través de otros nodos. 
+- No obstante, pueden volverse (in)dependientes en función de la evidencia en otros nodos.
+## Representación del conocimiento
+- **Modelo Judea Pearl**
+	- Modelos causales formados por **nodo concepto y relaciones** entre ellos, definidas por una red.
+	- Las **relaciones son de influencia** y se les asocia **medida de probabilidad** que condiciona los aspectos causa y efecto.
+	- Manejando adecuadamente la estructura podemos **generar explicaciones** de las conclusiones.
+	- Se consideran **grafos sin ciclos** (**poliárboles**)
+	- Existen modelos para grafos con ciclos.
 
-### Representación del Conocimiento
+![[Pasted image 20260621222634.png]]
 
-- El sistema de Judea Pearl estructura el conocimiento mediante modelos causales compuestos por "nodos concepto" y las relaciones de influencia causa-efecto establecidas en la red, formando comúnmente grafos dirigidos sin ciclos conocidos como poliárboles.
-    
-- A nivel estructural, un conjunto de nodos $X_{i}$ toma valores concretos contenidos dentro de dominios finitos delimitados $D_{i}$.
-    
-- **Separabilidad Direccional**: Este es un principio de descomposición esencial en las redes bayesianas, el cual establece que la influencia de un nodo $Z$ sobre un nodo $X$ depende de manera exclusiva del nodo intermedio $Y$.
-    
-- Siguiendo el principio anterior, si un nodo $Y$ separa a $X$ del resto de nodos $w_{1},...,w_{n}$, la probabilidad se puede simplificar algorítmicamente a $P(x|y,w_{1},...,w_{n})=P(x|y)$.
-    
-- Para cuantificar estas influencias condicionales, se emplean matrices de probabilidad condicional sustentadas en juicios estadísticos y humanos.
-    
-- Las redes posibilitan tres flujos distintos de evaluación lógica: el razonamiento predictivo (desde las causas hacia los efectos), el razonamiento de diagnóstico (desde los efectos hacia las causas subyacentes) y el razonamiento intercausal (evaluando relaciones matemáticas entre causas concurrentes).
-    
+Está formada por un **conjunto de nodos** $X_i$ con valores en **dominios finitos** $D_i$.
+- *Ejemplo* -> el concepto Edad toma valores en dominio <niño, joven, adulto, viejo>
+- Notación: P(X=x | Y=y) = P(x|y) = 0.3
 
-### Mecanismos de Inferencia Probabilística
+![[Pasted image 20260621222937.png]]
 
-- El razonamiento base de toda inferencia en este sistema es el teorema de Bayes clásico: $P(A|B)=\frac{P(B|A)\cdot P(A)}{P(B)}$.
-    
-- Para facilitar el cómputo de la red, la suma de las probabilidades divisoras se agrupa dentro de una constante de normalización $\alpha$, simplificando la expresión final a $P(A|B)=\alpha\cdot P(B|A)\cdot P(A)$.
-    
-- El mecanismo de inferencia global descompone la credibilidad final de un nodo aprovechando la premisa de separabilidad direccional abordada en el apartado anterior.
-    
-- Frente a un nuevo evento de evidencia $e$, el nodo $X$ es capaz de particionar analíticamente dicha evidencia en dos porciones: $e_{x}^{+}$ (representa la evidencia de los antecesores o causas de X) y $e_{x}^{-}$ (representa la evidencia de los sucesores o efectos derivados de X).
-    
-- La credibilidad o creencia final sobre un suceso específico procesado por un nodo se define matemáticamente como la ecuación $Cr(x)=P(x|e)=\alpha\cdot\pi(x)\cdot\lambda(x)$.
-    
-- El parámetro inferior $\lambda(x)$ engloba la probabilidad de la evidencia originada en los efectos del nodo, estipulada como $\lambda(x)=P(e_{x}^{-}|x)$.
-    
-- El parámetro superior $\pi(x)$ recoge la probabilidad propia del nodo teniendo en consideración la evidencia que envían sus nodos causas, descrita como $\pi(x)=P(x|e_{x}^{+})$.
-    
-- En implementaciones prácticas, la propagación de estas variables es estrictamente unidireccional: los valores $\pi$ transitan únicamente desde arriba hacia abajo (flujo causa-efecto), mientras que los valores $\lambda$ solo fluyen desde abajo hacia arriba (flujo efecto-causa).
-    
+Decimos que los nodos se relacionan mediante **arcos**. El significado es:
+- Los valores de X están condicionados por los valores de Y
+- Los valores de Y están condicionados por los valores de Z
+- La influencia de Z sobre X depende exclusivamente de Y.
+Esto es lo que llamamos **Separabilidad Direccional**
 
-## Modelo MYCIN
+Si en un grafo acíclico el nodo Y separa al nodo X del conjunto de nodos $W_1, W_2, ..., W_n$, podemos escribir:$$P(x|y, w_1, w_2, ..., w_n)=P(x|y)$$
+Lo cual es un **principio de descomposición de las influencias** en la red y **no un principio de relación de consecuencia lógica**
 
-### Introducción al Sistema
+Tenemos ahora las matrices de probabilidad condicional, ob
+tenibles de expertos o estadísticas
 
-- MYCIN es un sistema experto desarrollado en la Universidad de Stanford en la década de los años 70.
-    
-- Operacionalmente, se trata de un sistema basado de manera íntegra en reglas, diseñado específicamente para facilitar procesos de toma de decisiones.
-    
-- Su propósito original en la medicina era actuar como un sistema de consulta técnica para realizar un diagnóstico preciso y determinar un tratamiento certero frente a enfermedades de tipo infeccioso, alojando unas 500 reglas de validación en su código.
-    
-- Para efectuar el diagnóstico, el sistema interroga iterativamente al clínico sobre los síntomas exactos presentes en el paciente y los compara de forma automática con su base de datos de infecciones documentadas.
-    
-- Una vez procesados los síntomas, el algoritmo despliega una lista de posibles enfermedades subyacentes, ordenando a estas según su severidad intrínseca y la probabilidad porcentual de afectación del paciente.
-    
-- Simultáneamente, el sistema sugiere un abanico de tratamientos óptimos recomendados para el usuario, que engloba antibióticos, la ejecución de cirugías preventivas o correctivas y procedimientos médicos anexos.
-    
-- La arquitectura profunda de MYCIN cuenta con tres partes en estrecha interacción: el propio "sistema de consulta" para recomendaciones terapéuticas, el "sistema de explicaciones" (que narra lógicamente cómo ha deducido su respuesta y qué conclusiones ha extraído de la consulta), y el "sistema de adquisición de conocimiento", una interfaz vanguardista para que médicos expertos sin nociones de programación pudieran actualizar la base de datos autónomamente.
-    
+![[Pasted image 20260621223232.png]]
 
-### Representación del Conocimiento e Incertidumbre
+X se relaciona con $C_1, C_2, ..., C_n$ de forma que se satisface la tabla de probabilidad.
+### Modelo de razonamiento
+- Dados:
+	- BC con estructura de relaciones entre conceptos y el conjunto de matrices de probabilidad asociada a las relaciones.
+	- Hipótesis de probabilidades de valores conocidos en unos nodos borde. 
+- Evaluamos:
+	- La probabilidad de los nodos de la red que sean consistentes con estos datos.
+- Tipo de razonamiento
+	- **Predictivo**: Causas -> Efectos
+	- **Diagnóstico**: Efectos -> Causas
+	- **Intercausal**: Causas <--> Efectos
+### Repaso breve
+$$P(A|B)=\frac{P(A, B)}{P(B)}$$
+Teorema de Bayes:$$P(A|B)=\frac{P(B|A) · P(A)}{P(B)}$$pudiendo A y B ser multivaluadas.
 
-- En lugar de emplear sistemas lógicos inmensamente complejos, MYCIN modela afirmaciones sobre los pacientes utilizando formulación proposicional estructurada en tripletas: concepto-atributo-valor (ejemplo: paciente.fiebre = alta).
-    
-- El conjunto dinámico de reglas dentro de la base de conocimiento enlaza múltiples tripletas para generar deducciones operativas mediante la notación teórica: $c_{i}.a_{j}=v_{k},...,c_{h}.a_{r}=v_{d}\rightarrow c_{l}.a_{s}=v_{m}$.
-    
-- MYCIN construye árboles lógicos interconectando las premisas de dichas reglas en dirección hacia su objetivo final propuesto.
-    
-- La metodología de barrido del árbol consiste en tres pasos fundamentales que se repiten: identificar todas las reglas relacionadas con el objetivo central, expandir la búsqueda hacia reglas correlacionadas con las premisas individuales que subyacen al objetivo y, finalmente, detener la búsqueda cuando un dato sea conocido empíricamente o deba consultarse externamente al usuario.
-    
-- Para separarse de los límites de las probabilidades meramente estadísticas puras en favor del criterio médico humano y para modelar la "ignorancia temporal" sin comprometer la predicción global, el sistema desecha el uso clásico estadístico e introduce una métrica de pesos probatorios subjetivos.
-    
-- Esta nueva heurística subjetiva de medida toma el nombre de "Factor de Certeza" (FC), y se bifurca en dos variables matemáticas: una Medida de Credibilidad (MC) y una Medida de Incredibilidad a favor de refutar la hipótesis (MI).
-    
-- Ambas medidas actúan como vectores opuestos integrados en una misma magnitud algebraica donde $FC(h,e)=MC(h,e)-MI(h,e)$.
-    
-- Cualquier afirmación analizada posee, por ende, un $FC(h)$ con rangos numéricos continuos entre $-1$ (evidencia abrumadora de falsedad) y $+1$ (seguridad fáctica y total de veracidad).
-    
+Luego:
+$$\begin{align}P(A|B)=\frac{P(B|A) · P(A)}{P(B)}\\P(\neg A|B)=\frac{P(B|\neg A) · P(\neg A)}{P(B)}\end{align}$$
+como $P(A|B) + P(\neg A|B) =1$ entonces:$$P(B)=P(B|A)·P(A)+P(B|\neg A)·P(\neg A)$$y$$P(A|B)=\frac{P(B|A)·P(A)}{P(B|A)·P(A)+P(B|\neg A)·P(\neg A)}$$
+Si generalizamos:
+$$P(A_k|B)=\frac{P(B|A_k)·P(A_k)}{\sum_iP(B|A_i)·P(A_i)}$$
+Como $\sum_iP(A_i|B)=1$ la ecuación anterior se puede escribir como:
+$$P(A|B)=\alpha P(B|A)·P(A)$$
+siendo $\alpha$ una constante de normalización.
 
-### Mecanismos de Inferencia
+![[Pasted image 20260621224541.png]]
+## Inferencia
 
-- Para operar lógicamente con los Factores de Certeza calculados, MYCIN introduce un mecanismo de propagación ascendente en su estructura de árbol (de abajo hacia arriba, desde las premisas obtenidas hasta su resolución).
-    
-- El proceso matemático para esta propagación de evidencias aglutina dos procesos secuenciales diferentes: la "Propagación Vertical" y la "Acumulación Horizontal".
-    
-- **Propagación Vertical**: Proceso para extrapolar matemáticamente el Factor de Certeza deducido desde las premisas iniciales hasta arribar finalmente a la conclusión total de cada regla.
-    
-- Al evaluar un bloque de premisas conectadas conjuntamente ($FC(e)$), el sistema selecciona el máximo entre ambos componentes si se usa un operador lógico de disyunción OR: $FC(A\vee B)=max(FC(A),FC(B))$.
-    
-- Análogamente, cuando evalúa una serie de premisas conectadas por un operador condicional lógico estricto AND o conjunción, opta por el peso mínimo penalizador: $FC(A\wedge B)=min(FC(A),FC(B))$.
-    
-- Una vez deducido el subtotal para las premisas, la certeza de la conclusión final se calcula por multiplicidad: $FC(h)=FC(e)*FC(h,e)$, asumiendo implícitamente que $FC(e)>0$ de lo contrario sería cancelada por completo equivaliendo a un rotundo cero.
-    
-- **Acumulación Horizontal**: Aplica como procedimiento algorítmico aglutinante cuando confluyen convergencias lógicas procedentes de varias reglas independientes sobre una misma hipótesis a evaluar.
-    
-- Para unificar estos choques de evidencia en un mismo plano, los factores confirmantes positivos se consolidan separadamente de los factores de incredibilidad (negativos), calculando una sola vez el cruce total final unificado para el diagnóstico.
-    
-- Si ambas reglas presentan el mismo perfil direccional (es decir, $FC1*FC2>0$), estas se potencian algebraicamente sin llegar nunca al desborde matemático según la ecuación límite: $FC=FC1+FC2-|FC1|*FC2$.
-    
-- Ante cruces conflictivos de signos contrarios o indeterminados que no cumplan la premisa previa, el sistema emplea la técnica de ponderación: $FC=\frac{FC1+FC2}{1-min(|FC1|,|FC2|)}$.
-    
+![[Pasted image 20260621224707.png]]
 
-### Ventajas y Desventajas del Modelo MYCIN
+Para el mecanismo de inferencia nos basamos en descomponer la credibilidad asociada a un nodo P(x|e) en base a la teoría bayesiana y la hipótesis de separabilidad direccional.
+- x divide e en dos partes:
+	- $e_x^+$ evidencia sobre las causas de X
+	- $e_x^-$ evidencia sobre los efectos de X
 
-| **Aspecto**              | **Consideraciones Técnicas**                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Ventajas Principales** | MYCIN otorga un entorno e interfaz de naturaleza extremadamente intuitiva y posee una fácil computación interna para un rendimiento ágil. Confiere una altísima facilidad y apertura para modelar directamente las métricas de certeza extrayendo el juicio directo de estadistas o expertos.                                                                                                                                                                                         |
-| **Problemas Clásicos**   | Es estructuralmente susceptible a sufrir posibles inconsistencias o fisuras derivadas de contradicciones lógicas presentes en el conocimiento original insertado por el experto humano. A esto hay que sumarle una grave limitación subyacente de su algoritmo: no evalúa explícitamente posibles correlaciones secundarias presentes de antemano entre sus premisas base, y tampoco reconoce correlaciones implícitas ligadas estrictamente a sus conclusiones finales diagnósticas. |
+Podemos decir entonces:
+$$P(x \mid e) = P(x \mid e_x^-, e_x^+) = \frac{P(e_x^- \mid x, e_x^+) \cdot P(x \mid e_x^+)}{P(e_x^- \mid e_x^+)}$$ por separabilidad direccional $$P(x \mid e) = P(x \mid e_x^-, e_x^+) = \frac{P(e_x^- \mid x) \cdot P(x \mid e_x^+)}{P(e_x^- \mid e_x^+)}$$ donde $$\frac{1}{P(e_x^- \mid e_x^+)}$$ puede considerarse un operador $\alpha$ de normalización $$\lambda(x) = P(e_x^- \mid x) \quad \quad \quad \pi(x) = P(x \mid e_x^+)$$ **Credibilidad** $$Cr(x) = P(x \mid e) = \alpha \cdot \pi(x) \cdot \lambda(x)$$
+
+---
+
+Por otra parte, $\quad \pi(x) = P(x \mid e_x^+) = P(x \mid e_{u_1x}^+, e_{u_2x}^+, \dots, e_{u_nx}^+)$
+
+condicionando sobre $u_1, u_2, \dots, u_n$
+
+$$\pi(x) = P(x \mid e_x^+) = \sum_{u_1 \dots u_n} P(x \mid u_1 \dots u_n) \cdot P(u_1 \dots u_n \mid e_{u_1x}^+, e_{u_2x}^+, \dots, e_{u_nx}^+)$$
+
+teniendo en cuenta que $x$ separa cada $u_i$ del resto
+
+$$P(u_1 \dots u_n \mid e_{u_1x}^+, e_{u_2x}^+, \dots, e_{u_nx}^+) = P(u_1 \mid e_{u_1x}^+) \cdot P(u_2 \mid e_{u_2x}^+) \cdot \dots \cdot P(u_n \mid e_{u_nx}^+)$$
+
+quedando 
+
+$$\pi(x) = \sum_{u_1 \dots u_n} P(x \mid u_1 \dots u_n) \cdot \prod_i \pi_x(u_i)$$
+
+siendo 
+
+$$\pi_x(u_i) = P(u_i \mid e_{u_ix}^+)$$
+
+---
+
+Queda calcular $\lambda_{y_j}(x)$ y $\pi_x(u_i)$ en función de sus nodos vecinos
+
+Desde el punto de vista de x
+
+$$\pi_{y_j}(x) = P(x \mid e_{xy_j}^+) = P(x \mid e - e_{xy_j}^-)$$
+
+$$\pi_{y_j}(x) = Cr_{e - e_{xy_j}^-}(x) = \alpha \cdot \pi(x) \cdot \prod_{k \neq j} \lambda_{y_k}(x)$$
+
+De forma análoga, $\quad \quad \lambda_x(u_i) = P(e_{u_ix}^- \mid u_i)$
+
+condicionando a x y el resto de $u_j$ + separación direccional + bayes + independencia
+
+$$\lambda_x(u_i) = \beta \cdot \sum_x \lambda(x) \cdot \sum_{u_k, k \neq i} P(x \mid u_1 \dots u_k \dots u_n) \cdot \prod_{k \neq i} \pi_x(u_k)$$
+### Fórmulas
+Después de esta elaboración quedamos con las siguientes fórmulas:
+**Creencia** -> $Cr(x)=\alpha·\pi(x)·\lambda(x)$
+- La creencia final sobre ti mismo. Lo que tus genes/padres $(\pi(x))$ multiplicado por el feedback de cómo se están comportando tus hijos en el mundo real $(\lambda(x))$
+**Información que recibe** -> $\lambda(x)=\prod_j \lambda_{y_j}(x)$
+- Si tienes varios hijos ($y_j$) cada uno te da su propia opinión independiente sobre ti ($\lambda_{y_j}(x)$). Para saber el feedback total que recibes de tu descendencia, simplemente multiplicas/combinas los reportes independientes de cada uno de tus hijos.
+**Información que envía** -> $\pi(x)=\sum_{u_1...u_n}P(x|u_1...u_i...u_n)\prod_i\pi_x(u_i)$
+- Lo que heredas. Para saber que esperamos de ti mismo basado en tus ancestros, tienes que saber lo que cada uno de tus padres te dice $(\pi_x(u_i))$. Esto lo combinamos con las reglas de la genética familiar (tabla de probabilidad condicional $P(x|u_1...u_n)$) considerando todas las combinaciones posibles de cómo podrían estar tus padres.
+**Información que le envías a tus hijos** -> $\pi_{y_j}(x)=\alpha·\pi(x)·\prod_{k\neq j}\lambda_{y_k}(x)$
+- Le cuentas lo que tus padres te enseñaron más el feedback recibido de todos tus otros hijos salvo el propio hijo $y_j$. 
+**Información que envías a uno de tus padres** -> $\lambda_x(u_i)=\beta·\sum_x\lambda(x)\sum_{u_k,k\neq i}P(x|u_1...u_i...u_n)\prod_{k\neq i}\pi_x(u_k)$ 
+- Ahora te toca decirle a tu padre $u_i$ cómo te va. Tu reporte se basa en la evidencia que te dan tus propios hijos combinada con la información que estás recibiendo de tus otros padres donde no puede ser el padre al que le envías. Usas las reglas de familia para traducir todo esto en un mensaje que tu padre pueda entender. Beta es una constante para cuadrar las posibilidades al 100%
+
+La **constante de normalización** se calcula en base de los resultados crudos. Siendo la inversa de esa suma total$$\alpha=\frac{1}{SumaTotal}$$
+## Observaciones prácticas
+- Valores $\pi$ sólo van de causa a efecto (hacia abajo)
+- Valores $\lambda$ sólo van de efecto a causa (hacia arriba)
+- Un valor que sale de un nodo ($\pi$ o $\lambda$) depende de todos los valores que entran a ese nodo por el resto de arcos (no por el mismo arco)
+# MYCIN
+## Introducción
+Sistema experto basado en reglas para toma de decisiones. Usado para diagnóstico y tratamiento. Se realiza mediante preguntas acerca de los síntomas del paciente.
+
+Teniendo la lista de posibles enfermedades, las ordenaba de acuerdo con la gravedad y la probabilidad de tener al paciente infectado con cada una. Podía luego recomendarte el tratamiento.
+
+Tres partes interrelacionales en MYCIN:
+- Sistema de consulta
+	- BC para generar recomendación terapéutica
+- Sistema de explicaciones
+	- Describe razonamiento realizado durante consulta y las conclusiones
+- Sistema de adquisición de conocimiento
+	- Permite a los expertos actualizar el conocimiento sin saber de programación.
+## Representación del conocimiento
+Usamos **fórmulación proposicional** para representar declaraciones.
+
+El objetivo es acercarnos a la capacidad de representación de la lógica de predicados, pero sin su complejidad.
+
+La idea principal es plantear declaraciones formuladas en base a tripletas concepto-atributo-valor para representar propiedades específicas de un concepto en un dominio determinado de valores (por ejemplo paciente.fiebre = alta)
+
+Formulamos reglas con estructura:
+$$c_i.a_j=v_k,...,c_h.a_r=v_d\rightarrow_gc_l.a_s=v_m$$
+Los elementos en la bc siendo las reglas que contienen las tripletas $c.a.v$ que modelan el problema. En base a estas se construyen los árboles mediante el encadenamiento de las reglas. 
+
+Se construyen mediante el siguiente proceso los árboles:
+- Se buscan reglas cuyas conclusiones estén relacionadas con el objetivo.
+- Se repite la búsqueda de regla anterior, pero teniendo en cuenta que la conclusión esté relacionada con cada premisa. Este paso se repite mientras existan reglas que concluyan sobre alguna premisa  o las premisas son datos conocidos o se pueden averiguar preguntando al usuario.
+
+![[Pasted image 20260621231257.png]]
+
+A diferencia de los sistemas basados en reglas tradicionales, MYCIN usa **grados de certeza sobre la evidencia y las reglas.**
+- En un principio usábamos probabilidades estimadas a partir de las frecuencias estadísticas y en caso de no disponer de la info estadística, había juicio subjetivo.
+- Se optó mejor por el **Factor de Certeza (FC)** que se expresa a partir de **Medida de Credibilidad (MC)** y **Medida de Incredibilidad (MI)**
+
+* **$MC$ (Medida de Credibilidad)**
+
+$$MC(h, e) = \begin{cases} 
+\quad 1 & \text{si } p(h) = 1 \\ 
+\frac{\max(p(h|e), p(h)) - p(h)}{1 - p(h)} & \text{en otro caso} 
+\end{cases}$$
+
+* **$MI$ (Medida de Incredibilidad)**
+
+$$MI(h, e) = \begin{cases} 
+\quad 1 & \text{si } p(h) = 0 \\ 
+\frac{\min(p(h|e), p(h)) - p(h)}{0 - p(h)} & \text{en otro caso} 
+\end{cases}$$
+
+* **$FC$ (Factor de Certeza)**
+
+$$FC(h, e) = MC(h, e) - MI(h, e)$$
+### Factor de certeza
+$FC(h)$ -> Es un valor entre -1 y +1 que indica el grado de creencia en una hipótesis $h$ (+1: totalmente seguro, -1: totalmente seguro que falso)
+$FC(h, e)$ -> factor de certeza de $h$ basado en la evidencia $e$
+$FC(\neg h, e) = -FC(h, e)$ es decir $FC(h, e) + FC(\neg h, e) = 0$
+*Ejemplo
+- h1 = el organismo es gram-negativo
+- h2 = el organismo tiene forma de bastón
+- h3 = el organismo es anaerobio
+- FC(h1, E) = +0.8: evidencia fuerte de que es gram-negativo
+- FC(h2, E) = -0.3: ligera evidencia que no tiene forma de bastón
+- FC(h3, E) = +1: se sabe con seguridad que es anaerobio.
+
+Luego...
+- **Reglas**: evidencia -> hipótesis $(e \rightarrow h)$
+- **$e$ es una fórmula lógica $(\wedge, \vee)$**
+- $FC(h, e)$: expresa el grado en que se puede o no confirmar la conclusión $h$ supuesta la evidencia de las premisas $e$.
+- Ejemplo
+	- Si el organismo es gram-negativo Y tiene forma de bastón Y es anaerobio ENTONCES [hay una evidencia media de que] el organismo es bacteroide (con certeza de 0.6)
+- Los grados de certeza se obtienen de:
+	- expertos
+	- estadísticas (si hay datos)
+## Inferencia
+Para hacer este proceso, necesitamos **añadir algunos criterios** para propagar la evidencia en el árbol de reglas.
+- La propagación se hace desde **abajo hacia arriba**
+- Específicamente, se divide en dos partes:
+	- **Propagación vertical** de la evidencia desde las premisas hasta la conclusión de la regla, teniendo en cuenta los FC de ambas.
+		- **Obtención del FC de las premisas** $FC(e)$ depende de si se trata de conjunciones o disyunciones de las premisas:
+			- $FC(A\vee B)=max(FC(A), FC(B))$
+			- $FC(A\wedge B)=min(FC(A), FC(B))$
+		- **Obtención del FC de la conclusión** $FC(h)$ usando el FC de la regla $FC(h, e)$:
+			- $FC(h)=FC(e)·FC(h, e)$ si $FC(e) > 0$, 0 e. o. c
+		- Mecanismo simple que trata de hacer una aproximación a la lógica proposicional donde las funciones max y min devuelven los valores 0 y 1 en los límites.
+	- **Acumulación horizontal** de la evidencia que converge sobre una misma conclusión procedente de varias reglas (algunas confirmantes y otras desconfirmantes)
+		- Se aplica cuando varias reglas inciden sobre la misma hipótesis.
+			- Se agrupan los FC positivos por un lado, negativos por otro.
+			- Sólo una vez se combinan ambas
+			- Se usa el siguiente cálculo dependiendo si los FC son del mismo signo o no:
+				- $$FC = \begin{cases} FC1 + FC2 - |FC1| * FC2 & \color{red}{\text{si } FC1 * FC2 > 0 \text{ (mismo signo)}} \\ \frac{FC1 + FC2}{1 - \min(|FC1|, |FC2|)} & \color{red}{\text{en cualquier otro caso}} \end{cases}$$
+## Ventajas y desventajas
+
+
+| **Ventajas**                                                            | **Desventajas**                                |
+| ----------------------------------------------------------------------- | ---------------------------------------------- |
+| Modelo muy intuitivo                                                    | Inconsistencias en el conocimiento del experto |
+| Fácil computación                                                       | No considera relaciones entre premisas         |
+| Facilidad para obtener las medidas de certeza (expertos o estadísticas) | No considera relaciones entre conclusiones     |
