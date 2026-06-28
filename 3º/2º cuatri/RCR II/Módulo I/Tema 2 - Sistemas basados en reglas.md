@@ -55,7 +55,7 @@ CLIPS es una herramienta en C/ANSI para SBR por encadenamiento hacia delante.
 **El Motor de Inferencia en CLIPS**:
 - Para elegir qué regla disparar en el paso 2 del ciclo, CLIPS primero evalúa la **prioridad explícita** `(declare (salience X))`.
 - Luego aplica una de estas **Estrategias de resolución:**
-	- *Depth* (por defecto): Prefiere activaciones más recientes (amplitud)
+	- *Depth* (por defecto): Prefiere activaciones más recientes, que sitúa por encima de las activaciones con igual o mayor antigüedad.
 	- *Breadth*: Prefiere activaciones más antiguas
 	- *Complexity:* Prefiere reglas con mayor **especificidad**
 	- *Simplicity:* Menos especificidad
